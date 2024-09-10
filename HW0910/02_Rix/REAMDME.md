@@ -16,4 +16,4 @@ heads, (2) B = the first two tosses are heads, (3) C = the last toss is a tail. 
 
 ### Answers
 Simple event = $\{H, T\}$
-a. $\Omega = \{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT \}$
+a. $\Omega = \{ HHH, HHT, HTH, HTT, THH, THT, TTH, TTT \} $
