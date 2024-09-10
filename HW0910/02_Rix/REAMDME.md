@@ -16,7 +16,10 @@ heads, (2) B = the first two tosses are heads, (3) C = the last toss is a tail. 
 
 ### Answers
 
-a. 
-   $\Omega$ = \{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT\} \n
+a.   
+   $\Omega$ = \{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT\}  
 b. 
-   
+   A = \{HHH, HHT, HTH, THH\}  
+   B = \{HHT, HHH\}  
+   C = \{HHT, HTT, THT, TTT\}  
+c.
