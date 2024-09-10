@@ -19,3 +19,5 @@ heads, (2) B = the first two tosses are heads, (3) C = the last toss is a tail. 
 a. $
 \Omega = \{ HHH, HHT, HTH, HTT, THH, THT, TTH, TTT \}
 $
+
+b. 
