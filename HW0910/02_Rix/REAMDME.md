@@ -25,7 +25,7 @@ b.
    C = \{HHT, HTT, THT, TTT\}  
   
 c.  
-   A^c = \{THH, THT, TTH, TTT\}  
+   \(A^c\) = \{THH, THT, TTH, TTT\}  
    A \cap B = \{HHH, HHT\}  
    A \cup C = \{HHH, HHT, HTH, HTT, THH, THT, TTT\}
 
