@@ -26,6 +26,6 @@ b.
   
 c.  
    Aᶜ = \{THH, THT, TTH, TTT\}  
-   A &#8745 B = \{HHH, HHT\}  
-   A &#8746 C = \{HHH, HHT, HTH, HTT, THH, THT, TTT\}
+   A &#8745; B = \{HHH, HHT\}  
+   A &#8746; C = \{HHH, HHT, HTH, HTT, THH, THT, TTT\}
 
