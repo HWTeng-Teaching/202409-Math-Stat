@@ -12,7 +12,7 @@ by 林嘉佳 Jocelyn
 
 Step 1: Calculate the possible outcome
 <br> There are 5 people, and each can choose 1 floor out of 7. Hence, the possible outcome is 
-$\7^5$ 
+$7^5$ 
 
 Step 2: Calculate the successful outcome
 <br> Since there are only 5 people, so only 5 floor will be occupied. "7 Combination 5"
