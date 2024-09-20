@@ -15,3 +15,4 @@ There are 5 people, and each can choose 1 floor out of 7. Hence, the possible ou
 \[ 
 7^5 
 \]
+= 
