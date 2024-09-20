@@ -15,3 +15,11 @@ Step 1: Calculate the possible outcome
 \[ 
 7^5 
 \] = 16807
+
+Step 2: Calculate the successful outcome
+<br> Since there are only 5 people, so only 5 floor will be occupied.
+<br> 7 Combination 5
+<br> 
+\[ 
+7! / 5! * 2!
+\]
