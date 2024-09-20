@@ -10,8 +10,8 @@ by 林嘉佳 Jocelyn
 
 ### Answer
 
-Step 1: Calculate the possible outcome. 
-There are 5 people, and each can choose 1 floor out of 7. Hence, the possible outcome is
+Step 1: Calculate the possible outcome
+<br> There are 5 people, and each can choose 1 floor out of 7. Hence, the possible outcome is
 <br> 
 \[ 
 7^5 
