@@ -10,4 +10,6 @@ by 林嘉佳 Jocelyn
 
 ### Answer
 
-Sample size is 7^5 = 16807
+\[ 
+7^5 
+\]
