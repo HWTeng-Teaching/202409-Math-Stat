@@ -10,14 +10,18 @@ by 林嘉佳 Jocelyn
 
 ### Answer
 
-Step 1: Calculate the possible outcome
+Step 1: Calculate the sample space
 <br> There are 5 people, and each can choose 1 floor out of 7. Hence, the possible outcome is 
 $7^5$ = 16807
 
-Step 2: Calculate the successful outcome
-<br> Since there are only 5 people, so only 5 floor will be occupied:
+Step 2: Calculate the outcomes
+<br> Since there are only 5 people, so only 5 floor will be occupied. We then use the combination formula:
+
 $\binom{7}{5}$
-<br> 
-\[ 
-\binom{7}{5} = \binom{7}{2} = 21 
-\]
+
+Next, since those 5 people are not constrained in any floor. So there are 5! of possible arrangement.
+
+Therefore, the outcomes will be:
+
+$\binom{7}{5} * 5!$
+
