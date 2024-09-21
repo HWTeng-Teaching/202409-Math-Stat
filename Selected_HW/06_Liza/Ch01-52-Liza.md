@@ -11,9 +11,7 @@ This represents all the possible ways to choose 4 cards from 51.
 
 - Since the first card is already a king, only 3 kings remain in the deck.
 - We now calculate the number of ways to select 4 cards that **do not include any of the remaining 3 kings**. This is the number of ways to select 4 cards from the remaining 48 non-king cards:
-$$
-\binom{48}{4}
-$$
+$$\binom{48}{4}$$
 The probability of dealing 4 cards without getting a king is:
 \[
 P(\text{no king}) = \frac{\binom{48}{4}}{\binom{51}{4}}
