@@ -15,7 +15,7 @@
 
 3. **Coefficient Using Combinations**:  
    The coefficient is found using the multinomial formula:  
-   $$\[ \frac{7!}{2!2!3!}\]$$
+   $$\[ \frac{7!}{2!2!3!}]$$
 
 4. **Calculation**:  
    First, calculate the factorials:  
