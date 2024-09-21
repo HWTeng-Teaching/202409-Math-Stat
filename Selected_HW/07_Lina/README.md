@@ -14,23 +14,20 @@
    So, we want to find the coefficient of this specific term.
 
 3. **Coefficient Using Combinations**:  
-   The coefficient is found using the multinomial formula:  
+   The coefficient is found using the multinomial formula:
+   
    $$\[ \frac{7!}{2!2!3!}]$$
 
-4. **Calculation**:  
+5. **Calculation**:  
    First, calculate the factorials:  
-   $$\[
-   7! = 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 5040
-   \]$$  
-   $$\[
-   2! = 2 \times 1 = 2
-   \]$$  
-   $$\[
-   3! = 3 \times 2 \times 1 = 6
-   \]$$  
+
+   $$\[7! = 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 5040]$$
+     
+   $$\[2! = 2 \times 1 = 2]$$
+     
+   $$\[3! = 3 \times 2 \times 1 = 6]$$
+     
    Now substitute into the formula:  
-   $$\[
-   \frac{7!}{2!2!3!} = \frac{5040}{2 \times 2 \times 6} = \frac{5040}{24} = 210
-   \]$$
+   $$\[\frac{7!}{2!2!3!} = \frac{5040}{2 \times 2 \times 6} = \frac{5040}{24} = 210]$$
 
 Thus, the coefficient of $$\(x^2 y^2 z^3)$$ is **210**.
