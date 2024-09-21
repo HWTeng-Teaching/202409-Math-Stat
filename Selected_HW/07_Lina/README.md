@@ -9,17 +9,15 @@
    $$\(a + b + c = 7)$$  
    where $$\(a)$$ is the exponent of $$\(x)$$, $$\(b)$$ is the exponent of $$\(y)$$, and $$\(c)$$ is the exponent of $$\(z)$$.
 
-3. **For the term $$\(x^2 y^2 z^3)$$**:  
+2. **For the term $$\(x^2 y^2 z^3)$$**:  
    The exponents for $$\(x)$$, $$\(y)$$, and $$\(z)$$ are $$\(a = 2)$$, $$\(b = 2)$$, and $$\(c = 3)$$, respectively.
    So, we want to find the coefficient of this specific term.
 
-4. **Coefficient Using Combinations**:  
+3. **Coefficient Using Combinations**:  
    The coefficient is found using the multinomial formula:  
-   $$\[
-   \frac{7!}{2!2!3!}
-   \]$$
+   $$\[ \frac{7!}{2!2!3!}\]$$
 
-5. **Calculation**:  
+4. **Calculation**:  
    First, calculate the factorials:  
    $$\[
    7! = 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 5040
