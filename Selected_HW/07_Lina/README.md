@@ -12,7 +12,7 @@ $$\[
 (x + y + z)^7 = \sum \binom{7}{a, b, c} x^a y^b z^c
 \]$$
 
-Where $$\a + b + c = 7$$, and the multinomial coefficient $$\(\binom{7}{a, b, c}\)$$ is:
+Where $$\(a + b + c = 7)\$$, and the multinomial coefficient $$\(\binom{7}{a, b, c}\)$$ is:
 
 $$\[
 \binom{7}{a, b, c} = \frac{7!}{a! b! c!}
