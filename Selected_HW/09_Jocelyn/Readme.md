@@ -10,11 +10,12 @@ by 林嘉佳 Jocelyn
 
 ### Answer
 
-Step 1: Calculate the sample space
+**Step 1: Calculate the sample space**
 <br> There are 5 people, and each can choose 1 floor out of 7. Hence, the possible outcome is 
-$$7^5$$ = 16807
 
-Step 2: Calculate the outcomes
+$$7^5$$
+
+**Step 2: Calculate the outcomes**
 <br> Since there are only 5 people, so only 5 floor will be occupied. We then use the combination formula:
 
 $$\binom{7}{5}$$
@@ -23,5 +24,14 @@ Next, since those 5 people are not constrained in any floor. So there are 5! of 
 
 Therefore, the outcomes will be:
 
-$$\binom{7}{5} times 5!$$
+$$\binom{7}{5} \times 5!$$
+
+**Step 3: Calculate the probability**
+<br>The probability that no two people get off at the same floor is:
+
+$$P = \frac{\text{Possible Outcome}}{\text{Sample Space}}$$
+
+$$P = \frac{\binom{7}{5} \times 5!}{7^5} = \frac{360}{2401} \approx {0.15}$$
+
+
 
