@@ -12,16 +12,16 @@ by 林嘉佳 Jocelyn
 
 Step 1: Calculate the sample space
 <br> There are 5 people, and each can choose 1 floor out of 7. Hence, the possible outcome is 
-$7^5$ = 16807
+$$7^5$$ = 16807
 
 Step 2: Calculate the outcomes
 <br> Since there are only 5 people, so only 5 floor will be occupied. We then use the combination formula:
 
-$\binom{7}{5}$
+$$\binom{7}{5}$$
 
 Next, since those 5 people are not constrained in any floor. So there are 5! of possible arrangement.
 
 Therefore, the outcomes will be:
 
-$\binom{7}{5} * 5!$
+$$\binom{7}{5} times 5!$$
 
