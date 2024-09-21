@@ -1,5 +1,5 @@
 # Problem
-## What is the coefficient of $$\x^2 y^2 z^3$$ in the Expansion of $$\(x + y + z)^7$$?
+## What is the coefficient of $$x^2 y^2 z^3$$ in the Expansion of $$(x + y + z)^7$$?
 
 In the expansion of $\(x + y + z)^7\$, we want to find the coefficient of the term $\x^2 y^2 z^3\$.
 
