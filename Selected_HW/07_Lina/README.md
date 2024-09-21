@@ -1,9 +1,9 @@
-##Problem
+## Problem
 # What is the coefficient of \(x^2 y^2 z^3\) in the Expansion of \((x + y + z)^7\)?
 
 In the expansion of \((x + y + z)^7\), we want to find the coefficient of the term \(x^2 y^2 z^3\).
 
-##Solution
+## Solution
 # Multinomial Expansion Formula
 
 The multinomial expansion of \((x + y + z)^7\) is given by:
