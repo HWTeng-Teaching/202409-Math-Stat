@@ -4,13 +4,12 @@
 # Solution
 
 1. **Total Power**:  
-   The expansion of $$\(x + y + z)^7$$ requires that the sum of the exponents in each term must equal 7. That is:  
-   $$\[
-   a + b + c = 7
-   \]$$  
+   The expansion of $$\(x + y + z)^7$$ requires that the sum of the exponents in each term must equal 7.
+   That is:  
+   $$\a + b + c = 7$$  
    where $$\(a)$$ is the exponent of $$\(x)$$, $$\(b)$$ is the exponent of $$\(y)$$, and $$\(c)$$ is the exponent of $$\(z)$$.
 
-2. **For the term $$\(x^2 y^2 z^3)$$**:  
+3. **For the term $$\(x^2 y^2 z^3)$$**:  
    The exponents for $$\(x)$$, $$\(y)$$, and $$\(z)$$ are $$\(a = 2)$$, $$\(b = 2)$$, and $$\(c = 3)$$, respectively.
    So, we want to find the coefficient of this specific term.
 
