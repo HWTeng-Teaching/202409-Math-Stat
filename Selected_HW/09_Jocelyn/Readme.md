@@ -15,7 +15,8 @@ Step 1: Calculate the possible outcome
 $7^5$ = 16807
 
 Step 2: Calculate the successful outcome
-<br> Since there are only 5 people, so only 5 floor will be occupied. "7 Combination 5"
+<br> Since there are only 5 people, so only 5 floor will be occupied:
+$$ \binom{7}{5} $$
 <br> 
 \[ 
 \binom{7}{5} = \binom{7}{2} = 21 
