@@ -5,9 +5,7 @@ and three starches if a meal consists of one selection from each group?
 
 # Solution:
 To determine how many different meals can be made, we need to multiply the number of options in each category.  
-
 There are:  
-
 4 kinds of meat,  
 6 kinds of vegetables, and  
 3 kinds of starches.  
