@@ -12,6 +12,6 @@ There are:
 6 kinds of vegetables, and
 3 kinds of starches.
 The total number of different meals is:
-\[\binom{4}{1}\]× \[\binom{6}{1}\]×\[\binom{3}{1}\]
+\binom{4}{1}× \binom{6}{1}×\binom{3}{1}
 4×6×3=72
 Thus, 72 different meals can be made.
