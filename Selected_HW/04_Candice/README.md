@@ -4,27 +4,45 @@
 
 # Answer
 ### Definitions
-
-- P(A ∩ B): The probability that both events A and B happen together (joint probability).
-- P(A|B): The conditional probability of A given B, which is defined as:
-
-  P(A|B) = P(A ∩ B) / P(B)
-
-This formula expresses that the probability of A given B is the probability that both A and B occur divided by the probability of B occurring.
+- Let \( P(A) \) denote the probability of event \( A \).
+- Let \( P(B) \) denote the probability of event \( B \).
 
 ### Proof
 
-1. **Start with the definition of conditional probability:**
+1. **Understanding the Definition of Subset**:
+   Since \( A \subseteq B \), every outcome in \( A \) is also an outcome in \( B \).
 
-   P(A|B) = P(A ∩ B) / P(B)
+2. **Using the Additivity Property of Probability**:
+   The probability of the union of two disjoint events is equal to the sum of their probabilities. We can express \( B \) as:
+   \[
+   B = A \cup (B \setminus A)
+   \]
+   where \( B \setminus A \) is the set of outcomes in \( B \) that are not in \( A \).
 
-2. **Rearrange the formula to solve for P(A ∩ B):**
+3. **Disjoint Sets**:
+   The sets \( A \) and \( B \setminus A \) are disjoint. Thus, we can apply the additivity property:
+   \[
+   P(B) = P(A) + P(B \setminus A)
+   \]
 
-   Multiply both sides of the equation by P(B):
+4. **Non-negativity of Probability**:
+   Since probabilities are always non-negative, we have:
+   \[
+   P(B \setminus A) \geq 0
+   \]
 
-   P(A ∩ B) = P(A|B) ⋅ P(B)
+5. **Combining the Results**:
+   From step 3, we can substitute the non-negativity into our equation:
+   \[
+   P(B) = P(A) + P(B \setminus A) \geq P(A)
+   \]
 
-This is the **Multiplication Law**, which expresses the joint probability P(A ∩ B) in terms of the conditional probability P(A|B) and the probability of B.
+6. **Conclusion**:
+   Thus, we conclude:
+   \[
+   P(A) \leq P(B)
+   \]
+   This completes the proof.
 
----
-
+### Summary
+If \( A \subseteq B \), then it follows that \( P(A) \leq P(B) \).
