@@ -28,3 +28,5 @@ c.
    Aᶜ = \{THH, THT, TTH, TTT\}  
    A &#8745; B = \{HHH, HHT\}  
    A &#8746; C = \{HHH, HHT, HTH, HTT, THH, THT, TTT\}
+
+TA 施昱全(James) reviewed on 20240924 and score $\textbf{\textcolor{red}{100}}$. 
