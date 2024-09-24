@@ -19,3 +19,5 @@ $$\ 1 = 1 + P(\emptyset) \$$
 Therefore,
 
 $$\ P(\emptyset) = 0 \$$
+
+TA 施昱全(James) reviewed on 20240924 and score $\textbf{\textcolor{red}{100}}$
