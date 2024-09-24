@@ -10,7 +10,7 @@
 ### Proof
 
 1. **Understanding the Definition of Subset**:
-   Since \( A \subseteq B \), every outcome in \( A \) is also an outcome in \( B \).
+   Since \( A⊆B \), every outcome in \( A \) is also an outcome in \( B \).
 
 2. **Using the Additivity Property of Probability**:
    The probability of the union of two disjoint events is equal to the sum of their probabilities. We can express \( B \) as:
