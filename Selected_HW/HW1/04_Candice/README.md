@@ -43,3 +43,5 @@
 
 ### Summary
 If \( A \subseteq B \), then it follows that \( P(A) ≤ P(B) \).
+
+TA 施昱全(James) reviewed on 20240924 and score $\textbf{\textcolor{red}{100}}$
