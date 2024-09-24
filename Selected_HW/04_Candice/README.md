@@ -14,35 +14,32 @@
 
 2. **Using the Additivity Property of Probability**:
    The probability of the union of two disjoint events is equal to the sum of their probabilities. We can express \( B \) as:
-   \[
-   B = A \cup (B \setminus A)
-   \]
-   where \( B \setminus A \) is the set of outcomes in \( B \) that are not in \( A \).
+   <br>
+   **B = A ∪ (B ∖ A)**
+   <br>
+   where \( B ∖ A \) is the set of outcomes in \( B \) that are not in \( A \).
 
 3. **Disjoint Sets**:
-   The sets \( A \) and \( B \setminus A \) are disjoint. Thus, we can apply the additivity property:
-   \[
-   P(B) = P(A) + P(B \setminus A)
-   \]
+   The sets \( A \) and \( B ∖ A \) are disjoint. Thus, we can apply the additivity property:
+   <br>
+   **P(B) = P(A) + P(B ∖ A)**
 
 4. **Non-negativity of Probability**:
    Since probabilities are always non-negative, we have:
-   \[
-   P(B \setminus A) \geq 0
-   \]
+   <br>
+   **P(B ∖ A) ≥ 0**
 
 5. **Combining the Results**:
    From step 3, we can substitute the non-negativity into our equation:
-   \[
-   P(B) = P(A) + P(B \setminus A) \geq P(A)
-   \]
+   <br>
+   **P(B) = P(A) + P(B ∖ A) ≥ P(A)**
 
 6. **Conclusion**:
    Thus, we conclude:
-   \[
-   P(A) \leq P(B)
-   \]
+   <br>
+   **P(A) ≤ P(B)**
+   <br>
    This completes the proof.
 
 ### Summary
-If \( A \subseteq B \), then it follows that \( P(A) \leq P(B) \).
+If \( A \subseteq B \), then it follows that \( P(A) ≤ P(B) \).
