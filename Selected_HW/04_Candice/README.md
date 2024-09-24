@@ -2,6 +2,7 @@
 # Question
 ## Prove: If A ⊆ B, then P(A) ≤ P(B)
 
+# Answer
 ### Definitions
 
 - P(A ∩ B): The probability that both events A and B happen together (joint probability).
