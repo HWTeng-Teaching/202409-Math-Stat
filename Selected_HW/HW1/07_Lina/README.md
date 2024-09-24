@@ -31,3 +31,5 @@
    $$\[\frac{7!}{2!2!3!} = \frac{5040}{2 \times 2 \times 6} = \frac{5040}{24} = 210]$$
 
 Thus, the coefficient of $$\(x^2 y^2 z^3)$$ is **210**.
+
+TA 施昱全(James) reviewed on 20240924 and score $\textbf{\textcolor{red}{100}}$
