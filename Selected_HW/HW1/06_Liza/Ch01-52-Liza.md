@@ -25,3 +25,5 @@ $$P(\text{at least one king}) = 1 - P(\text{no king})$$
 $$P(\text{at least one king}) = 1 - \frac{\binom{48}{4}}{\binom{51}{4}} = 0.22$$
 
 This is the probability of drawing at least one more king from the next 4 cards.
+
+TA 施昱全(James) reviewed on 20240924 and score $\textbf{\textcolor{red}{100}}$
