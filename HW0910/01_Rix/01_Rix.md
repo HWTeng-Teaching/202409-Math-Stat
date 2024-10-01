@@ -34,7 +34,7 @@ How many different meals can be made from four kinds of meat, six vegetables, an
 
 ### Answers
 
-Select each group once, so there will be 4 \times 6 \times 3 = 72 different meals.
+Select each group once, so there will be $4 \times 6 \times 3 = 72$ different meals.
 
 ## Q3.
 
