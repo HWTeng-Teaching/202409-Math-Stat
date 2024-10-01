@@ -174,3 +174,58 @@ Solving for \( P(∅) \), we get:
 Thus, the probability of the empty set \( ∅ \) is **0**.
 
 ---
+### Proof: 
+
+We want to prove that:
+
+P(A ∩ B) = P(A) + P(B) − P(A ∪ B)
+
+#### Step 1:
+Start with the equation for the union of sets:
+
+A ∪ B = A ∪ (B − A ∩ B)
+
+and
+
+A ∩ (B − A ∩ B) = ∅
+
+So, A and B − A ∩ B are mutually exclusive events.
+
+#### Step 2:
+By the **Additivity Theorem (Theorem 1.2)**, the probability of the union of mutually exclusive events is the sum of their probabilities. Hence:
+
+P(A ∪ B) = P(A ∪ (B − A ∩ B)) = P(A) + P(B − A ∩ B)
+
+#### Step 3:
+Now, since A ∩ B ⊆ B, **Theorem 1.5** implies that:
+
+P(B − A ∩ B) = P(B) − P(A ∩ B)
+
+#### Step 4:
+Substitute this into the equation for P(A ∪ B):
+
+P(A ∪ B) = P(A) + (P(B) − P(A ∩ B))
+
+#### Step 5:
+Simplify:
+
+P(A ∪ B) = P(A) + P(B) − P(A ∩ B)
+
+#### Step 6:
+Rearrange the terms:
+
+P(A ∩ B) = P(A) + P(B) − P(A ∪ B)
+
+### Theorems Used:
+
+**Theorem 1.2**  
+Let {A₁, A₂, ..., Aₙ} be a mutually exclusive set of events. Then:
+
+P(⋃ᵢ₌₁ⁿ Aᵢ) = ∑ᵢ₌₁ⁿ P(Aᵢ)
+
+(This is **Axiom 3** of probability.)
+
+**Theorem 1.5**  
+If A ⊆ B, then:
+
+P(B − A) = P(B ∩ Aᶜ) = P(B) − P(A)
