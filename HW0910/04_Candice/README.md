@@ -147,7 +147,7 @@ If \( A \subseteq B \), then it follows that \( P(A) ≤ P(B) \).
 **Definition of Probability:**  
 The probability of any event \( A \), denoted by \( P(A) \), must satisfy two key axioms:
 
-- \( 0 \leq P(A) \leq 1 \) for any event \( A \)
+- \( 0 \≤ P(A) \≤ 1 \) for any event \( A \)
 - \( P(S) = 1 \), where \( S \) is the sample space (the set of all possible outcomes)
 
 **Empty Set (∅):**  
