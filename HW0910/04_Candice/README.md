@@ -142,3 +142,44 @@ So the probability is approximately **0.150**.
 If \( A \subseteq B \), then it follows that \( P(A) ≤ P(B) \).
 
 ---
+
+### Proof: P(ϕ) = 0
+
+1. **Definition of Probability:**
+   The probability of any event \( A \), denoted by \( P(A) \), must satisfy two key axioms:
+   
+   - \( 0 \leq P(A) \leq 1 \) for any event \( A \)
+   - \( P(S) = 1 \), where \( S \) is the sample space (the set of all possible outcomes)
+
+2. **Empty Set (ϕ):**
+   The empty set \( \varphi \) contains no elements, meaning it represents an event that cannot occur. By definition, there are no outcomes in \( \varphi \).
+
+3. **Additivity Axiom:**
+   The probability of the union of disjoint sets equals the sum of their probabilities:
+   
+   \[
+   P(A \cup B) = P(A) + P(B)
+   \]
+   
+   Since \( \varphi \) and \( S \) are disjoint (no overlap), we can write:
+   
+   \[
+   P(S) = P(S \cup \varphi) = P(S) + P(\varphi)
+   \]
+   
+4. **Final Step:**
+   We know that \( P(S) = 1 \), so:
+   
+   \[
+   1 = 1 + P(\varphi)
+   \]
+   
+   Solving for \( P(\varphi) \), we get:
+   
+   \[
+   P(\varphi) = 0
+   \]
+   
+Thus, the probability of the empty set \( \varphi \) is **0**.
+
+---
