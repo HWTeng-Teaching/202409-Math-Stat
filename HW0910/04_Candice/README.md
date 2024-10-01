@@ -211,16 +211,3 @@ Rearrange the terms:
 
 P(A ∩ B) = P(A) + P(B) − P(A ∪ B)
 
-### Theorems Used:
-
-**Theorem 1.2**  
-Let {A₁, A₂, ..., An} be a mutually exclusive set of events. Then:
-
-P(⋃ᵢ₌₁ⁿ Aᵢ) = ∑ᵢ₌₁ⁿ P(Aᵢ)
-
-(This is **Axiom 3** of probability.)
-
-**Theorem 1.5**  
-If A ⊆ B, then:
-
-P(B − A) = P(B ∩ Aᶜ) = P(B) − P(A)
