@@ -37,22 +37,19 @@ The total number of possible five-letter sequences (with repetition allowed) is:
 
 Thus, the probability that no letter occurs more than once is:
 
-(26 × 25 × 24 × 23 × 22) / (26^5) = (26 × 25 × 24 × 23 × 22) / (26 × 26 × 26 × 26 × 26) = (25 × 24 × 23 × 22) / (26^4)
+(26 × 25 × 24 × 23 × 22) / (26^5) = (26 × 25 × 24 × 23 × 22) / (26 × 26 × 26 × 26 × 26) = (25 × 24 × 23 × 22) / (26^4)**=303600
+/456976 ≈ 0.664**
 
 
 ---
 
 ### 37. What is the coefficient of x²y²z³ in the expansion of (x + y + z)⁷?
 
-\[
-\frac{7!}{a!b!c!} x^a y^b z^c
-\]
+7! / (a! b! c!) * x^a * y^b * z^c
 
 where **a + b + c = 7**. For the term **x²y²z³**, **a = 2, b = 2, c = 3**. Therefore, the coefficient is:
 
-\[
-\frac{7!}{2!2!3!} = \frac{5040}{2 × 2 × 6} = 210
-\]
+7! / (2! 2! 3!) = 5040 / (2 × 2 × 6) = 210
 
 So the coefficient of **x²y²z³** is **210**.
 
@@ -62,17 +59,21 @@ So the coefficient of **x²y²z³** is **210**.
 
 Given that the first card is already a king, there are 51 cards remaining in the deck, and 3 of these are kings. The probability of **at least one more king** in the next 4 cards can be found by first calculating the probability of **no more kings** and subtracting that from 1.
 
-The probability of drawing no kings in the next 4 cards is:
+First, calculate the probability of drawing no kings in the next 4 cards:
 
-\[
-\frac{48}{51} \times \frac{47}{50} \times \frac{46}{49} \times \frac{45}{48}
-\]
+(48 / 51) × (47 / 50) × (46 / 49) × (45 / 48)
+->
+(48 / 51) × (47 / 50) = 2256 / 2550 ≈ 0.884  
+0.884 × (46 / 49) ≈ 0.830  
+0.830 × (45 / 48) ≈ 0.623
+
+Thus, the probability of drawing no kings in the next 4 cards is approximately 0.623.
 
 The probability of **at least one more king** is:
 
-\[
-1 - \left( \frac{48}{51} \times \frac{47}{50} \times \frac{46}{49} \times \frac{45}{48} \right)
-\]
+1 - 0.623 = 0.377
+
+So, the probability of drawing **at least one more king** is approximately **0.377**.
 
 ---
 
@@ -88,8 +89,7 @@ The total number of possible ways the 5 people can get off (without the restrict
 
 Thus, the probability that no two people get off at the same floor is:
 
-\[
-\frac{7 × 6 × 5 × 4 × 3}{7^5} = \frac{2520}{16807}
-\]
+(7 × 6 × 5 × 4 × 3) / (7^5) = 2520 / 16807 ≈ 0.150
+
 
 So the probability is approximately **0.150**.
