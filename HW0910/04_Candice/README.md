@@ -22,16 +22,13 @@
 
 ### 15. How many different meals can be made from four kinds of meat, six vegetables, and three starches if a meal consists of one selection from each group?
 
-The number of different meals is the product of the choices available in each category:
-
 **4 meats × 6 vegetables × 3 starches = 72 meals**
 
 ---
 
 ### 27. If a five-letter word is formed at random (meaning that all sequences of five letters are equally likely), what is the probability that no letter occurs more than once?
 
-There are 26 letters in the alphabet. The number of ways to choose 5 distinct letters without repetition is:
-
+There are 26 letters in the alphabet. 
 **26 × 25 × 24 × 23 × 22**
 
 The total number of possible five-letter sequences (with repetition allowed) is:
@@ -47,8 +44,6 @@ Thus, the probability that no letter occurs more than once is:
 ---
 
 ### 37. What is the coefficient of x²y²z³ in the expansion of (x + y + z)⁷?
-
-The multinomial expansion of **(x + y + z)⁷** is given by the general term:
 
 \[
 \frac{7!}{a!b!c!} x^a y^b z^c
