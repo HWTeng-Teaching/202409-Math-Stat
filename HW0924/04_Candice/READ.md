@@ -90,3 +90,34 @@ n * ln(0.95) = ln(0.5)
 n = ln(0.5) / ln(0.95) ≈ -0.6931 / -0.0513 ≈ 13.5
 
 So, the player should throw the dart **14 times** to have at least a 0.5 probability of hitting the bull’s-eye.
+---
+
+### Consider a Bernoulli trial, which is a random experiment with only two possible outcomes: success (with probability ( p )) and failure (with probability ( 1 - p )). Based on the Bernoulli trial, let ( X ) be a Bernoulli random variable, where:
+
+### ( X(success) = 1 ), i.e., ( X ) maps success to 1.
+### ( X(failure) = 0 ), i.e., ( X ) maps failure to 0.
+### In other words, ( X = 1 ) represents a success, and ( X = 0 ) represents a failure.
+ Consider a Bernoulli trial, which is a random experiment with only two possible outcomes:
+
+- **Success** with probability **p**
+- **Failure** with probability **1 - p**
+
+Let \( X \) be a Bernoulli random variable, where:
+- \( X = 1 \) represents success.
+- \( X = 0 \) represents failure.
+
+The **probability mass function (pmf)** of \( X \) is the function that gives the probability of each possible value of \( X \). The pmf is defined as:
+
+\[
+P(X = x) = 
+\begin{cases}
+p & \text{if } x = 1 \ (\text{success}) \\
+1 - p & \text{if } x = 0 \ (\text{failure})
+\end{cases}
+\]
+
+This means:
+- \( P(X = 1) = p \)
+- \( P(X = 0) = 1 - p \)
+
+Thus, the probability mass function of \( X \) describes the likelihood of success or failure in a Bernoulli trial.
