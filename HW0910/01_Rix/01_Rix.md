@@ -11,9 +11,6 @@ a. List the sample space.
 b. List the elements that make up the following events: (1) A = at least two
 heads, (2) B = the first two tosses are heads, (3) C = the last toss is a tail. c. List the elements of the following events: (1) Aᶜ, (2) A ∩ B, (3) A ∪ C.
 
-<img width="601" alt="image" src="https://github.com/user-attachments/assets/a3f5b163-43fa-4823-a379-65add5edaed4">
-
-
 ### Answers
 
 a.   
@@ -28,3 +25,19 @@ c.
    Aᶜ = \{THH, THT, TTH, TTT\}  
    A &#8745; B = \{HHH, HHT\}  
    A &#8746; C = \{HHH, HHT, HTH, HTT, THH, THT, TTT\}
+
+## Q2.
+
+### Questions
+
+How many different meals can be made from four kinds of meat, six vegetables, and three starches if a meal consists of one selection from each group?
+
+### Answers
+
+Select each group once, so there will be 4 \times 6 \times 3 = 72 different meals.
+
+## Q3.
+
+### Questions
+
+
