@@ -174,14 +174,9 @@ Solving for \( P(∅) \), we get:
 Thus, the probability of the empty set \( ∅ \) is **0**.
 
 ---
-### Proof: 
-
-We want to prove that:
-
-P(A ∩ B) = P(A) + P(B) − P(A ∪ B)
+### Proof: P(A ∩ B) = P(A) + P(B) − P(A ∪ B)
 
 #### Step 1:
-Start with the equation for the union of sets:
 
 A ∪ B = A ∪ (B − A ∩ B)
 
