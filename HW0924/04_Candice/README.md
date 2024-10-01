@@ -139,11 +139,11 @@ Let’s define the frequency function and cumulative distribution function for t
   - \( P(X_1 = 4) = 1/16 \) (All four tosses are heads)
   
 - **Cumulative Distribution Function (CDF):**
-  - \( F_X(0) = P(X_1 \leq 0) = 1/2 \)
-  - \( F_X(1) = P(X_1 \leq 1) = 1/2 + 1/4 = 3/4 \)
-  - \( F_X(2) = P(X_1 \leq 2) = 3/4 + 1/8 = 7/8 \)
-  - \( F_X(3) = P(X_1 \leq 3) = 7/8 + 1/16 = 15/16 \)
-  - \( F_X(4) = P(X_1 \leq 4) = 15/16 + 1/16 = 1 \)
+  - \( F_X(0) = P(X_1 ≤ 0) = 1/2 \)
+  - \( F_X(1) = P(X_1 ≤ 1) = 1/2 + 1/4 = 3/4 \)
+  - \( F_X(2) = P(X_1 ≤ 2) = 3/4 + 1/8 = 7/8 \)
+  - \( F_X(3) = P(X_1 ≤ 3) = 7/8 + 1/16 = 15/16 \)
+  - \( F_X(4) = P(X_1 ≤ 4) = 15/16 + 1/16 = 1 \)
 
 #### (b) The number of heads following the first tail
 
@@ -156,10 +156,10 @@ Let’s define the frequency function and cumulative distribution function for t
   - \( P(X_2 = 3) = 5/16 \) (If the first tail occurs on the fourth toss)
   
 - **Cumulative Distribution Function (CDF):**
-  - \( F_X(0) = P(X_2 \leq 0) = 1/16 \)
-  - \( F_X(1) = P(X_2 \leq 1) = 1/16 + 1/4 = 5/16 \)
-  - \( F_X(2) = P(X_2 \leq 2) = 5/16 + 3/8 = 11/16 \)
-  - \( F_X(3) = P(X_2 \leq 3) = 11/16 + 5/16 = 1 \)
+  - \( F_X(0) = P(X_2 ≤ 0) = 1/16 \)
+  - \( F_X(1) = P(X_2 ≤ 1) = 1/16 + 1/4 = 5/16 \)
+  - \( F_X(2) = P(X_2 ≤ 2) = 5/16 + 3/8 = 11/16 \)
+  - \( F_X(3) = P(X_2 ≤ 3) = 11/16 + 5/16 = 1 \)
 
 #### (c) The number of heads minus the number of tails
 
@@ -173,11 +173,11 @@ Let’s define the frequency function and cumulative distribution function for t
   - \( P(X_3 = 4) = 1/16 \) (If all tosses are heads)
   
 - **Cumulative Distribution Function (CDF):**
-  - \( F_X(-4) = P(X_3 \leq -4) = 1/16 \)
-  - \( F_X(-2) = P(X_3 \leq -2) = 1/16 + 1/4 = 5/16 \)
-  - \( F_X(0) = P(X_3 \leq 0) = 5/16 + 3/8 = 11/16 \)
-  - \( F_X(2) = P(X_3 \leq 2) = 11/16 + 1/4 = 15/16 \)
-  - \( F_X(4) = P(X_3 \leq 4) = 15/16 + 1/16 = 1 \)
+  - \( F_X(-4) = P(X_3 ≤ -4) = 1/16 \)
+  - \( F_X(-2) = P(X_3 ≤ -2) = 1/16 + 1/4 = 5/16 \)
+  - \( F_X(0) = P(X_3 ≤ 0) = 5/16 + 3/8 = 11/16 \)
+  - \( F_X(2) = P(X_3 ≤ 2) = 11/16 + 1/4 = 15/16 \)
+  - \( F_X(4) = P(X_3 ≤ 4) = 15/16 + 1/16 = 1 \)
 
 #### (d) The number of tails times the number of heads
 
@@ -190,7 +190,7 @@ Let’s define the frequency function and cumulative distribution function for t
   - \( P(X_4 = 6) = 2/16 = 1/8 \) (If there are 3 heads and 1 tail)
 
 - **Cumulative Distribution Function (CDF):**
-  - \( F_X(0) = P(X_4 \leq 0) = 1/8 \)
-  - \( F_X(2) = P(X_4 \leq 2) = 1/8 + 3/8 = 4/8 = 1/2 \)
-  - \( F_X(4) = P(X_4 \leq 4) = 1/2 + 3/8 = 7/8 \)
-  - \( F_X(6) = P(X_4 \leq 6) = 7/8 + 1/8 = 1 \)
+  - \( F_X(0) = P(X_4 ≤ 0) = 1/8 \)
+  - \( F_X(2) = P(X_4 ≤ 2) = 1/8 + 3/8 = 4/8 = 1/2 \)
+  - \( F_X(4) = P(X_4 ≤ 4) = 1/2 + 3/8 = 7/8 \)
+  - \( F_X(6) = P(X_4 ≤ 6) = 7/8 + 1/8 = 1 \)
