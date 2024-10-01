@@ -1,7 +1,6 @@
 ### 1. A coin is tossed three times and the sequence of heads and tails is recorded.
 
 #### a. List the sample space.
-The sample space for tossing a coin three times is the set of all possible outcomes:
 
 **S = {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}**
 
@@ -16,10 +15,8 @@ The sample space for tossing a coin three times is the set of all possible outco
 #### c. List the elements of the following events:
 1. **Ac = complement of A**:  
    **Ac = {HTT, THT, TTH, TTT}**
-2. **A ∩ B (intersection of A and B)**:  
-   **A ∩ B = {HHH, HHT}**
-3. **A ∪ C (union of A and C)**:  
-   **A ∪ C = {HHH, HHT, HTH, HTT, THH, THT, TTT}**
+2. **A ∩ B = {HHH, HHT}**
+3. **A ∪ C = {HHH, HHT, HTH, HTT, THH, THT, TTT}**
 
 ---
 
