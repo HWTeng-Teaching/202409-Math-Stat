@@ -214,7 +214,7 @@ P(A ∩ B) = P(A) + P(B) − P(A ∪ B)
 ### Theorems Used:
 
 **Theorem 1.2**  
-Let {A₁, A₂, ..., Aₙ} be a mutually exclusive set of events. Then:
+Let {A₁, A₂, ..., An} be a mutually exclusive set of events. Then:
 
 P(⋃ᵢ₌₁ⁿ Aᵢ) = ∑ᵢ₌₁ⁿ P(Aᵢ)
 
