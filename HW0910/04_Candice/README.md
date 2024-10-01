@@ -37,9 +37,8 @@ The total number of possible five-letter sequences (with repetition allowed) is:
 
 Thus, the probability that no letter occurs more than once is:
 
-\[
-\frac{26 × 25 × 24 × 23 × 22}{26^5} = \frac{26 × 25 × 24 × 23 × 22}{26 × 26 × 26 × 26 × 26} = \frac{25 × 24 × 23 × 22}{26^4}
-\]
+(26 × 25 × 24 × 23 × 22) / (26^5) = (26 × 25 × 24 × 23 × 22) / (26 × 26 × 26 × 26 × 26) = (25 × 24 × 23 × 22) / (26^4)
+
 
 ---
 
