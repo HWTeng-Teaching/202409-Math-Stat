@@ -121,3 +121,76 @@ This means:
 - \( P(X = 0) = 1 - p \)
 
 Thus, the probability mass function of \( X \) describes the likelihood of success or failure in a Bernoulli trial.
+
+---
+### 2. An experiment consists of throwing a fair coin four times.
+
+Let’s define the frequency function and cumulative distribution function for the following random variables:
+
+#### (a) The number of heads before the first tail
+
+- **Random Variable:** Let \( X_1 \) represent the number of heads before the first tail is observed.
+- **Possible Values of \( X_1 \):** 0, 1, 2, 3, 4
+- **Frequency Function of \( X_1 \):**
+  - \( P(X_1 = 0) = 1/2 \) (The first toss is a tail)
+  - \( P(X_1 = 1) = 1/4 \) (The first toss is heads, the second is tail)
+  - \( P(X_1 = 2) = 1/8 \) (The first two tosses are heads, the third is tail)
+  - \( P(X_1 = 3) = 1/16 \) (The first three tosses are heads, the fourth is tail)
+  - \( P(X_1 = 4) = 1/16 \) (All four tosses are heads)
+  
+- **Cumulative Distribution Function (CDF):**
+  - \( F_X(0) = P(X_1 \leq 0) = 1/2 \)
+  - \( F_X(1) = P(X_1 \leq 1) = 1/2 + 1/4 = 3/4 \)
+  - \( F_X(2) = P(X_1 \leq 2) = 3/4 + 1/8 = 7/8 \)
+  - \( F_X(3) = P(X_1 \leq 3) = 7/8 + 1/16 = 15/16 \)
+  - \( F_X(4) = P(X_1 \leq 4) = 15/16 + 1/16 = 1 \)
+
+#### (b) The number of heads following the first tail
+
+- **Random Variable:** Let \( X_2 \) represent the number of heads following the first tail.
+- **Possible Values of \( X_2 \):** 0, 1, 2, 3
+- **Frequency Function of \( X_2 \):**
+  - \( P(X_2 = 0) = 1/16 \) (If the first toss is a tail, no heads can follow)
+  - \( P(X_2 = 1) = 4/16 = 1/4 \) (If the first tail occurs on toss 2 or 3)
+  - \( P(X_2 = 2) = 6/16 = 3/8 \) (If the first tail occurs on toss 2 or 3 and we have more heads)
+  - \( P(X_2 = 3) = 5/16 \) (If the first tail occurs on the fourth toss)
+  
+- **Cumulative Distribution Function (CDF):**
+  - \( F_X(0) = P(X_2 \leq 0) = 1/16 \)
+  - \( F_X(1) = P(X_2 \leq 1) = 1/16 + 1/4 = 5/16 \)
+  - \( F_X(2) = P(X_2 \leq 2) = 5/16 + 3/8 = 11/16 \)
+  - \( F_X(3) = P(X_2 \leq 3) = 11/16 + 5/16 = 1 \)
+
+#### (c) The number of heads minus the number of tails
+
+- **Random Variable:** Let \( X_3 \) represent the number of heads minus the number of tails.
+- **Possible Values of \( X_3 \):** -4, -2, 0, 2, 4 (since the number of heads and tails can vary between 0 and 4)
+- **Frequency Function of \( X_3 \):**
+  - \( P(X_3 = -4) = 1/16 \) (If all tosses are tails)
+  - \( P(X_3 = -2) = 4/16 = 1/4 \) (If there are 1 head and 3 tails)
+  - \( P(X_3 = 0) = 6/16 = 3/8 \) (If there are 2 heads and 2 tails)
+  - \( P(X_3 = 2) = 4/16 = 1/4 \) (If there are 3 heads and 1 tail)
+  - \( P(X_3 = 4) = 1/16 \) (If all tosses are heads)
+  
+- **Cumulative Distribution Function (CDF):**
+  - \( F_X(-4) = P(X_3 \leq -4) = 1/16 \)
+  - \( F_X(-2) = P(X_3 \leq -2) = 1/16 + 1/4 = 5/16 \)
+  - \( F_X(0) = P(X_3 \leq 0) = 5/16 + 3/8 = 11/16 \)
+  - \( F_X(2) = P(X_3 \leq 2) = 11/16 + 1/4 = 15/16 \)
+  - \( F_X(4) = P(X_3 \leq 4) = 15/16 + 1/16 = 1 \)
+
+#### (d) The number of tails times the number of heads
+
+- **Random Variable:** Let \( X_4 \) represent the number of tails times the number of heads.
+- **Possible Values of \( X_4 \):** 0, 2, 4, 6
+- **Frequency Function of \( X_4 \):**
+  - \( P(X_4 = 0) = 2/16 = 1/8 \) (If all tosses are heads or tails)
+  - \( P(X_4 = 2) = 6/16 = 3/8 \) (If there are 1 head and 3 tails, or 3 heads and 1 tail)
+  - \( P(X_4 = 4) = 6/16 = 3/8 \) (If there are 2 heads and 2 tails)
+  - \( P(X_4 = 6) = 2/16 = 1/8 \) (If there are 3 heads and 1 tail)
+
+- **Cumulative Distribution Function (CDF):**
+  - \( F_X(0) = P(X_4 \leq 0) = 1/8 \)
+  - \( F_X(2) = P(X_4 \leq 2) = 1/8 + 3/8 = 4/8 = 1/2 \)
+  - \( F_X(4) = P(X_4 \leq 4) = 1/2 + 3/8 = 7/8 \)
+  - \( F_X(6) = P(X_4 \leq 6) = 7/8 + 1/8 = 1 \)
