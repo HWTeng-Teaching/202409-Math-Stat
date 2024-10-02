@@ -28,3 +28,28 @@ sum of exponents is 7
 exponents of x is 2,exponents of y is 2,exponents of z is 3  
 7! / (2! 2! 3!) = 5040 / (2 × 2 × 6) = 210  
 the answer is 210  
+### 52.Suppose that 5 cards are dealt from a 52-card deck and the first one is a king.What is the probability of at least one more king?  
+P(at least two king)=1-P(one king) since their must be one king  
+P(at least two king)=1-($\binom{48}{4}$ / $\binom{51}{4}$)=0.22  
+### 33.An elevator containing five people can stop at any of seven floors. What is the probability that no two people get off at the same floor? Assume that the occupants act independently and that all floors are equally likely for each occupant.  
+each one can choose 1 floor out of 7. Hence, the possible outcome is 7^5  
+five people to stop at five different floors to make sure that no two people get off at the same time  
+=> $$\binom{7}{5} \times 5!$$  
+the answer is $$\binom{7}{5} \times 5!$$  / 7^5=360/2401=0.15  
+### Prove: P(ϕ) = 0  
+S=S∪∅  
+S∩∅=∅, so Sand ∅ are mutually exclusive.  
+P(S) = P(S ∪ ϕ) = P(S) + P(ϕ)  
+1 + P(ϕ) = 1  
+so P(ϕ) = 0  
+### Prove: P(A ∪ B) = P(A) + P(B) - P(A ∩ B)  
+P(A)=P(A ∩ B)+P(A\B)    
+P(B)=P(A ∩ B)+P(B\A)  
+You also know from set theory that the union A∪B is the disjoint union of A∩B, A\B,and B\A  
+![image](https://github.com/user-attachments/assets/19856ecc-4ae9-43ad-ba5e-0302fa3fd34f)  
+P(A ∪ B)=P(A ∩ B)+P(A\B)+P(B\A)  
+plus P(A ∩ B) at both side and we will got P(A ∪ B)+P(A ∩ B)  = P(A) + P(B)  
+thus P(A ∪ B) = P(A) + P(B) - P(A ∩ B)
+.
+ 
+
