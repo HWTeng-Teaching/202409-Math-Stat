@@ -28,7 +28,9 @@ In light of the construction of a geometric distribution from a sequence of inde
 
 ### Questions 
 
-
+Suppose that in a city, the number of suicides can be approximated by a Poisson process with λ = .33 per month.  
+a. Find the probability of k suicides in a year for k = 0, 1, 2,... . What is the most probable number of suicides?  
+b. What is the probability of two suicides in one week?
 
 ### Answers
 
@@ -38,7 +40,8 @@ In light of the construction of a geometric distribution from a sequence of inde
 
 ### Questions 
 
-
+Let F(x) = 1 − exp(−αxβ ) for x ≥ 0,α > 0,β > 0, and F(x) = 0 for x < 0.  
+Show that F is a cdf, and find the corresponding density.
 
 ### Answers
 
@@ -48,7 +51,7 @@ In light of the construction of a geometric distribution from a sequence of inde
 
 ### Questions 
 
-
+Let f (x) = (1 + αx)/2 for −1 ≤ x ≤ 1 and f (x) = 0 otherwise, where −1 ≤ α ≤ 1. Show that f is a density, and find the corresponding cdf. Find the quartiles and the median of the distribution in terms of α.
 
 ### Answers
 
@@ -58,6 +61,6 @@ In light of the construction of a geometric distribution from a sequence of inde
 
 ### Questions 
 
-
+Sketch the pdf and cdf of a random variable that is uniform on [−1, 1].
 
 ### Answers
