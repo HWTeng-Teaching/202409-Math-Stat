@@ -1,40 +1,46 @@
 # 202409-Math-Stat
 This repo collects course slides and students' presentations of Prof. Huei-Wen Teng for the course "Mathematical Statistics" in the fall semester, 2024. 
 
-|-MFS
 
-|-Selected HW
+## Course slides downloaded in Quantinar
 
-|- Chxx-QQ-Nickname.md
+### Step 1. 
 
-|- Chxx-QQ-Nickname.md
-
-|- Chxx-QQ-Na
-
-|-HW0910
+Go to https://quantinar.com/ using google chrome and sign in Quantinar. 
 
 
-<img width="816" alt="image" src="https://github.com/user-attachments/assets/d002f76c-0932-4110-a122-d80cc6520adc">
+<img width="1224" alt="image" src="https://github.com/user-attachments/assets/35cb2cec-ea3d-4bfa-a473-ab069af4694b">
 
 
 
-| No | 姓名   | Nickname | FMS  | HW01                                                   |
-|--| ------ | -------- | ---- | ------------------------------------------------------ |
-|01| 周子揚 | Rix      |      | Ch01.01                                                |
-|02| 關立   | Stanley  |      | Ch01.15                                                |
-|03| 王邦碩 | Brian    |      | Ch01.27                                                |
-|04| 曹斯涵 | Candice  |      | Prove: If $A \in B$, then $P(A) \leq P(B)$             |
-|05| 莉娜   | Lina     | 9/10 | Ch01.37                                                |
-|06| 葉莉莎 | Liza     | 9/10 | Ch01.52                                                |
-|07| 林嘉佳 | Jocelyn  | 9/10 | Ch01.33                                                |
-|08| 麗婭   | Liya     | 9/10 | Prove: $P(\phi) = 0$                                   |
-|09| 許柏堯 | Frank    |      |                                                        |
-|10| 汪兪宏 | Wang     |      |                                                        |
-|11| 張啟航 | Hank     |      |                                                        |
-|12| 王俐甯 | Amelia   | 9/10 |                                                        |
-|13| 郭彥辰 |          |      |                                                        |
-|14| 鍾芸琦 | Cindy    | 9/10 | Prove: $P(A \cap B) = P(A) + P(B) - P(A \cup B)$       |
-|15| 陳逸萱 | Angela   | 9/10 |                                                        |
-|16| 江禮詮 | John     | 9/10 |                                                        |
-|17| 施竣棋 | Julyus   |      |                                                        |
-|18| 張祐廷 | Tim      |      |                                                        |
+
+### Step 2
+
+Search "Math Stat".
+
+
+<img width="1182" alt="image" src="https://github.com/user-attachments/assets/f7fb8f37-5abe-4cd2-b9f9-fcbab06a3d88">
+
+
+### Step 3
+
+
+Scroll to the bottom.
+
+<img width="848" alt="image" src="https://github.com/user-attachments/assets/8098fc4f-84be-469c-b80c-50a8a90ca4bf">
+
+
+
+### Step 4. 
+
+You can find the slides and download them directly. 
+
+<img width="1194" alt="image" src="https://github.com/user-attachments/assets/fede1170-abcd-455f-970a-11e1cd24a1b6">
+
+
+
+
+
+
+
+
