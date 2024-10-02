@@ -1,8 +1,6 @@
 # 202409-Math-Stat
 This repo collects course slides and students' presentations of Prof. Huei-Wen Teng for the course "Mathematical Statistics" in the fall semester, 2024. 
-
-
-## Course slides downloaded in Quantinar
+You can find the slides in the Quantinar ecosystem. 
 
 ### Step 1. Go to https://quantinar.com/ using google chrome and sign in Quantinar. 
 
