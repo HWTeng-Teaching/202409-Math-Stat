@@ -134,6 +134,8 @@ Sketch the pdf and cdf of a random variable that is uniform on [−1, 1].
 ### Answer
 
 PDF
-![image](https://hackmd.io/_uploads/r1RtsF6R0.png)
+![image](https://github.com/user-attachments/assets/edca4c01-2a51-4828-88c7-8c052374597c)
+
 CDF
-![image](https://hackmd.io/_uploads/SJsmhtpRR.png)
+![image](https://github.com/user-attachments/assets/9942c033-f076-473a-be83-8489610562dd)
+
