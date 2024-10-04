@@ -6,45 +6,49 @@ Find an expression for the cumulative distribution function of a geometric rando
 
 ## Solution
 
-We start by defining the geometric probability:
+### Definition of Geometric Probability:
 
-\[
-P(X = k) = q^{k-1} p = (1 - p)^{k-1} p
-\]
+The probability mass function of a geometric random variable is given by:
 
-with \( k \) a nonzero integer.
+\[ P(X = k) = q^{k-1} p = (1 - p)^{k-1} p \]
 
-The cumulative distribution function at \( x \) represents the probability of the random variable being smaller than or equal to \( x \):
+where \( k \) is a nonzero integer.
 
-\[
-F(x) = P(X \leq x)
-\]
+### Cumulative Distribution Function (CDF):
 
-If \( x < 1 \), then there are no values smaller than \( x \) that have a nonzero probability. Thus:
+The cumulative distribution function at \( x \) represents the probability that the random variable is less than or equal to \( x \):
 
-\[
-F(x) = P(X \leq x) = 0
-\]
+\[ F(x) = P(X ≤ x) \]
 
-If \( m \leq x < m+1 \) with \( m \) an integer, then we note that \( 1, 2, 3, \dots, m \) are smaller than or equal to \( x \):
+#### Case 1: \( x < 1 \)
 
-\[
-F(x) = P(X \leq x) = \sum_{k=1}^{m} P(X = k) = \sum_{k=1}^{m} (1 - p)^{k-1} p = p \sum_{k=1}^{m} (1 - p)^{k-1}
-\]
+If \( x < 1 \), then there are no values smaller than \( x \) that have a nonzero probability. Thus, the CDF is:
+
+\[ F(x) = P(X ≤ x) = 0 \]
+
+#### Case 2: \( m ≤ x < m + 1 \)
+
+If \( m ≤ x < m + 1 \) where \( m \) is an integer, the values \( 1, 2, 3, …, m \) are less than or equal to \( x \). Therefore, the cumulative probability is the sum of the individual probabilities:
+
+\[ F(x) = P(X ≤ x) = \sum_{k=1}^{m} P(X = k) = \sum_{k=1}^{m} (1 - p)^{k-1} p \]
 
 This simplifies to:
 
-\[
-= p \frac{1 - (1 - p)^m}{1 - (1 - p)} = p \frac{1 - (1 - p)^m}{p} = 1 - (1 - p)^m
-\]
+\[ F(x) = p \sum_{k=1}^{m} (1 - p)^{k-1} \]
 
-Thus, combining these results, we obtain:
+This is a geometric series that sums to:
+
+\[ F(x) = p \frac{1 - (1 - p)^m}{1 - (1 - p)} = p \frac{1 - (1 - p)^m}{p} = 1 - (1 - p)^m \]
+
+### Final Expression:
+
+Combining these results, the cumulative distribution function is:
 
 \[
-F(x) = 
+F(x) =
 \begin{cases}
-0 & x < 1 \\
-1 - (1 - p)^m & m \leq x < m+1
+0 & \text{if } x < 1 \\
+1 - (1 - p)^m & \text{if } m ≤ x < m + 1
 \end{cases}
 \]
 
