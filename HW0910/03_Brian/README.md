@@ -13,15 +13,15 @@ heads, (2) B = the first two tosses are heads, (3) C = the last toss is a tail. 
 
 ### Solution
 
-A) HHH, HHT, HTH, THH, HTT, THT, THH, TTT
-B) 
-&emsp;    (1) A = {HHH, HHT, HTH, THH}
-&emsp;    (2) B = {HHH, HHT}
-&emsp;    (3) C = {HTT, TTT} 
-B)
-&emsp;    Aᶜ = {HTT, THT, THH, TTT}  
-&emsp;    A &#8745; B = {HHH, HHT}  
-&emsp;    A &#8746; C = {HHH, HHT, HTH, THH, HTT, TTT}
+A) HHH, HHT, HTH, THH, HTT, THT, THH, TTT  
+B)   
+&emsp;    (1) A = {HHH, HHT, HTH, THH}  
+&emsp;    (2) B = {HHH, HHT}  
+&emsp;    (3) C = {HTT, TTT}   
+C)  
+&emsp;    Aᶜ = {HTT, THT, THH, TTT}    
+&emsp;    A &#8745; B = {HHH, HHT}    
+&emsp;    A &#8746; C = {HHH, HHT, HTH, THH, HTT, TTT}  
 
 ## Q2
 ### Question
@@ -78,18 +78,18 @@ Suppose that 5 cards are dealt from a 52-card deck and the first one is a king. 
 
 ### Solution
 
-Total possibility: $\binom{51}{4}$
-No king in the rest 4 cards: $\binom{48}{4}$
-1 - $\binom{48}{4}$/$\binom{51}{4}$ = 1 - 0.7786 = 0.2214
+Total possibility: $\binom{51}{4}$  
+No king in the rest 4 cards: $\binom{48}{4}$  
+1 - $\binom{48}{4}$/ $\binom{51}{4}$ = 1 - 0.7786 = 0.2214
 
 ## Q7
 ### Question
 An elevator containing five people can stop at any of seven floors. What is the probability that no two people get off at the same floor? Assume that the occupants act independently and that all floors are equally likely for each occupant.
 
 ### Solution
-Total possibility: $7^5$
-No two people get off at the same floor: $7*6*5*4*3$
-$\large\frac{7*6*5*4*2}{7^5} = 0.1499$
+Total possibility: $7^5$  
+No two people get off at the same floor: $7×6×5×4×3$   
+$\large\frac{7×6×5×4×2}{7^5} = 0.1499$
 
 ## Q8
 ### Question
@@ -97,17 +97,17 @@ Prove: P($\emptyset$)= 0
 
 ### Question
 For any set A,
-P(A) 
-= P(A &#8746; $\emptyset$) 
-= P(A \ $\emptyset$) + P(A &#8745; $\emptyset$) + P($\emptyset$ \ A)
-=P(A) + 0 + P($\emptyset$)
-So P($\emptyset$) = 0
+P(A)   
+= P(A &#8746; $\emptyset$)   
+= P(A \ $\emptyset$) + P(A &#8745; $\emptyset$) + P($\emptyset$ \ A)  
+=P(A) + 0 + P($\emptyset$)  
+So P($\emptyset$) = 0  
 
 ## Q9
 ### Question
 Prove: P(A ∩ B) = P(A) + P(B) - P(A ∪ B)
 
 ### Solution
-A∪B = (A \ B)∪(A ∩ B)∪(B \ A)
-p(A∪B) = P(A \ b) + P(A ∩ B) + P(B \ A)
+A∪B = (A \ B)∪(A ∩ B)∪(B \ A)  
+p(A∪B) = P(A \ b) + P(A ∩ B) + P(B \ A)  
 P(A ∩ B) = P(A \ b) + P(A ∪ B) + P(B \ A)
