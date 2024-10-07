@@ -52,7 +52,13 @@ P(at least one more king is dealt|first card dealt is a king) = 1 - P(no more ki
 P(no more king is dealt after the first card|first card dealt is a king) = $C\binom{48}{4} \over C\binom{51}{4}$ = 0.22
 ## Q7.
 ### Questions
+An elevator containing five people can stop at any of seven floors. What is the probability that no two people get off at the same floor? Assume that the occupants act independently and that all floors are equally likely for each occupant.  
 ### Answers
+Each person can choose 1 floor out of 7, thus there are $7^{5}$ possible outcomes  
+To make sure no two people get off at the same floor, all five people have to get off at different floors   
+$P\binom{7}{5} \over 7^{5}$ = $2520 \over 16807$ ≈ 0.15
+
+the answer is 0.15
 ## Q8.
 ### Questions
 ### Answers
