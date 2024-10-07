@@ -118,3 +118,24 @@ P(\text{at least one more king}) = 1 - P(\text{no additional kings}) = 1 - \frac
 
 # QUESTION 1.33
 <img width="641" alt="image" src="https://github.com/user-attachments/assets/03108755-56a4-4c53-afcb-2e2443024f1b">
+
+1) If we assighn every person with a floor ( no repitition)=
+
+   
+   $$\(7 \times6 \times5 \times4 \times3)$$ = 2520
+
+2) with repetoition
+
+   $$\ (7^ 5\)$$ = 16807
+
+## Therefore, The probability that theres no 2 people go on the same floor is 
+
+   $$\(2520 /16807)$$ = 0,1499= 14,99%
+
+   ### Answer 14,99% or 0,1499
+
+
+
+  # PROVE 
+
+   
