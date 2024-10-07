@@ -71,14 +71,23 @@ $\exp(-\alpha x^\beta)$ is decreasing
 $\therefore F(x)$ is non-decreasing  
 
 (2)  
-$lim_{x \to \infty} −αx^β = -\infty$  
-$\therefore$ $lim_{x \to \infty} F(x) = 1$  
-
+$lim_{x \to \infty} F(x) = lim_{x \to \infty} 1-exp(−αx^β) = 1 - 0 = 1$    
+$\therefore lim_{x \to \infty} F(x) = 1$   
 (3)  
-$F(x) = 0 for x < 0$  
+$F(x) = 0$, for x < 0  
 $\therefore lim_{x \to -\infty} F(x) = 0$  
 
-Therefore, $F(x)$ is a CDF  
+(4)  
+For x < 0, $F(x) = 0$  
+For x $\geq$ 0,  
+$lim_{h \to 0} F(x+h)$  
+$= lim_{h \to 0} 1-exp(−α(x+h)^β)$  
+$= lim_{h \to 0} 1-exp(−α(x^β + \sum_{k=1}^{β} \binom{β}{k} x^{n-k} h^k)$  
+$= lim_{h \to 0} 1-exp(−αx^β)$  
+$=1-exp(−αx^β)$  
+$\therefore$ For $x \in R$, $lim_{x \to x_0^+} F(x) = F(x_0)$   
+
+By(1)~(4), $F(x)$ is a CDF  
 #### B) 
 $\frac{d}{dx} F(x) = \frac{d}{dx} \left( 1 - \exp(-\alpha x^\beta) \right)$  
 $=-\exp(-\alpha x^\beta)(\frac{d}{dx}-\alpha x^\beta)$  
