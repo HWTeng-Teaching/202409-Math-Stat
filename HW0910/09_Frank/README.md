@@ -17,7 +17,8 @@ b.
 How many different meals can be made from four kinds of meat, six vegetables, and three starches if a meal consists of one selection from each group?  
 ### Answers
 Multiply the number of options from each group  
-4×6×3=72  
+4×6×3=72
+the answer is 72
 ## Q3.
 ### Questions
 If a five-letter word is formed at random (meaning that all sequences of five letters are equally likely), what is the probability that no letter occurs more than once?  
@@ -25,6 +26,7 @@ If a five-letter word is formed at random (meaning that all sequences of five le
 26 English letters fromigng a 5 lettets word → total 26^5 possible words  
 no letter is the same in the 5 letters word → 26×25×24×23×22 possiable words  
 $26×25×24×23×22 \over 26^{5}$ = $303600 \over 456976$ ≈ 0.664
+the answer is 0.664
 ## Q4.
 ### Questions
 Prove: If A ⊆ B, then P(A) ≤ P(B)  
@@ -33,7 +35,7 @@ Let P(A) denote the probability of event A and let P(B) denote the probability o
 B = A ∪ (B∖A)
 P(A) + P(B∖A) = P(B) since A and B∖A are disjoint  
 P(B∖A) ≥ 0  
-thusn P(A) ≤ P(B)  
+thus P(A) ≤ P(B)  
 ## Q5.
 ### Questions
 What is the coefficient of $$\(x^2 y^2 z^3)$$ in the Expansion of $$\(x + y + z)^7$$?  
