@@ -20,7 +20,11 @@ Multiply the number of options from each group
 4×6×3=72  
 ## Q3.
 ### Questions
+If a five-letter word is formed at random (meaning that all sequences of five letters are equally likely), what is the probability that no letter occurs more than once?  
 ### Answers
+26 English letters fromigng a 5 lettets word → total 26^5 possible words  
+no letter is the same in the 5 letters word → 26×25×24×23×22 possiable words  
+26×25×24×23×22/26^5 = $fract{303600}{456976}$ ≈ 0.664
 ## Q4.
 ### Questions
 ### Answers
