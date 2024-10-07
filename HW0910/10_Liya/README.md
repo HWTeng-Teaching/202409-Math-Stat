@@ -24,3 +24,8 @@ S = { HHH, HHT, HTH, HTT, THH, THT, TTH, TTT }
 2) A ∩ B = { HHH, HHT }
 3) A ∪ C = { HHH, HHT, HTH, THH, HTT, THT, TTH, TTT }
 
+
+## QUESTION 1.15
+<img width="639" alt="image" src="https://github.com/user-attachments/assets/2e7262a9-c3d3-4310-9ed7-a9b99cae1df6">
+
+
