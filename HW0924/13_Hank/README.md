@@ -112,6 +112,91 @@ $= 1-p if \chi = 0$
 
 $= 0 if \chi \ne 0 and \chi \ne 1$
 
+## Q2
+### a.
+X = the number of heads before the first tail
 
+P(0) = 1/2      
 
+P(1) = 1/4
 
+P(2) = 1/8              
+
+P(3) = 1/16
+
+P(4) = 1/16
+
+F(X) = 0 , X < 0
+
+F(X) = 1/2 , 0 <= X < 1
+
+F(X) = 3/4 , 1 <= X < 2
+
+F(X) = 7/8 , 2 <= X < 3
+
+F(X) = 15/16 , 3 <= X < 4
+
+F(X) = 1 , X >= 4
+
+### b.
+X = the number of heads following the first tail
+
+P(0) = 5/16      
+
+P(1) = 3/8
+
+P(2) = 1/4              
+
+P(3) = 1/16
+
+F(X) = 0 , X < 0
+
+F(X) = 5/16 , 0 <= X < 1
+
+F(X) = 11/16 , 1 <= X < 2
+
+F(X) = 15/16 , 2 <= X < 3
+
+F(X) = 1 , X >= 3
+
+### c.
+X = the number of heads minus the number of tails
+
+P(-4) = 1/16      
+
+P(-2) = 1/4
+
+P(0) = 3/8              
+
+P(2) = 1/4
+
+P(4) = 1/16
+
+F(X) = 0 , X < -4
+
+F(X) = 1/16 , -4 <= X < -2
+
+F(X) = 5/16 , -2 <= X < 0
+
+F(X) = 11/16 , 0 <= X < 2
+
+F(X) = 15/16 , 2 <= X < 4
+
+F(X) = 1 , X >= 4
+
+### d.
+X =  the number of tails times the number of heads
+
+P(0) = 1/8      
+
+P(3) = 1/2
+
+P(4) = 3/8  
+
+F(X) = 0 , X < 0
+
+F(X) = 1/8 , 0 <= X < 3
+
+F(X) = 5/8 , 3 <= X < 4
+
+F(X) = 1 , X >= 4
