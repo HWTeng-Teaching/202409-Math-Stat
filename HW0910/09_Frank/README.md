@@ -36,7 +36,12 @@ P(B∖A) ≥ 0
 thusn P(A) ≤ P(B)  
 ## Q5.
 ### Questions
+What is the coefficient of $$\(x^2 y^2 z^3)$$ in the Expansion of $$\(x + y + z)^7$$?  
 ### Answers
+sum of exponents is 7  
+exponents of x,y,z are 2,2, and 3 respectively  
+$7! \over (2! \times 2! \times 3!)$ = $5040 \over (2 \times 2 \times 6)$ = 210  
+the answer is 210  
 ## Q6.
 ### Questions
 ### Answers
