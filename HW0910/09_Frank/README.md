@@ -46,7 +46,10 @@ $7! \over (2! \times 2! \times 3!)$ = $5040 \over (2 \times 2 \times 6)$ = 210
 the answer is 210  
 ## Q6.
 ### Questions
+Suppose that 5 cards are dealt from a 52-card deck and the first one is a king.What is the probability of at least one more king?  
 ### Answers
+P(at least two king)=1-P(one king) since their must be one king  
+P(at least two king)=1-($\binom{48}{4}$ / $\binom{51}{4}$)=0.22
 ## Q7.
 ### Questions
 ### Answers
