@@ -76,7 +76,7 @@ P(X = 2) $\approx 0.1495$
 P(X = 3) $\approx 0.1973$  
 P(X = 4) $\approx 0.1953$  
 P(X = 5) $\approx 0.1547$  
-​The most probable number is 4.
+​The most probable number is 3.
 
 b.  
 Since there are about 4.33 weeks in a month, the rate for one week is:  
