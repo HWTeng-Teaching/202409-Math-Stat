@@ -14,7 +14,10 @@ b.
    C = \{HHT, THT, HTT, TTT\}
 ## Q2.
 ### Questions
+How many different meals can be made from four kinds of meat, six vegetables, and three starches if a meal consists of one selection from each group?  
 ### Answers
+Multiply the number of options from each group  
+4×6×3=72  
 ## Q3.
 ### Questions
 ### Answers
