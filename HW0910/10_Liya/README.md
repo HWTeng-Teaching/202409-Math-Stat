@@ -105,13 +105,13 @@ therefore COEFFICIENT= $$\frac{7!}{2! 2! 3!}
 
 ### Lets find the probability of not getting anymore kings 
 $$\
-P(\text{no additional kings}) = \frac{\binom{48}{4}}{\binom{51}{4}}
+P(\{no additional kings}) = \frac{\binom{48}{4}}{\binom{51}{4}}
 \$$
 
 Therefore, the probability of having **at least one more king** is:
 
 $$\
-P(\text{at least one more king}) = 1 - P(\text{no additional kings}) = 1 - \frac{\binom{48}{4}}{\binom{51}{4}}
+P(\{at least one more king}) = 1 - P(\text{no additional kings}) = 1 - \frac{\binom{48}{4}}{\binom{51}{4}}
 \$$ = 0.2815
 ### Answer= 0,2815
 
