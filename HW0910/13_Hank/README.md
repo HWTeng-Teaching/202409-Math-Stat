@@ -42,4 +42,21 @@
 
 ## Prove: if A $\in$ B, P(A) $\le$ P(B)
 
+   Proof: If A $\cup$ (B\\A) because A $\le$ B
+   
+   P(B) = P(A) + P(B\\A) where P(B\\A) $\ge$ 0 because probabilities arenon-negative
+   
+   So P(A) $\le$ P(B)
+   
+   Thus, we have proven that if A $\le$ B, then P(A) $\le$ P(B)
+   
+## Q33
+
+$\frac{\binom{7}{5} \times 5!}{7^5}$
+= $\frac{360}{2401}$
+
+## Q37
+The coefficient of $x^2$ $y^2$ $z^3$ in the expansion of $(x+y+z)^7$ is: 
+$\frac{7!}{2! 2! 3!}$ 
+
 
