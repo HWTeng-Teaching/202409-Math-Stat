@@ -36,5 +36,47 @@ TOTAL MEALS= 4 * 6* 3= 72
 # QUESTION 1.27
  <img width="625" alt="image" src="https://github.com/user-attachments/assets/c59d82cf-20bb-42f1-bf0a-c42d1e2832d4">
 
- 
+1) Lets assume that therere 26 letters in the alphabet; therefore the total amount of words WITH POSSIBLE PEPETITION is:
+
+$$TOTAL= \( 26^5 = 11881376 \) $$
+
+2) Now, lets find the amount of words WITHOUT repetition ( at firsr we can use 26 letters, then 25,...)
+   
+   $$WITHOUT=  \( 26 \times 25 \times 24 \times 23 \times 22 = 303600 \) $$
+   
+4) P(no repitition)= 7893600/11881376= 0,6644
+### Answer P= 0,664
+
+# PROVE 
+
+1. **NOTE**
+    Lets assume that $$\( A \) and \( B \)$$ are two events such that $$\( A \subseteq B \)$$.
+   Probability of an event $$\( A \), denoted \( P(A) \)$$, is the measure of the set $$\( A \)$$.
+
+
+   Since $$\( A \subseteq B \)$$, lets express $$\( B \)$$ as:
+   $$\( B = A \cup (B \setminus A) \)$$
+    THEREFORE, $$\( B \setminus A \)$$ is the part of $$\( B \)$$ (not $$\( A \)$$).
+
+3. **By Additive property**:
+   The probability of the union of disjoint sets is
+      $$\( P(B) = P(A) + P(B \setminus A) \)$$
+
+Since,probabilities are always non-negative:
+      $$\( P(B \setminus A) \geq 0 \)$$
+
+**Finally,**
+      $$\( P(B) = P(A) + P(B \setminus A) \geq P(A) \)$$
+
+Thus, we conclude that if 
+
+$$\( A \subseteq B \),\( P(A) \leq P(B) \)$$
+
+proven.
+
+
+# QUESTION 1.37
+<img width="548" alt="image" src="https://github.com/user-attachments/assets/8f672bd0-ce6c-4244-898e-068ea1e45ae8">
+
+
 
