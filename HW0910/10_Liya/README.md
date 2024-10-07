@@ -99,7 +99,7 @@ therefore COEFFICIENT= $$\frac{7!}{2! 2! 3!}
 
 2) IF there is no king
 
-   $$\
+ $$\
 \binom{48}{4}
 \$$
 
@@ -111,7 +111,7 @@ P(\{no additional kings}) = \frac{\binom{48}{4}}{\binom{51}{4}}
 Therefore, the probability of having **at least one more king** is:
 
 $$\
-P(\{at least one more king}) = 1 - P(\text{no additional kings}) = 1 - \frac{\binom{48}{4}}{\binom{51}{4}}
+P(\{at least one more king}) = 1 - P(\{no additional kings}) = 1 - \frac{\binom{48}{4}}{\binom{51}{4}}
 \$$ = 0.2815
 ### Answer= 0,2815
 
@@ -158,5 +158,9 @@ Therefore,
 
 $$\ P(\emptyset) = 0 \$$
 
+# PROVE P(A∪B)=P(A)+P(B)−P(A∩B)
+
+
+<img width="642" alt="image" src="https://github.com/user-attachments/assets/5a2f41c2-97db-4f77-869f-4dfe435e7f90">
 
    
