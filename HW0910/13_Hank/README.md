@@ -59,4 +59,6 @@ $\frac{\binom{7}{5} \times 5!}{7^5}$
 The coefficient of $x^2$ $y^2$ $z^3$ in the expansion of $(x+y+z)^7$ is: 
 $\frac{7!}{2! 2! 3!}$ 
 
+## Q52
+$1 \- \frac{\binom{48}{4}}{\binom{51}{4}} = \frac{922}{4165}$
 
