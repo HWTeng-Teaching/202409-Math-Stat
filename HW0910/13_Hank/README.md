@@ -73,3 +73,13 @@ The empty set $\emptyset$ means no outcome
 P(S)+P($\emptyset$) = P(S $\cup$ $\emptyset$) = P(S) => P($\emptyset$) = 0
 
 ## Prove P(A $\cup$ B) = P(A) + P(B) - P(A $\cap$ B)
+Proof: A $\cup$ B = A $\cup$(B\\A)
+
+A $\cap$ (B\\A) = 0, A and B\\A are mutually exclusive 
+
+P(A $\cup$ (B\\A)) = P(A) + P(B\\A)
+
+P(B\\A) = P(B) - P(A $\cup$ B)
+
+P((A $\cup$ B) = P(A) + P(B) - P(A $\cap$ B)
+         
