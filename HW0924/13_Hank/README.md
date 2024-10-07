@@ -77,3 +77,16 @@ P(Drew leaves | Teacher says Jason stays) = (1/2 × 1/3) / (1/2) = (1/6) / (1/2)
 ### Conclusion
 
 Drew's probability of leaving remains **1/3** even after the teacher reveals who among Chris and Jason will stay. His scheme does **not** increase his chances.
+
+## Q74
+(1) The probability that the fist path or third path will not work
+
+$1-(1-p)^2$
+
+(2) The probability that the second path will not work
+
+$p
+
+(3) The probability that the whole system will work
+
+$1-(p(1-(1-p)^2)^2)$
