@@ -64,16 +64,16 @@ the answer is 0.15
 Prove: P(ϕ) = 0  
 ### Answers
 S = S∪ϕ  
-S∩ϕ = ∅, so S and ϕ are mutually exclusive
-P(S) = P(S ∪ ϕ) = P(S) + P(ϕ)  
-1 + P(ϕ) = 1  
-thus P(ϕ) = 0
+S∩ϕ = ∅, S and ϕ are mutually exclusive 
+P(S) = P(S ∪ ϕ) = P(S) + P(ϕ)   
+P(S) + P(ϕ) = P(S)   
+thus P(ϕ) = 0 
 ## Q9.
 ### Questions
 Prove: P(A ∪ B) = P(A) + P(B) - P(A ∩ B)  
 ### Answers
 P(A) = P(A ∩ B) + P(A\B)    
-P(B) = P(A ∩ B) + P(B\A)  
+P(B) = P(A ∩ B) + P(B\A)   
 P(A ∪ B) = P(A ∩ B) + P(A\B) + P(B\A)  
-plus P(A ∩ B) at both side and we will got P(A ∪ B)+P(A ∩ B)  = P(A) + P(B)  
+plus P(A ∩ B) at both side and we will got P(A ∪ B)+P(A ∩ B)  = P(A) + P(B)   
 thus P(A ∪ B) = P(A) + P(B) - P(A ∩ B)
