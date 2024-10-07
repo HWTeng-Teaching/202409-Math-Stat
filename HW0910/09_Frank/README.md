@@ -24,7 +24,7 @@ If a five-letter word is formed at random (meaning that all sequences of five le
 ### Answers
 26 English letters fromigng a 5 lettets word → total 26^5 possible words  
 no letter is the same in the 5 letters word → 26×25×24×23×22 possiable words  
-26×25×24×23×22/26^5 = $fract{303600}{456976}$ ≈ 0.664
+26×25×24×23×22/26^5 = $303600 \over 456976$ ≈ 0.664
 ## Q4.
 ### Questions
 ### Answers
