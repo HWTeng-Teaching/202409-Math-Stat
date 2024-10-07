@@ -1,6 +1,6 @@
-## HOMEWORK 1 (0910) LIYA ##
+# HOMEWORK 1 (0910) LIYA ##
 
-## QUESTION 1.1
+# QUESTION 1.1
 
 
 <img width="623" alt="image" src="https://github.com/user-attachments/assets/a3c9cc3b-1997-4450-bd11-8c0d3c66a8cc">
@@ -25,7 +25,16 @@ S = { HHH, HHT, HTH, HTT, THH, THT, TTH, TTT }
 3) A ∪ C = { HHH, HHT, HTH, THH, HTT, THT, TTH, TTT }
 
 
-## QUESTION 1.15
+# QUESTION 1.15
 <img width="639" alt="image" src="https://github.com/user-attachments/assets/2e7262a9-c3d3-4310-9ed7-a9b99cae1df6">
 
+By using multiplication method:
+
+TOTAL MEALS= 4 * 6* 3= 72
+### Answer: 72
+
+# QUESTION 1.27
+ <img width="625" alt="image" src="https://github.com/user-attachments/assets/c59d82cf-20bb-42f1-bf0a-c42d1e2832d4">
+
+ 
 
