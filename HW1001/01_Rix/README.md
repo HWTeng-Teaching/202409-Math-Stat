@@ -70,18 +70,18 @@ Since there are 12 months in a year, the rate λ for one year is:
 λyear = 12 × 0.33 = 3.96  
 The probability of observing k events (suicides in this case) in a given time period for a Poisson distribution is given by:  
 P(X = k) = $\frac{e^{−λ}λ^k}{k!}$  
-P(X = 0) $\approx 0.01876$  
-P(X = 1) $\approx 0.0744$  
-P(X = 2) $\approx 0.1381$  
-P(X = 3) $\approx 0.1882$  
-P(X = 4) $\approx 0.1961$  
-P(X = 5) $\approx 0.1569$  
-​Since λ is 3.96, the most probable number is close to it. It's 4.
+P(X = 0) $\approx 0.01906$  
+P(X = 1) $\approx 0.07549$  
+P(X = 2) $\approx 0.1495$  
+P(X = 3) $\approx 0.1973$  
+P(X = 4) $\approx 0.1953$  
+P(X = 5) $\approx 0.1547$  
+​The most probable number is 4.
 
 b.  
 Since there are about 4.33 weeks in a month, the rate for one week is:  
-λweek = $\frac{0.33}{4.33} \approx 0.0763$  
-P(X = 2) $\approx 0.0054$  
+λweek = $\frac{0.33}{4.33} \approx 0.0762$  
+P(X = 2) $\approx 0.00269$  
 
 ## Q4. 
 
