@@ -136,6 +136,27 @@ P(\text{at least one more king}) = 1 - P(\text{no additional kings}) = 1 - \frac
 
 
 
-  # PROVE 
+  # PROVE: P(ϕ)=0
+
+### Proof:
+## Note 1
+$$\ S = S \cup \emptyset \$$
+
+## Note 2
+$$\ S \cap \emptyset = \emptyset \$$, so $$\ S \$$ and $$\ \emptyset \$$ are mutually exclusive.
+
+## Then, 
+\(Note: from Axiom 3)
+
+$$\ P(S) = P(S \cup \emptyset) = P(S) + P(\emptyset) \$$
+
+Note: \( P(S) = 1 \) by Axiom 2, so we can substitute:
+
+$$\ 1 = 1 + P(\emptyset) \$$
+
+Therefore,
+
+$$\ P(\emptyset) = 0 \$$
+
 
    
