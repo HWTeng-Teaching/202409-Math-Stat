@@ -79,4 +79,42 @@ proven.
 <img width="548" alt="image" src="https://github.com/user-attachments/assets/8f672bd0-ce6c-4244-898e-068ea1e45ae8">
 
 
+Sum of powers $$\( x^2 y^2 z^3 \)$$ = 2 + 2 + 3= 7
 
+therefore COEFFICIENT= $$\frac{7!}{2! 2! 3!}
+\$$ = 210
+
+### Answer= 210
+
+# QUESTION 1.52
+<img width="612" alt="image" src="https://github.com/user-attachments/assets/dc523ff9-11b1-4d45-b382-35d80c8857cb">
+
+**NOTE** Since the first card is a king, there are 3 kings left...
+
+1) All possible outcomes (taking 4 cards from 51) is
+
+   $$\
+\binom{51}{4}
+\$$
+
+2) IF there is no king
+
+   $$\
+\binom{48}{4}
+\$$
+
+### Lets find the probability of not getting anymore kings 
+$$\
+P(\text{no additional kings}) = \frac{\binom{48}{4}}{\binom{51}{4}}
+\$$
+
+Therefore, the probability of having **at least one more king** is:
+
+$$\
+P(\text{at least one more king}) = 1 - P(\text{no additional kings}) = 1 - \frac{\binom{48}{4}}{\binom{51}{4}}
+\$$ = 0.2815
+### Answer= 0,2815
+
+
+# QUESTION 1.33
+<img width="641" alt="image" src="https://github.com/user-attachments/assets/03108755-56a4-4c53-afcb-2e2443024f1b">
