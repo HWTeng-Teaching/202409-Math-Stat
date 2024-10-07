@@ -102,3 +102,16 @@ $n\log 0.95 \le \log 0.5$
 $n \ge 13.5134$
 
 $n = 14$
+
+## Consider a Bernoulli trial...
+$P(x=\chi)$ 
+
+$= p if \chi = 1$
+
+$= 1-p if \chi = 0$
+
+$= 0 if \chi \ne 0 and \chi \ne 1$
+
+
+
+
