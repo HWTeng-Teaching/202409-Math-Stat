@@ -90,3 +90,15 @@ $p
 (3) The probability that the whole system will work
 
 $1-(p(1-(1-p)^2)^2)$
+
+# Q77
+
+$1-(1-0.05)^n$ $\ge 0.5$ 
+
+$(0.95)^n \le 0.5$
+
+$n\log 0.95 \le \log 0.5$
+
+$n \ge 13.5134$
+
+$n = 14$
