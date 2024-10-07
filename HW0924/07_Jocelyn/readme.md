@@ -1,1 +1,5 @@
-
+![HW2-1](https://github.com/Jiajia-mathstat/Tes/blob/main/IMAGE/Homework-3.jpg)
+![HW2-2](https://github.com/Jiajia-mathstat/Tes/blob/main/IMAGE/Homework-4.jpg)
+![HW2-3](https://github.com/Jiajia-mathstat/Tes/blob/main/IMAGE/Homework-5.jpg)
+![HW2-4](https://github.com/Jiajia-mathstat/Tes/blob/main/IMAGE/Homework-6.jpg)
+![HW2-5](https://github.com/Jiajia-mathstat/Tes/blob/main/IMAGE/Homework-7.jpg)
