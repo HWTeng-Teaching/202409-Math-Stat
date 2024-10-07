@@ -62,3 +62,14 @@ $\frac{7!}{2! 2! 3!}$
 ## Q52
 $1 \- \frac{\binom{48}{4}}{\binom{51}{4}} = \frac{922}{4165}$
 
+## Prove P($\emptyset$) = 0
+
+For any two mutually exclusive event A and B, P(A),P(B) $\ge$ 0, we can know that P(A $\cup$ B) = P(A)+P(B)
+
+Now the entire sample spaces S, P(S) = 1
+
+The empty set $\emptyset$ means no outcome
+
+P(S)+P($\emptyset$) = P(S $\cup$ $\emptyset$) = P(S) => P($\emptyset$) = 0
+
+## Prove P(A $\cup$ B) = P(A) + P(B) - P(A $\cap$ B)
