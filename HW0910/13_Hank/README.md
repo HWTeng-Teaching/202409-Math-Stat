@@ -1,4 +1,4 @@
-## Problem 1
+## Q1
 
 ### a. List the sample space.
 
@@ -28,8 +28,8 @@ C = \{HHT, HTT, THT, TTT\}
    A &#8745; B = \{HHH, HHT\}  
    A &#8746; C = \{HHH, HHT, HTH, HTT, THH, THT, TTT\}
    
-## Problem 2
-
+## Q15
+   
 
 
 
