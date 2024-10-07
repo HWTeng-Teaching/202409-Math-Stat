@@ -27,7 +27,13 @@ no letter is the same in the 5 letters word → 26×25×24×23×22 possiable wor
 $26×25×24×23×22 \over 26^{5}$ = $303600 \over 456976$ ≈ 0.664
 ## Q4.
 ### Questions
+Prove: If A ⊆ B, then P(A) ≤ P(B)  
 ### Answers
+Let P(A) denote the probability of event A and let P(B) denote the probability of event B  
+B = A ∪ (B∖A)
+P(A) + P(B∖A) = P(B) since A and B∖A are disjoint  
+P(B∖A) ≥ 0  
+thusn P(A) ≤ P(B)  
 ## Q5.
 ### Questions
 ### Answers
