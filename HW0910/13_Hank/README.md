@@ -29,7 +29,7 @@ C = \{HHT, HTT, THT, TTT\}
    A &#8746; C = \{HHH, HHT, HTH, HTT, THH, THT, TTT\}
    
 ## Q15
-   
+   There will be 4\*6*3=72 kind of meals
 
 
 
