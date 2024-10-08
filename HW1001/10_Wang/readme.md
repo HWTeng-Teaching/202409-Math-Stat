@@ -141,4 +141,27 @@ ans : **Probability of Two Suicides in One Week**: Approximately 0.0027
 
 ### Q4
 
+Since \( F(x) \) satisfies all three properties of a CDF, it is a valid cumulative distribution function.
+
+
+The probability density function \( f(x) \) is found by differentiating the CDF \( F(x) \):
+
+$$ 
+f(x) = \frac{d}{dx} F(x). 
+$$
+
+For \( x \geq 0 \):
+
+$$ 
+f(x) = \frac{d}{dx} \left( 1 - \exp(-\alpha x^\beta) \right) = 0 + \alpha \beta x^{\beta - 1} \exp(-\alpha x^\beta). 
+$$
+
+Thus, the probability density function is:
+
+$$ 
+f(x) = \alpha \beta x^{\beta - 1} \exp(-\alpha x^\beta) \quad \text{for } x \geq 0. 
+$$
+
+### Q5
+
 
