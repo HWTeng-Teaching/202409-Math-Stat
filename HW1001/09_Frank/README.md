@@ -84,6 +84,29 @@ Let f (x) = (1 + αx)/2 for −1 ≤ x ≤ 1 and f (x) = 0 otherwise, where
 −1 ≤ α ≤ 1. Show that f is a density, and find the corresponding cdf. Find the
 quartiles and the median of the distribution in terms of α.
 #### Solution
+A valid probability density function must satisfy:
+- **Non-negativity**: For -1 ≤ α ≤ 1, f(x) = (1 + αx) / 2 ≥ 0 for -1 ≤ x ≤ 1.  
+**Total probability equals 1**: The integral of f(x) over its domain must equal 1:
+  $\int_{-1}^{1} f(x) \ dx = \int_{-1}^{1} \frac{1 + \alpha x}{2} \, dx = 1.$
+f(x) is a valid PDF.
+#####  Cumulative Distribution Function (CDF)  
+The CDF F(x) is defined as F(x) = $\int_{-\infty}^{x} f(t) dt$  
+For x < -1, F(x) = 0. For -1 ≤ x ≤ 1, the CDF is given by:  
+$F(x) = \frac{1}{2} \left( x + 1 + \frac{\alpha}{2} (x^2 - 1) \right)$  
+For x > 1, F(x) = 1.  
+##### Quartiles and Median  
+The **median** `m` is the value where F(`m`) = 0.5. Solving the equation:  
+$\frac{1}{2} \left( m + 1 + \frac{\alpha}{2} (m^2 - 1) \right) = 0.5$  
+gives the median `m`.
+𝑚 = $\frac{−1 + \sqrt{1 + 𝛼^2}}{2𝛼}$(since 𝑚 must be in the interval [-1, 1])  
+
+The first quartile Q1  
+CDF 𝐹(𝑄1) = 0.25  
+​Q1 = $\frac{−1 + \sqrt{1 - 𝛼 + 𝛼^2}}{𝛼}$  
+
+The third quartile Q3  
+CDF 𝐹(𝑄3) = 0.75  
+​Q3 = $\frac{−1 + \sqrt{1 - 4𝛼 + 3𝛼^2}}{𝛼}$
 ### Q6
 #### Problem
 #### Solution
