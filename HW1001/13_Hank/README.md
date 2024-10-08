@@ -83,3 +83,17 @@ $\int_{-1}^1$ $\frac{1+\alpha x}{2} dx$ = $\frac{1}{2}$ + $\frac{1}{2}$ + $\frac
 
 (2)CDF
 
+For $x \lt -1$, since $f(x)=0$, we have $F(x)=0$
+
+For $-1 \le x \le 1$, $F(x)= \frac{x+1}{2}+\frac{\alpha}{4}(x^2-1)$
+
+For $x \gt 1$, $F(x) = 1$
+
+(3)Median
+
+$F(m) = \frac{1}{2}$ => $\frac{m+1}{2}+\frac{\alpha}{4}(m^2-1) = \frac{1}{2}$
+
+solve for m: 
+
+$m = \frac{-1-\sqrt{1+\alpha^2}}{\alpha}$ or $\frac{-1+\sqrt{1+\alpha^2}}{\alpha}$ (since $-1 \le m \le 1$ , $m=\frac{-1+\sqrt{1+\alpha^2}}{\alpha}$)
+
