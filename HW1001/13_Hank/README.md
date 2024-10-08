@@ -108,3 +108,5 @@ $F(Q_{3}) = \frac{3}{4}$ =>
 $Q_{3} = \frac{-1+\sqrt{1-\alpha+\alpha^2}}{\alpha}$
 
 ## Q35
+![a5e0d726-c6b2-43f5-8d3a-24f68cb2bab9](https://github.com/user-attachments/assets/241a2236-d94e-46a2-9780-689dd9abea9c)
+
