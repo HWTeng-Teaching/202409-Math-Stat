@@ -24,6 +24,8 @@ Drew's scheme doesn't increase his chances of leaving since theres a 1/3 chance 
 ## Question 1.74
 <img width="633" alt="image" src="https://github.com/user-attachments/assets/c308ff9d-cafb-4a7c-8fea-692ad12eea9d">
 
+<img width="738" alt="image" src="https://github.com/user-attachments/assets/6cb583fe-8cb4-43b3-a590-fafc6154279f">
+
 ## Question 1.77
 <img width="621" alt="image" src="https://github.com/user-attachments/assets/8d7e6c09-80e2-494d-93fd-8319e2687876">
 <img width="780" alt="image" src="https://github.com/user-attachments/assets/27f22dc1-fd2e-424f-aaa7-199109295187">
