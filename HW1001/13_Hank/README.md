@@ -43,3 +43,28 @@ $\lambda_{week}$ = $\frac{3.96}{52} \approx 0.0762$
 $P(X=k) = \frac{\lambda^ke^{-\lambda}}{k!}$ => $P(X=2) = \frac{0.0762^2\times e^{-0.0762}}{2!} \approx 0.00269$
 
 ## Q33
+(1) 
+
+1. checking monotonic increasing:
+
+$F^{'}(x)$ = $\frac{d}{dx}(1-exp(-\alpha x^\beta))$ = $0 - exp(-\alpha x^\beta)$ $(-\alpha\beta x^{\beta-1})$
+
+= $exp(-\alpha x^\beta)$ $(\alpha\beta x^{\beta-1})$
+
+since $\alpha \gt 0$, $\beta \gt 0$ and $F^{'}(x) \ge 0$, which means $F(x)$ is a non-decreasing function.
+
+2. checking boundary conditions:
+
+  when $x->0^{+}$: $F(0) = 1-exp(0)=1-1=0$
+
+  when $x->\infty$: $1$
+
+  so $F(x)$ is bounded between 0 and 1
+
+  Therefore $F(x)$ is a cdf.
+
+  (2)
+
+  $f(x)= F^{'}(x)$ = $exp(-\alpha x^\beta)$ $(\alpha\beta x^{\beta-1})$ for $x \ge 0$
+  ## Q34
+  
