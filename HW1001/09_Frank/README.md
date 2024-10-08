@@ -109,4 +109,6 @@ CDF 𝐹(𝑄3) = 0.75
 ​Q3 = $\frac{−1 + \sqrt{1 - 4𝛼 + 3𝛼^2}}{𝛼}$
 ### Q6
 #### Problem
+Sketch the pdf and cdf of a random variable that is uniform on [−1, 1].
 #### Solution
+
