@@ -50,5 +50,8 @@ P(X=x) = 0, for x is not 1 or 0,  means probability of other outcome is 0.
 
 <img width="630" alt="image" src="https://github.com/user-attachments/assets/91313e36-abb6-4cf7-9c64-afab1ed906d0">
 
+<img width="783" alt="image" src="https://github.com/user-attachments/assets/58cfd6ef-a274-4229-9392-1ed104ac910c">
+
+<img width="779" alt="image" src="https://github.com/user-attachments/assets/10b47ba4-fc11-4f28-9082-e9c60b0fb73c">
 
 
