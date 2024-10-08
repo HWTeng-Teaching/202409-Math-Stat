@@ -29,22 +29,24 @@ a. Find the probability of k suicides in a year for k = 0, 1, 2,... . What is th
 most probable number of suicides?
 b. What is the probability of two suicides in one week?
 #### Solution
-a. 
+##### a. 
 λ=0.33 per month => λ=0.33*12=3.96 per year  
 X~Poisson  
 P(X=k)= $$\frac{\lambda^k e^{-\lambda}}{k!}$$  
-P(X = 0) $\approx 0.01906$    
-P(X = 1) $\approx 0.07549$    
-P(X = 2) $\approx 0.1495$    
-P(X = 3) $\approx 0.1973$    
-P(X = 4) $\approx 0.1953$    
-P(X = 5) $\approx 0.1547$    
+$$P(X = 0) \approx 0.01906$$    
+$P(X = 1) \approx 0.07549$    
+$P(X = 2) \approx 0.1495$    
+$P(X = 3) \approx 0.1973$    
+$P(X = 4) \approx 0.1953$    
+$P(X = 5) \approx 0.1547$    
 base on the λ per year, we can know that the most probable number is 4   
-b.
+##### b.
 λ=0.33 per month => λ=0.33*0.25=0.0825 per week  
 P(X=2) $\approx 0.0031$  
 ### Q4
 #### Problem
+Let F(x) = 1 − exp(−αxβ) for x ≥ 0,α > 0,β > 0, and F(x) = 0 for x < 0.
+Show that F is a cdf, and find the corresponding density.
 #### Solution
 ### Q5
 #### Problem
