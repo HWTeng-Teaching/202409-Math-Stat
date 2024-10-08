@@ -48,8 +48,41 @@ P(X=2) $\approx 0.0031$
 Let F(x) = 1 − exp(−αxβ) for x ≥ 0,α > 0,β > 0, and F(x) = 0 for x < 0.
 Show that F is a cdf, and find the corresponding density.
 #### Solution
+A CDF if it satisfies the following properties:  
+
+Non-decreasing  
+examine the derivative of F(x) for x ≥ 0:  
+F′(x) = $\frac{d}{dx}(1 − exp(−αx^β))$  
+F′(x) = $0 − (−αβx^{β−1}exp(−αx^β))=αβx^{β−1}exp(−αx^β)$  
+Since α > 0, β > 0, and $x^{β−1}$ ≥ 0 for x ≥ 0, we have: F′(x) ≥ 0  
+
+Right-continuous  
+The function F(x) is composed of continuous functions (the exponential function), so it is right-continuous for x ≥ 0.  
+
+Limits  
+For x < 0 : F(x) = 0  
+Thus, lim x→−∞ F(x) = 0.  
+For x → ∞ :  
+lim x→∞ F(x) = 1
+
+Thus, F(x) is a CDF
+
+To find the corresponding probability density function (PDF), we differentiate F(x):  
+f(x) =F′(x) = $αβx^{β−1}exp(−αx^β)$, x ≥ 0
+
+The cumulative distribution function is given by:  
+𝐹(𝑥) =  
+{0 for 𝑥 < 0  
+{1 − exp($−𝛼𝑥^𝛽$) for 𝑥 ≥ 0  
+
+The corresponding probability density function is:  
+f(x) = $αβx^{β−1}exp(−αx^β)$, x ≥ 0
+
 ### Q5
 #### Problem
+Let f (x) = (1 + αx)/2 for −1 ≤ x ≤ 1 and f (x) = 0 otherwise, where
+−1 ≤ α ≤ 1. Show that f is a density, and find the corresponding cdf. Find the
+quartiles and the median of the distribution in terms of α.
 #### Solution
 ### Q6
 #### Problem
