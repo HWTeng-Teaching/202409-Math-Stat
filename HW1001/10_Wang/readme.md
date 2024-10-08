@@ -241,9 +241,9 @@ F(x) =
 \end{cases}.
 $$
 
-##Calculate Q1,Q2,Q3
+## Calculate Q1,Q2,Q3
 
-Use completing square to caculate cdf function F(X) = 0.25 , F(X) = 0.5 , F(X) = 0.75
+Use completing square to caculate X in cdf function F(X) = 0.25 , F(X) = 0.5 , F(X) = 0.75
 
 $$
 Q1 = \frac{-1 + \sqrt{1 - α + α^2}}{α}
@@ -259,5 +259,10 @@ $$
 Q3 = \frac{-1 + \sqrt{1 + 3α + α^2}}{α}
 $$
 
+### Q6
+
+### Graphical Representation
+
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1001/10_Wang/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-10-08%20170840.png)
 
 
