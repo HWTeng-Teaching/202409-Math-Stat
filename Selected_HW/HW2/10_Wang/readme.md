@@ -13,7 +13,11 @@ b. What is the probability given that there was at least one tail?
 ### Answers
 
 a.   
-   p(x >= 2) = (p(3) + p(2))/P(X>=1) =1/2 / (7/8) = 4/7
+   p(x = 2 , 3 | X >=1 ) = (p(3) + p(2))/P(X>=1) =1/2 / (7/8) = 
+   
+   $$
+  ans :  \frac{4}{7} 
+   $$
   
 b.  
-   p(x >= 1) = 1 - p(0) = 7/8
+   p(x >= 1) = 1 - p(0) = 7/8 = 1 - the probability that there was no tail
