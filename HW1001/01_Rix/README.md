@@ -33,14 +33,14 @@ In light of the construction of a geometric distribution from a sequence of inde
 
 ### Answers
 
-CDF of geometric random variable is P(X > n) = $(1 - p)^n$  
+The survival function of geometric random variable is P(X > n) = $(1 - p)^n$  
 P(X > n + k − 1 | X > n − 1) = $\frac{P(X > n + k − 1 ∩ X > n − 1)}{P(X > n − 1)}$  
 
 Since X > n + k − 1 implies X > n − 1, we have :  
 P(X > n + k − 1 ∩ X > n − 1) = P(X > n + k − 1)  
 so that, P(X > n + k − 1 | X > n − 1) = $\frac{P(X > n + k − 1)}{P(X > n − 1)}$
 
-Turn to CDF :  
+Turn to survival function :  
 ​P(X > n + k − 1 | X > n − 1) = $\frac{(1 - p)^{n+k-1}}{(1 - p)^{n-1}}$ = $(1 - p)^k$  
 
 This is precisely the probability that X > k:  
