@@ -38,4 +38,8 @@ $P(X=4) \approx 0.1953$ , $P(X=5) \approx 0.1547$ , $P(X=6) \approx 0.1021$ , $P
 
 The most probable number of suicides is 3.
 ### b.
-$\lambda_{week}$ = $\frac{3.96}{52} \approx 0.0762
+$\lambda_{week}$ = $\frac{3.96}{52} \approx 0.0762$
+
+$P(X=k) = \frac{\lambda^ke^{-\lambda}}{k!}$ => $P(X=2) = \frac{0.0762^2\times e^{-0.0762}}{2!} \approx 0.00269$
+
+## Q33
