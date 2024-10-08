@@ -13,8 +13,11 @@
 <img width="751" alt="image" src="https://github.com/user-attachments/assets/fd5b2e08-3c24-4ff5-a17c-df00c35917a2">
 
 
-## Question 1,34
+## Question 1.34
 <img width="788" alt="image" src="https://github.com/user-attachments/assets/793259f7-ed6c-407a-aea1-5e6933f8a595">
 
+## Quesrtion 1.35
+
+<img width="788" alt="image" src="https://github.com/user-attachments/assets/d6bf9357-2f8d-454b-a835-6400a8f1ca52">
 
 
