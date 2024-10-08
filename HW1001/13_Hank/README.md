@@ -97,4 +97,14 @@ solve for m:
 
 $m = \frac{-1-\sqrt{1+\alpha^2}}{\alpha}$ or $\frac{-1+\sqrt{1+\alpha^2}}{\alpha}$ (since $-1 \le m \le 1$ , $m=\frac{-1+\sqrt{1+\alpha^2}}{\alpha}$)
 
+(4)Quartiles:
 
+$F(Q_{1}) = \frac{1}{4}$ =>
+
+$Q_{1} = \frac{-1-\sqrt{1-\alpha+\alpha^2}}{\alpha}$
+
+$F(Q_{3}) = \frac{3}{4}$ =>
+
+$Q_{3} = \frac{-1+\sqrt{1-\alpha+\alpha^2}}{\alpha}$
+
+## Q35
