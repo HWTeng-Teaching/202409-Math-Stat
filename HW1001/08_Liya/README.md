@@ -1,7 +1,7 @@
 # HW 1001 by Liya 
 
 ## Question 2.19
-<img width="635" alt="image" src="https://github.com/user-attachments/assets/ab86c8bb-94bc-4c03-a9e0-e8a6e2490a10">
+<img width="780" alt="image" src="https://github.com/user-attachments/assets/fbd0e289-248a-4aae-a589-9aa1dcd02821">
 
 ## Question 2.21
 <img width="635" alt="image" src="https://github.com/user-attachments/assets/386afd5e-8c0d-4f40-8c1d-72dae2cc4452">
