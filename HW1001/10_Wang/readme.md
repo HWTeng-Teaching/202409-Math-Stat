@@ -164,4 +164,82 @@ $$
 
 ### Q5
 
+Given the probability density function (PDF):
+
+$$
+f(x) = 
+\begin{cases} 
+\frac{1 + \alpha x}{2} & \text{for } -1 \leq x \leq 1 \\ 
+0 & \text{otherwise} 
+\end{cases}
+$$
+
+The cumulative distribution function \( F(x) \) is defined as:
+
+## Calculation of the CDF
+
+### 1. For \( x < -1 \)
+
+For \( x < -1 \):
+
+$$
+F(x) = 0.
+$$
+
+### 2. For \( -1 \leq x \leq 1 \)
+
+For \( -1 \leq x \leq 1 \):
+
+We compute:
+
+$$
+F(x) = \int_{-1}^{x} \frac{1 + \alpha t}{2} \, dt.
+$$
+
+Breaking this into two parts:
+
+1. **Integral of 1**:
+   $$ 
+   \int_{-1}^{x} 1 \, dt = x + 1. 
+   $$
+
+2. **Integral of \( t \)**:
+   $$ 
+   \int_{-1}^{x} t \, dt = \left[ \frac{t^2}{2} \right]_{-1}^{x} = \frac{x^2}{2} - \frac{1}{2} = \frac{x^2 - 1}{2}. 
+   $$
+
+Combining these results gives:
+
+$$
+F(x) = \frac{1}{2} (x + 1) + \frac{\alpha}{2} \left( \frac{x^2 - 1}{2} \right).
+$$
+
+This simplifies to:
+
+$$
+F(x) = \frac{x + 1}{2} + \frac{\alpha (x^2 - 1)}{4}.
+$$
+
+### 3. For \( x > 1 \)
+
+For \( x > 1 \):
+
+$$
+F(x) = 1.
+$$
+
+## Final Form of the CDF
+
+Thus, the cumulative distribution function \( F(x) \) is given by:
+
+$$
+F(x) = 
+\begin{cases} 
+0 & \text{for } x < -1 \\ 
+\frac{x + 1}{2} + \frac{\alpha (x^2 - 1)}{4} & \text{for } -1 \leq x \leq 1 \\ 
+1 & \text{for } x > 1 
+\end{cases}.
+$$
+
+
 
