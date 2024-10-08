@@ -19,6 +19,126 @@ $$
 
 ### Q2
 
+To show that 
 
+$$ 
+P(X > n + k - 1 \mid X > n - 1) = P(X > k), 
+$$ 
+
+we can use the memoryless property of the geometric distribution.
+
+The left-hand side can be expressed using the definition of conditional probability:
+
+$$ 
+P(X > n + k - 1 \mid X > n - 1) = \frac{P(X > n + k - 1 \cap X > n - 1)}{P(X > n - 1)}. 
+$$
+
+Since \(X > n + k - 1\) implies \(X > n - 1\), we have:
+
+$$ 
+P(X > n + k - 1 \cap X > n - 1) = P(X > n + k - 1). 
+$$
+
+Thus, we can rewrite the conditional probability as:
+
+$$ 
+P(X > n + k - 1 \mid X > n - 1) = \frac{P(X > n + k - 1)}{P(X > n - 1)}. 
+$$
+
+For a geometric random variable \(X\) with success probability \(p\):
+
+$$ 
+P(X > m) = (1 - p)^m. 
+$$
+
+Applying this to our expression, we have:
+
+$$ 
+P(X > n + k - 1) = (1 - p)^{n + k - 1}, 
+$$
+$$ 
+P(X > n - 1) = (1 - p)^{n - 1}. 
+$$
+
+Substituting these into our conditional probability gives:
+
+$$ 
+P(X > n + k - 1 \mid X > n - 1) = \frac{(1 - p)^{n + k - 1}}{(1 - p)^{n - 1}} = (1 - p)^{k} = P(X > k). 
+$$
+
+In simple terms, if you have already failed in the first \(n - 1\) trials, the situation resets, and you only need to consider the next \(k\) trials as a new series of independent trials. This is what makes the memoryless property of the geometric distribution "obvious."
+
+#### Q3
+
+### a.
+The Poisson distribution is given by the formula:
+
+$$ 
+P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!} 
+$$
+
+where \( \lambda \) is the average rate of occurrences in the interval, and \( k \) is the number of occurrences.
+
+Given that \( \lambda = 0.33 \) per month, the annual rate \( \lambda_{year} \) is:
+
+$$ 
+\lambda_{year} = 0.33 \times 12 = 3.96 
+$$
+
+Now, we calculate the probabilities for \( k = 0, 1, 2, \ldots \):
+
+$$ 
+P(X = 0) = \frac{3.96^0 e^{-3.96}}{0!} = e^{-3.96} \approx 0.0189 
+$$
+
+**For \( k = 1 \)**:
+
+$$ 
+P(X = 1) = \frac{3.96^1 e^{-3.96}}{1!} = 3.96 e^{-3.96} \approx 0.0755
+$$
+
+**For \( k = 2 \)**:
+
+$$ 
+P(X = 2) = \frac{3.96^2 e^{-3.96}}{2!} = \frac{3.96^2}{2} e^{-3.96} \approx 0.149
+$$
+
+**For \( k = 3 \)**:
+   
+$$ 
+P(X = 3) = \frac{3.96^3 e^{-3.96}}{3!} = \frac{3.96^3}{6} e^{-3.96} \approx 0.197 
+$$
+
+**For \( k = 4 \)**:
+
+$$ 
+P(X = 4) = \frac{3.96^4 e^{-3.96}}{4!} = \frac{3.96^4}{24} e^{-3.96} \approx 0.1955 
+$$
+
+ans :The most probable number of suicides is where \( P(X = k) \) is maximized. From our calculations, both \( k = 3 \)  yield the highest probabilities. Thus, the most probable number of suicides in a year is 3 .
+
+### b.
+
+There are approximately 4.33 weeks in a month (52 weeks/year ÷ 12 months/year). Therefore, the weekly rate is:
+
+$$ 
+\lambda_{week} = \frac{0.33}{4.33} \approx 0.0763 
+$$
+
+Using the Poisson formula:
+
+$$ 
+P(X = 2) = \frac{0.0763^2 e^{-0.0763}}{2!} 
+$$
+
+Calculating this gives:
+
+$$ 
+P(X = 2) \approx \frac{0.0058 \cdot 0.9264}{2} \approx 0.0027 
+$$
+
+ans : **Probability of Two Suicides in One Week**: Approximately 0.0027
+
+### Q4
 
 
