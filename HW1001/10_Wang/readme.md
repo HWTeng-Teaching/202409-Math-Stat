@@ -241,5 +241,23 @@ F(x) =
 \end{cases}.
 $$
 
+##Calculate Q1,Q2,Q3
+
+Use completing square to caculate cdf function F(X) = 0.25 , F(X) = 0.5 , F(X) = 0.75
+
+$$
+Q1 = \frac{-1 + \sqrt{1 - α + α^2}}{α}
+$$
+- Median (p = 0.5):
+
+$$
+Median = \frac{-1 + \sqrt{1 + α^2}}{α}
+$$
+- Third Quartile (p = 0.75):
+
+$$
+Q3 = \frac{-1 + \sqrt{1 + 3α + α^2}}{α}
+$$
+
 
 
