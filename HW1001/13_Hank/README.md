@@ -63,8 +63,23 @@ since $\alpha \gt 0$, $\beta \gt 0$ and $F^{'}(x) \ge 0$, which means $F(x)$ is 
 
   Therefore $F(x)$ is a cdf.
 
-  (2)
+(2)
 
   $f(x)= F^{'}(x)$ = $exp(-\alpha x^\beta)$ $(\alpha\beta x^{\beta-1})$ for $x \ge 0$
   ## Q34
-  
+(1)
+
+1.check non-negativity
+
+  For $-1\le x \le 1$ ,we have $1+ax$ ranges from $\[1-\alpha,1+\alpha\]$
+
+  For $-1\le \alpha \le 1$, $\[1-\alpha,1+\alpha\]$ equals to $\[0,2\]$
+
+  So, $f(x) \ge 0$ for all $x \in \[-1,1\]$
+
+2. Intergral equals 1:
+
+$\int_{-1}^1$ $\frac{1+\alpha x}{2} dx$ = $\frac{1}{2}$ + $\frac{1}{2}$ + $\frac{\alpha}{2}(\frac{1}{2}-\frac{1}{2})$ = $1$
+
+(2)CDF
+
