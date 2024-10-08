@@ -111,4 +111,4 @@ CDF 𝐹(𝑄3) = 0.75
 #### Problem
 Sketch the pdf and cdf of a random variable that is uniform on [−1, 1].
 #### Solution
-[pic](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1001/09_Frank/pdf.JPG)
+![pic](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1001/09_Frank/pdf.JPG)
