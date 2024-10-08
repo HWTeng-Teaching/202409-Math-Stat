@@ -97,3 +97,4 @@ solve for m:
 
 $m = \frac{-1-\sqrt{1+\alpha^2}}{\alpha}$ or $\frac{-1+\sqrt{1+\alpha^2}}{\alpha}$ (since $-1 \le m \le 1$ , $m=\frac{-1+\sqrt{1+\alpha^2}}{\alpha}$)
 
+
