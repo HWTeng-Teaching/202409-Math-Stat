@@ -118,6 +118,7 @@ The probability of two suicides in one week is 0.0027 or 0.27%.
 ## Answer
 
 
+
 Given the cumulative distribution function (CDF):
 
 $$
@@ -130,27 +131,21 @@ $$
 
 where  \alpha > 0  and  \beta > 0 , we will show that  F(x)  is a valid CDF and find the corresponding probability density function (PDF).
 
-1. Showing that  F(x)  is a valid CDF
+1. Validating  F(x)  as a CDF
 
 For  F(x)  to be a valid CDF, it must satisfy:
 
 	1.	Non-decreasing:
- F(x)  is non-decreasing for all  x . For  x \geq 0 , we have:
-$$
-F(x) = 1 - \exp(-\alpha x^\beta)
-$$
-Since  \exp(-\alpha x^\beta)  is a decreasing function,  F(x)  is non-decreasing.
+Since  \exp(-\alpha x^\beta)  is a decreasing function,  F(x) = 1 - \exp(-\alpha x^\beta)  is non-decreasing for  x \geq 0 .
 	2.	Limit properties:
-	•	 \lim_{x \to -\infty} F(x) = 0 : Since  F(x) = 0  for  x < 0 , this holds.
-	•	 \lim_{x \to \infty} F(x) = 1 : As  x \to \infty ,  \exp(-\alpha x^\beta) \to 0 , so  F(x) \to 1 .
+	•	 F(x) = 0  for  x < 0 .
+	•	As  x \to \infty ,  F(x) \to 1 , which means  F(x)  approaches 1 as  x  becomes large.
 	3.	Range:
- F(x)  must lie between 0 and 1 for all  x . For  x \geq 0 ,  F(x) = 1 - \exp(-\alpha x^\beta) , which lies in  [0, 1] , and for  x < 0 ,  F(x) = 0 .
+ F(x)  is between 0 and 1 for all  x , so it is a valid CDF.
 
-Thus,  F(x)  is a valid CDF.
+2. Finding the PDF
 
-2. Finding the corresponding density
-
-The probability density function (PDF) is the derivative of  F(x) . For  x \geq 0 :
+To find the PDF, we take the derivative of the CDF  F(x) . For  x \geq 0 :
 
 $$
 f(x) = \frac{d}{dx} \left( 1 - \exp(-\alpha x^\beta) \right)
@@ -159,23 +154,13 @@ $$
 Using the chain rule:
 
 $$
-f(x) = \exp(-\alpha x^\beta) \cdot \frac{d}{dx}(-\alpha x^\beta)
-$$
-
-$$
-f(x) = \exp(-\alpha x^\beta) \cdot (-\alpha) \cdot \beta x^{\beta - 1}
-$$
-
-Thus, the PDF is:
-
-$$
-f(x) = \alpha \beta x^{\beta - 1} \exp(-\alpha x^\beta) \quad \text{for } x \geq 0
+f(x) = \alpha \beta x^{\beta - 1} \exp(-\alpha x^\beta)
 $$
 
 For  x < 0 , the PDF is:
 
 $$
-f(x) = 0 \quad \text{for } x < 0
+f(x) = 0
 $$
 
 Final Result:
@@ -185,7 +170,10 @@ The corresponding PDF is:
 $$
 f(x) =
 \begin{cases}
-\alpha \beta x^{\beta - 1} \exp(-\alpha x^\beta) & \text
+\alpha \beta x^{\beta - 1} \exp(-\alpha x^\beta) & \text{for } x \geq 0 \
+0 & \text{for } x < 0
+\end{cases}
+$$
 ## CH2.34
 ## Let f(x) = (1+αx)/2 for −1 ≤ x ≤ 1 and f(x) = 0 otherwise, where −1 ≤ α ≤ 1. Show that f is a density, and find the corresponding cdf. Find the quartiles and the median of the distribution in terms of α.
 
