@@ -117,6 +117,7 @@ The probability of two suicides in one week is 0.0027 or 0.27%.
 
 ## Answer
 
+
 Given the cumulative distribution function (CDF):
 
 $$
