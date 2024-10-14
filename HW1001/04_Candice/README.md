@@ -117,8 +117,6 @@ The probability of two suicides in one week is 0.0027 or 0.27%.
 
 ## Answer
 
-Answer
-
 Given the cumulative distribution function (CDF):
 
 $$
@@ -136,7 +134,11 @@ where  \alpha > 0  and  \beta > 0 , we will show that  F(x)  is a valid CDF and 
 For  F(x)  to be a valid CDF, it must satisfy:
 
 	1.	Non-decreasing:
- F(x)  is non-decreasing for all  x . For  x \geq 0 , we have  F(x) = 1 - \exp(-\alpha x^\beta) . Since  \exp(-\alpha x^\beta)  is a decreasing function,  F(x)  is non-decreasing.
+ F(x)  is non-decreasing for all  x . For  x \geq 0 , we have:
+$$
+F(x) = 1 - \exp(-\alpha x^\beta)
+$$
+Since  \exp(-\alpha x^\beta)  is a decreasing function,  F(x)  is non-decreasing.
 	2.	Limit properties:
 	•	 \lim_{x \to -\infty} F(x) = 0 : Since  F(x) = 0  for  x < 0 , this holds.
 	•	 \lim_{x \to \infty} F(x) = 1 : As  x \to \infty ,  \exp(-\alpha x^\beta) \to 0 , so  F(x) \to 1 .
@@ -182,10 +184,7 @@ The corresponding PDF is:
 $$
 f(x) =
 \begin{cases}
-\alpha \beta x^{\beta - 1} \exp(-\alpha x^\beta) & \text{for } x \geq 0 \
-0 & \text{for } x < 0
-\end{cases}
-$$
+\alpha \beta x^{\beta - 1} \exp(-\alpha x^\beta) & \text
 ## CH2.34
 ## Let f(x) = (1+αx)/2 for −1 ≤ x ≤ 1 and f(x) = 0 otherwise, where −1 ≤ α ≤ 1. Show that f is a density, and find the corresponding cdf. Find the quartiles and the median of the distribution in terms of α.
 
