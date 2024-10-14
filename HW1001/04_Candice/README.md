@@ -25,7 +25,7 @@ P(X > n + k - 1 \mid X > n - 1) = P(X > k)
 $$
 
 
-	1.	Conditional Probability Definition:
+1.	Conditional Probability Definition:
 By the definition of conditional probability:
 $$
 P(X > n + k - 1 \mid X > n - 1) = \frac{P(X > n + k - 1 \text{ and } X > n - 1)}{P(X > n - 1)}
@@ -63,7 +63,7 @@ $$
 
 ## Answer
 
-Part (a): Probability of  k  suicides in a year
+a. Probability of  k  suicides in a year
 
 The Poisson distribution formula is:
 
@@ -96,7 +96,7 @@ $$
 
 The most probable number of suicides is 3.
 
-Part (b): Probability of two suicides in one week
+b.Probability of two suicides in one week
 
 To find the weekly rate of suicides:
 
