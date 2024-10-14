@@ -72,6 +72,7 @@ P(X = k) = \frac{(\lambda t)^k e^{-\lambda t}}{k!}
 $$
 
 Here:
+
 $$
 \lambda = 0.33  suicides per month
 t = 12  months in a year
@@ -142,7 +143,7 @@ For  F(x)  to be a valid CDF, it must satisfy:
 3. **Range**: F(x) is between 0 and 1 for all x, so it is a valid CDF.
 Finding the PDF
 
-To find the PDF, we take the derivative of the CDF  F(x) . For  $$ x \geq 0 $$ :
+To find the PDF, we take the derivative of the CDF  F(x) . For  x <= 0 :
 
 $$
 f(x) = \frac{d}{dx} \left( 1 - \exp(-\alpha x^\beta) \right)
