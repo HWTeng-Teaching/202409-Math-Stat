@@ -133,12 +133,12 @@ Validating  F(x)  as a CDF
 
 For  F(x)  to be a valid CDF, it must satisfy:
 
-	1.	Non-decreasing:
+1.	Non-decreasing:
 Since  \exp(-\alpha x^\beta)  is a decreasing function,  F(x) = 1 - \exp(-\alpha x^\beta)  is non-decreasing for  x \geq 0 .
-	2.	Limit properties:
-	•	 F(x) = 0  for  x < 0 .
-	•	As  x \to \infty ,  F(x) \to 1 , which means  F(x)  approaches 1 as  x  becomes large.
-	3.	Range:
+2.	Limit properties:
+F(x) = 0  for  x < 0 .
+As  x \to \infty ,  F(x) \to 1 , which means  F(x)  approaches 1 as  x  becomes large.
+4.	Range:
  F(x)  is between 0 and 1 for all  x , so it is a valid CDF.
 
 Finding the PDF
@@ -168,7 +168,7 @@ The corresponding PDF is:
 $$
 f(x) =
 \begin{cases}
-\alpha \beta x^{\beta - 1} \exp(-\alpha x^\beta) & \text{for } x \geq 0 \
+\alpha \beta x^{\beta - 1} \exp(-\alpha x^\beta) & \text{for } x \geq 0 \\
 0 & \text{for } x < 0
 \end{cases}
 $$
