@@ -331,5 +331,8 @@ $$
 Q3 = \frac{-1 + \sqrt{1 + 3α + α^2}}{α}
 $$
 
+## CH2.35
+## Sketch the pdf and cdf of a random variable that is uniform on [−1, 1].
+![IMG_A2C924430FC2-1](https://github.com/user-attachments/assets/da092d15-ba30-41fc-bc83-810f748790eb)
 
 
