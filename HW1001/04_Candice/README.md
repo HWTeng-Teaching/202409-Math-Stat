@@ -15,7 +15,7 @@ where  \lfloor x \rfloor  is the greatest integer less than or equal to  x , and
 ## CH2.21
 ## If X is a geometric random variable, show that P(X > n + k − 1|X > n − 1) = P(X > k) In light of the construction of a geometric distribution from a sequence of independent Bernoulli trials, how can this be interpreted so that it is “obvious”?
 
-## Anser
+## Answer
 
 
 Given that  X  is a geometric random variable, we want to show that:
@@ -72,10 +72,11 @@ P(X = k) = \frac{(\lambda t)^k e^{-\lambda t}}{k!}
 $$
 
 Here:
-
-	•	 \lambda = 0.33  suicides per month
-	•	 t = 12  months in a year
-	•	 \lambda t = 0.33 \times 12 = 3.96 
+$$
+\lambda = 0.33  suicides per month
+t = 12  months in a year
+\lambda t = 0.33 \times 12 = 3.96 
+$$
 
 The probability for  k  suicides in a year is:
 
@@ -85,11 +86,13 @@ $$
 
 For different values of  k :
 
-	•	 P(X = 0) \approx 0.019 
-	•	 P(X = 1) \approx 0.075 
-	•	 P(X = 2) \approx 0.148 
-	•	 P(X = 3) \approx 0.195 
-	•	 P(X = 4) \approx 0.193 
+$$
+P(X = 0) \approx 0.019 
+P(X = 1) \approx 0.075 
+P(X = 2) \approx 0.148 
+P(X = 3) \approx 0.195 
+P(X = 4) \approx 0.193 
+$$
 
 The most probable number of suicides is 3.
 
@@ -97,7 +100,9 @@ Part (b): Probability of two suicides in one week
 
 To find the weekly rate of suicides:
 
-	•	 \lambda_{\text{week}} = \frac{0.33}{4.33} \approx 0.076  suicides per week
+$$
+\lambda_{\text{week}} = \frac{0.33}{4.33} \approx 0.076  suicides per week
+$$
 
 For  k = 2  suicides in one week:
 
