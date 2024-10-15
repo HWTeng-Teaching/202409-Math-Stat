@@ -72,7 +72,8 @@ Base case: $\(\Gamma(1) = 1 = 0!\)$
    $\\Gamma (n) = (n - 1)!\) holds for \ n = 1, 2, 3, \ldots\$
 
 
-D) 
+D) <img width="698" alt="image" src="https://github.com/user-attachments/assets/05cae788-6db8-404a-96f5-2e069b372641">
+
 
 
 
