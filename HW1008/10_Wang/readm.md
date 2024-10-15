@@ -1,4 +1,4 @@
-## 49. The gamma function is a generalized factorial function.
+## HW1008Q1
 
 ### a. Show that Γ(1) = 1.
 
@@ -108,3 +108,5 @@ Therefore, we conclude:
 $$
 \Gamma\left(\frac{n}{2}\right) = \sqrt{\pi} \frac{(n - 1)!}{2^{n - 1}} \binom{n - 1}{\frac{n - 1}{2}}.
 $$
+
+## HW1008Q2
