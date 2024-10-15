@@ -85,6 +85,27 @@ D)
 
 ## Question 2.51
 
+## Quesrion 2.53
+<img width="768" alt="image" src="https://github.com/user-attachments/assets/13fbce3f-a3c0-48c4-b3b8-3efff2b801bc">
 
-<img width="648" alt="image" src="https://github.com/user-attachments/assets/211a1fbd-0eda-4cbb-a480-48499da885c2">
+<img width="760" alt="image" src="https://github.com/user-attachments/assets/790c8813-07a6-4c8c-b076-2799590f9440">
+
+
+## Question 2.59
+
+<img width="727" alt="image" src="https://github.com/user-attachments/assets/02b6c00b-8660-46b2-b3f0-0eb702222dc2">
+
+
+## Question 2.65
+
+
+## Proof C
+<img width="721" alt="image" src="https://github.com/user-attachments/assets/8a2d1f96-396a-487f-90ab-e2e262edb805">
+
+## Proof D
+<img width="770" alt="image" src="https://github.com/user-attachments/assets/0002388e-4af4-4d33-a532-91d8260c884c">
+
+
+
+
 
