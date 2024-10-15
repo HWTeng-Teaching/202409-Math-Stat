@@ -84,6 +84,7 @@ D)
 
 
 ## Question 2.51
+<img width="749" alt="image" src="https://github.com/user-attachments/assets/7faff3f6-f1ea-46c4-93a5-9035f68a7bf1">
 
 ## Quesrion 2.53
 <img width="768" alt="image" src="https://github.com/user-attachments/assets/13fbce3f-a3c0-48c4-b3b8-3efff2b801bc">
@@ -98,6 +99,7 @@ D)
 
 ## Question 2.65
 
+<img width="732" alt="image" src="https://github.com/user-attachments/assets/d3a02c58-9080-44c2-b8de-0df0182e0c46">
 
 ## Proof C
 <img width="721" alt="image" src="https://github.com/user-attachments/assets/8a2d1f96-396a-487f-90ab-e2e262edb805">
