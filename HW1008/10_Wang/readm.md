@@ -111,6 +111,8 @@ $$
 
 ## HW1008Q2
 
+<img width="1022" alt="截圖 2024-10-14 上午9 43 20" src="https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1008/10_Wang/S__1138695_0.jpg">
+
 ## HW1008Q3
 
 
@@ -294,3 +296,5 @@ PROOF $P(X\le x)$ = $F(x)$
  Therefore, the cdf of x is F
 
  ## HW1008Q7
+
+ <img width="1022" alt="截圖 2024-10-14 上午9 43 20" src="https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1008/10_Wang/S__1138693_0.jpg">
