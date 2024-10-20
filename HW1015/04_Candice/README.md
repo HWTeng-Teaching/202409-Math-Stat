@@ -104,6 +104,39 @@ f_Y(y) = (1 / (yσ√(2π))) * exp(-(log(y) - μ)² / (2σ²)), for y > 0
 
 ## Q4 
 ## 
+## Answer 
+## Density of \( cX \) when \( X \) follows a Gamma Distribution
+
+Let \( X \) follow a Gamma distribution with shape parameter \( k \) and scale parameter \( \lambda \). The PDF of \( X \) is:
+
+$$
+f_X(x) = \frac{1}{\Gamma(k) \lambda^k} x^{k-1} e^{-x / \lambda}, \quad x > 0
+$$
+
+We want to find the PDF of \( Y = cX \), where \( c \) is a positive constant.
+
+### Step 1: Change of Variables
+
+Since \( Y = cX \), we have \( X = \frac{Y}{c} \) and \( \frac{dX}{dY} = \frac{1}{c} \).
+
+The PDF of \( Y \) is:
+
+$$
+f_Y(y) = \frac{1}{c} f_X\left(\frac{y}{c}\right)
+$$
+
+Substitute the PDF of \( X \) into the equation:
+
+$$
+f_Y(y) = \frac{1}{c} \cdot \frac{1}{\Gamma(k) \lambda^k} \left(\frac{y}{c}\right)^{k-1} \exp\left(-\frac{y}{c\lambda}\right)
+$$
+
+$$
+f_Y(y) = \frac{1}{\Gamma(k)} \cdot \frac{1}{(c\lambda)^k} \cdot y^{k-1} \exp\left(-\frac{y}{c\lambda}\right), \quad y > 0
+$$
+
+The result shows that only the scale parameter \( \lambda \) is affected by multiplying \( X \) by \( c \), turning it into \( c\lambda \). This confirms that \( \lambda \) is a scale parameter.
+
 ## Q8
 ## Find the joint and marginal densities corresponding to the cdf
 
