@@ -37,7 +37,42 @@ plt.tight_layout()
 plt.show()
 ```
 ## Q2
+## Write python codes to illustration Ch02.65 for α = 2.
 
+## Answer:
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the inverse CDF for α = 2
+def inverse_cdf(u):
+    # This is derived from solving the quadratic equation for the CDF of α = 2
+    # F(x) = 0.5 * (x + x^2 + 1), solve for x in terms of u
+    return (-1 + np.sqrt(1 + 4*u)) / 2
+
+# Number of samples
+n_samples = 10000
+
+# Generate uniform random numbers
+U = np.random.uniform(0, 1, size=n_samples)
+
+# Apply the inverse CDF to get samples from the target distribution
+X = inverse_cdf(U)
+
+# Plot the histogram of the generated samples
+plt.hist(X, bins=50, density=True, alpha=0.7, color='purple', label='Generated Samples')
+
+# Plot the actual PDF for comparison
+x_vals = np.linspace(-1, 1, 500)
+pdf_vals = (1 + 2*x_vals) / 2
+plt.plot(x_vals, pdf_vals, 'r-', label='PDF (α=2)')
+
+plt.title("Generated Samples vs PDF for α = 2")
+plt.xlabel("x")
+plt.ylabel("Density")
+plt.legend()
+plt.show()
+```
 ## Q8
 ## Find the joint and marginal densities corresponding to the cdf
 
