@@ -1,3 +1,39 @@
+## Q1
+## Write python codes to illustrate Propositions C and D
+
+## Answer:
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy.stats as stats
+
+# Proposition C: Simulate X ~ Exp(1) and calculate Z = F(X)
+n_samples = 10000
+X = np.random.exponential(scale=1, size=n_samples)  # X ~ Exp(1)
+F_X = stats.expon.cdf(X)  # F(X) using the CDF of Exp(1), should follow Uniform(0,1)
+
+# Proposition D: Simulate U ~ Uniform(0, 1) and calculate X = F^-1(U)
+U = np.random.uniform(0, 1, size=n_samples)  # U ~ Uniform(0, 1)
+F_inv_U = stats.expon.ppf(U)  # F^-1(U) using the inverse CDF (quantile function)
+
+# Plot results for Proposition C
+plt.figure(figsize=(12, 5))
+
+plt.subplot(1, 2, 1)
+plt.hist(F_X, bins=50, density=True, alpha=0.7, color='blue')
+plt.title("Proposition C: Histogram of Z = F(X) \n(should be Uniform(0, 1))")
+plt.xlabel("Z")
+plt.ylabel("Density")
+
+# Plot results for Proposition D
+plt.subplot(1, 2, 2)
+plt.hist(F_inv_U, bins=50, density=True, alpha=0.7, color='green')
+plt.title("Proposition D: Histogram of X = F^-1(U) \n(should be Exp(1))")
+plt.xlabel("X")
+plt.ylabel("Density")
+
+plt.tight_layout()
+plt.show()
+
 ## Q8
 ## Find the joint and marginal densities corresponding to the cdf
 
