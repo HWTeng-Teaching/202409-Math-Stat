@@ -82,7 +82,7 @@ The PDF of Z is:
 
 f_Z(z) = (1 / (√(2πσ²))) * exp(-(z - μ)² / (2σ²))
 
-We know that Y = exp(Z), so:
+ Y = exp(Z), so
 
 Z = log(Y)
 
@@ -154,6 +154,103 @@ $$
 
 
 The PDF of Y = cX is still a Gamma distribution with the same shape parameter k, but the scale parameter λ is replaced by cλ. This shows that only the scale parameter λ is affected by multiplying X by a constant c, which justifies calling λ a scale parameter.
+
+## Q5
+
+## One of the most commonly used (but not one of the best) methods of generating pseudorandom numbers is the linear congruential method, which works as follows. Let x₀ be an initial number (the “seed”). The sequence is generated recursively as:
+
+$$
+x_n = (a x_{n-1} + c) \mod m
+$$
+
+### a. 
+Choose values of a, c, and m, and try this out. Do the sequences "look" random?
+
+### b.
+Making good choices of a, c, and m involves both art and theory. The following are some values that have been proposed:
+
+1. a = 69069, c = 0, m = 2³¹
+2. a = 65539, c = 0, m = 2³¹
+
+The latter is an infamous generator called **RANDU**. Try out these schemes and examine the results.
+
+## Answer
+
+$$
+x_n = (a x_{n-1} + c) \mod m
+$$
+
+(a)
+
+$$
+a = 69069, \quad c = 0, \quad m = 2^{31}
+$$
+
+if x₀ = 1, then:
+
+$$
+x_1 = (69069 \times 1 + 0) \mod 2^{31}
+$$
+
+$$
+x_2 = (69069 \times x_1 + 0) \mod 2^{31}
+$$
+
+For part (b), try the provided values:
+
+1. a = 69069, c = 0, m = 2³¹
+2. a = 65539, c = 0, m = 2³¹ (RANDU)
+
+## Q6
+## Question 3
+
+Three players play 10 independent rounds of a game, and each player has a probability of 1/3 of winning each round. Find the joint distribution of the number of games won by each of the three players.
+
+## Solution
+
+This problem can be solved using the **multinomial distribution**, which generalizes the binomial distribution to multiple outcomes.
+
+### Step 1: Define the Random Variables
+
+Let:
+- X₁ be the number of games won by player 1,
+- X₂ be the number of games won by player 2,
+- X₃ be the number of games won by player 3.
+
+These three random variables represent the number of games won by each player out of 10 rounds, where each round can only have one winner.
+
+### Step 2: Multinomial Distribution
+
+Since there are three possible outcomes in each round (each player winning), the number of games won by each player follows a **multinomial distribution**.
+
+The probability mass function (PMF) for the multinomial distribution is given by:
+
+$$
+P(X_1 = x_1, X_2 = x_2, X_3 = x_3) = \frac{10!}{x_1! x_2! x_3!} \left( \frac{1}{3} \right)^{x_1} \left( \frac{1}{3} \right)^{x_2} \left( \frac{1}{3} \right)^{x_3}
+$$
+
+subject to the condition:
+
+$$
+x_1 + x_2 + x_3 = 10
+$$
+
+### Step 3: Interpretation
+
+- Each round has three possible outcomes (each player winning), and each outcome occurs with probability 1/3.
+- The total number of rounds is 10, so the joint distribution of the number of games won by the three players is multinomial with parameters n = 10 (number of rounds) and p₁ = p₂ = p₃ = 1/3 (equal probability for each player to win).
+
+Therefore, the joint distribution of the numbers of games won by each player is:
+
+$$
+(X_1, X_2, X_3) \sim \text{Multinomial}\left(10, \left( \frac{1}{3}, \frac{1}{3}, \frac{1}{3} \right)\right)
+$$
+
+This distribution gives the probabilities for all possible combinations of x₁, x₂, and x₃ (the numbers of games won by each player), where:
+
+$$
+x_1 + x_2 + x_3 = 10
+$$
 
 ## Q8
 ## Find the joint and marginal densities corresponding to the cdf
