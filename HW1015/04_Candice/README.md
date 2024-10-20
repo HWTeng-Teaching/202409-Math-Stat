@@ -2,6 +2,8 @@
 ## Write python codes to illustrate Propositions C and D
 
 ## Answer:
+
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as stats
@@ -33,6 +35,7 @@ plt.ylabel("Density")
 
 plt.tight_layout()
 plt.show()
+```
 
 ## Q8
 ## Find the joint and marginal densities corresponding to the cdf
