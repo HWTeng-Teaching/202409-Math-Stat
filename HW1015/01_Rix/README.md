@@ -70,7 +70,9 @@ RANDU
 ![image](https://github.com/user-attachments/assets/e3907781-91ab-4297-83e3-2d1d61b2d3b6)
 ![image](https://github.com/user-attachments/assets/28fff1f1-8a92-4d21-b4dd-1b10c9f4cfb8)
 ![image](https://github.com/user-attachments/assets/07810a6c-5272-469e-bac7-d371efb2ed26)  
-It looks 'random'
+It looks 'random'  
+But there are only odd numbers.  
+If the seed is an even number, and there will be all even numbers.  
 
 ## Q6. 
 
