@@ -90,6 +90,16 @@ $$
 From the final expression, we can see that the transformation $\( X \to cX \)$ only affects the rate parameter $\( \lambda \)$, replacing it with $\( \frac{\lambda}{c} \)$. The shape parameter $\( \alpha \)$ remains unchanged. This demonstrates that $\( \lambda \)$ is a **scale parameter** because scaling $\( X \)$ by $\( c \)$ only scales the rate parameter, justifying its interpretation as a scale parameter in the gamma distribution.
 
 ### Ch02.72 (Ch2.3)
+#### part a
+![image](https://github.com/user-attachments/assets/79c5256d-1b28-4157-9d18-32944f6deecf)  
+Scheme a: [0, 1, 6, 7, 4, 5, 2, 3, 0, 1, 6, 7, 4, 5, 2, 3, 0, 1, 6, 7]---not random
+#### part b ---- odd then odd, even than even
+![image](https://github.com/user-attachments/assets/a83c8eb4-231b-4697-8977-47694982ade5)  
+Scheme 1:  
+[69069, 475559465, 654291925, 1790562961, 957348637, 2091487033, 2135332261, 381957665, 1744831853, 1303896393, 1945705589, 560118449, 2050718909, 1672838233, 201201733, 435810369, 1855566093, 270364777, 1454463253, 1184851665]-----random  
+![image](https://github.com/user-attachments/assets/21a904e6-5a74-4887-adf0-a462f77203e0)  
+Scheme 2 (RANDU):  
+[65539, 393225, 1769499, 7077969, 26542323, 95552217, 334432395, 1146624417, 1722371299, 14608041, 1766175739, 1875647473, 1800754131, 366148473, 1022489195, 692115265, 1392739779, 2127401289, 229749723, 1559239569]---random
 ### Ch03.03 (Ch3.2)
 #### Joint Distribution of Games Won by Three Players
 
