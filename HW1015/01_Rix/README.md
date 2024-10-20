@@ -82,6 +82,7 @@ If the seed is an even number, and there will be all even numbers.
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/ad358e4b-9b60-4afe-9ffb-7a55c5f041d0)
 
 
 ## Q7. 
@@ -92,7 +93,7 @@ If the seed is an even number, and there will be all even numbers.
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/8527414d-bdb4-4a3a-bfe0-e381918d2858)
 
 ## Q8. 
 
@@ -102,3 +103,4 @@ If the seed is an even number, and there will be all even numbers.
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/fcf5fa5e-c57c-456d-9c5f-5c3faf586ca9)
