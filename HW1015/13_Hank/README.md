@@ -38,3 +38,53 @@ plt.title("Proposition D: X = F^(-1)(U) ~ N(0, 1)")
 plt.tight_layout()
 plt.show()
 ```
+
+## Q2
+write python code to illustration Ch02.65 for $\alpha$ = $0.5$
+![image](https://github.com/user-attachments/assets/3c6c69f0-4306-41de-86ea-229763a8f578)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the inverse CDF for α = 2
+def inverse_cdf(u):
+    # This is derived from solving the quadratic equation for the CDF of α = 2
+    # F(x) = 0.5 * (x + x^2 + 1), solve for x in terms of u
+    return (-1 + np.sqrt(1 + 4*u)) / 2
+
+# Number of samples
+n_samples = 10000
+
+# Generate uniform random numbers
+U = np.random.uniform(0, 1, size=n_samples)
+
+# Apply the inverse CDF to get samples from the target distribution
+X = inverse_cdf(U)
+
+# Plot the histogram of the generated samples
+plt.hist(X, bins=50, density=True, alpha=0.7, color='purple', label='Generated Samples')
+
+# Plot the actual PDF for comparison
+x_vals = np.linspace(-1, 1, 500)
+pdf_vals = (1 + 2*x_vals) / 2
+plt.plot(x_vals, pdf_vals, 'r-', label='PDF (α=2)')
+
+plt.title("Generated Samples vs PDF for α = 2")
+plt.xlabel("x")
+plt.ylabel("Density")
+plt.legend()
+plt.show()
+```
+## Q3
+![image](https://github.com/user-attachments/assets/8283ffe8-7eea-447e-a7ea-676c9f4cb58f)
+
+## Q4
+
+## Q5
+
+## Q6
+
+## Q7
+
+## Q8
