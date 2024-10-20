@@ -10,10 +10,14 @@ Write python codes to illustrate Propositions C and D (suppose $X\sim exp(1)$)
 ![image](https://github.com/user-attachments/assets/440f0b19-087a-45b3-bf30-691e555c702b)  
 ![image](https://github.com/user-attachments/assets/d240d996-dfe8-4d20-ab16-ee3740f9ea93)
 
-
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/f66a033b-dc03-4f0f-ad3a-3a792ced9c49)
+![Figure_1](https://github.com/user-attachments/assets/67e9cafc-812d-41d1-952d-b5fbb1423511)
+![image](https://github.com/user-attachments/assets/de146f54-2a45-4c0b-b86d-9c506b4ac9ce)
+![1](https://github.com/user-attachments/assets/c31e8827-1f09-4553-ad11-6037514ebd6c)
+![2](https://github.com/user-attachments/assets/2aa22dd8-e407-4cfa-8c71-875f78b6ec91)
+![3](https://github.com/user-attachments/assets/1575a3b4-1ccf-474b-ac2b-d6386e681733)
 
 ## Q2. 
 
