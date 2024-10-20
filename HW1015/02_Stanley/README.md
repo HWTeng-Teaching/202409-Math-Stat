@@ -146,4 +146,201 @@ $$
 This represents a multinomial distribution with parameters $\( n = 10 \)$ and $\( p_1 = p_2 = p_3 = \frac{1}{3} \)$.
 
 ### Ch03.06 (Ch3.2)
+# Marginal Densities of Points Chosen Randomly in an Ellipse
+
+Consider a point chosen randomly in the interior of an ellipse defined by the equation:
+
+$$
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1.
+$$
+
+We aim to find the marginal densities of the $\( x \)$ and $\( y \) $coordinates of the point.
+
+## Step 1: Area of the Ellipse
+
+The area $\( A \)$ of the ellipse can be calculated using the formula:
+
+$$
+A = \pi a b.
+$$
+
+## Step 2: Uniform Distribution Inside the Ellipse
+
+When a point is chosen uniformly from the interior of the ellipse, the joint density function \( f_{X,Y}(x,y) \) is given by:
+
+$$
+f_{X,Y}(x,y) = \frac{1}{A} = \frac{1}{\pi ab}
+$$
+
+for points $\( (x,y) \)$ that satisfy the ellipse equation$ \( \frac{x^2}{a^2} + \frac{y^2}{b^2} < 1 \)$, and $\( 0 \)$ otherwise.
+
+## Step 3: Marginal Densities
+
+To find the marginal densities \( f_X(x) \) and \( f_Y(y) \), we need to integrate the joint density over the respective variable.
+
+### Marginal Density of \( X \)
+
+The marginal density \( f_X(x) \) is obtained by integrating \( f_{X,Y}(x,y) \) over all \( y \):
+
+$$
+f_X(x) = \int_{-\sqrt{b^2(1 - \frac{x^2}{a^2})}}^{\sqrt{b^2(1 - \frac{x^2}{a^2})}} f_{X,Y}(x,y) \, dy.
+$$
+
+Substituting \( f_{X,Y}(x,y) \):
+
+$$
+f_X(x) = \int_{-\sqrt{b^2(1 - \frac{x^2}{a^2})}}^{\sqrt{b^2(1 - \frac{x^2}{a^2})}} \frac{1}{\pi ab} \, dy.
+$$
+
+Calculating the integral:
+
+$$
+f_X(x) = \frac{1}{\pi ab} \cdot \left[2\sqrt{b^2(1 - \frac{x^2}{a^2})}\right] = \frac{2\sqrt{b^2(1 - \frac{x^2}{a^2})}}{\pi ab}.
+$$
+
+Thus, the marginal density of \( X \) is:
+
+$$
+f_X(x) = \frac{2b}{\pi a} \sqrt{1 - \frac{x^2}{a^2}}, \quad \text{for } -a < x < a.
+$$
+
+### Marginal Density of \( Y \)
+
+Similarly, the marginal density \( f_Y(y) \) is found by integrating \( f_{X,Y}(x,y) \) over all \( x \):
+
+$$
+f_Y(y) = \int_{-\sqrt{a^2(1 - \frac{y^2}{b^2})}}^{\sqrt{a^2(1 - \frac{y^2}{b^2})}} f_{X,Y}(x,y) \, dx.
+$$
+
+Substituting \( f_{X,Y}(x,y) \):
+
+$$
+f_Y(y) = \int_{-\sqrt{a^2(1 - \frac{y^2}{b^2})}}^{\sqrt{a^2(1 - \frac{y^2}{b^2})}} \frac{1}{\pi ab} \, dx.
+$$
+
+Calculating this integral:
+
+$$
+f_Y(y) = \frac{1}{\pi ab} \cdot \left[2\sqrt{a^2(1 - \frac{y^2}{b^2})}\right] = \frac{2\sqrt{a^2(1 - \frac{y^2}{b^2})}}{\pi ab}.
+$$
+
+Thus, the marginal density of \( Y \) is:
+
+$$
+f_Y(y) = \frac{2a}{\pi b} \sqrt{1 - \frac{y^2}{b^2}}, \quad \text{for } -b < y < b.
+$$
+
+## Summary
+
+The marginal densities of the \( x \) and \( y \) coordinates of a point chosen randomly in the interior of the ellipse are:
+
+1. **Marginal Density of \( X \)**:
+
+   $$f_X(x) = \frac{2b}{\pi a} \sqrt{1 - \frac{x^2}{a^2}}$$ , for -a ≤ x ≤ a.
+   
+
+2. **Marginal Density of \( Y \)**:
+
+   $$f_Y(y) = \frac{2a}{\pi b} \sqrt{1 - \frac{y^2}{b^2}}$$ ,for -b ≤ y ≤ b.
+  
+
 ### Ch03.07 (Ch3.2)
+# Joint and Marginal Densities from the CDF
+
+Given the cumulative distribution function (CDF):
+
+$$
+F(x, y) = (1 - e^{-\alpha x})(1 - e^{-\beta y}), \quad x \geq 0, y \geq 0, \quad \alpha > 0, \beta > 0,
+$$
+
+we aim to find the **joint probability density function (PDF)** and the **marginal densities** for \( x \) and \( y \).
+
+## Step 1: Joint Density Function
+
+To find the joint density function \( f(x, y) \), we differentiate the CDF \( F(x, y) \) with respect to both \( x \) and \( y \):
+
+$$
+f(x, y) = \frac{\partial^2}{\partial x \, \partial y} F(x, y).
+$$
+
+### Partial Derivatives:
+
+1. **With respect to \( x \):**
+
+   Using the product rule:
+
+   $$\frac{\partial}{\partial x} F(x, y) = (1 - e^{-\beta y}) \cdot \alpha e^{-\alpha x}$$
+
+2. **With respect to \( y \):**
+
+   Differentiating the result with respect to \( y \):
+
+   $$f(x, y) = \alpha e^{-\alpha x} \cdot \beta e^{-\beta y}$$
+
+Thus, the **joint density function** is:
+
+$$
+f(x, y) = \alpha \beta e^{-\alpha x} e^{-\beta y}, \quad x \geq 0, y \geq 0.
+$$
+
+This represents the PDF of two independent exponential distributions with parameters $\( \alpha \) and \( \beta \)$.
+
+## Step 2: Marginal Density of \( X \)
+
+To find the **marginal density** of \( X \), we integrate the joint density over \( y \):
+
+$$
+f_X(x) = \int_0^{\infty} f(x, y) \, dy.
+$$
+
+Substituting \( f(x, y) = \alpha \beta e^{-\alpha x} e^{-\beta y} \):
+
+$$
+f_X(x) = \alpha e^{-\alpha x} \int_0^{\infty} \beta e^{-\beta y} \, dy = \alpha e^{-\alpha x}.
+$$
+
+Thus, the marginal density of \( X \) is:
+
+$$
+f_X(x) = \alpha e^{-\alpha x}, \quad x \geq 0.
+$$
+
+This is the PDF of an exponential distribution with parameter $\( \alpha \)$.
+
+## Step 3: Marginal Density of \( Y \)
+
+Similarly, the **marginal density** of \( Y \) is found by integrating the joint density over \( x \):
+
+$$
+f_Y(y) = \int_0^{\infty} f(x, y) \, dx.
+$$
+
+Substituting \( f(x, y) = \alpha \beta e^{-\alpha x} e^{-\beta y} \):
+
+$$
+f_Y(y) = \beta e^{-\beta y} \int_0^{\infty} \alpha e^{-\alpha x} \, dx = \beta e^{-\beta y}.
+$$
+
+Thus, the marginal density of \( Y \) is:
+
+$$
+f_Y(y) = \beta e^{-\beta y}, \quad y \geq 0.
+$$
+
+This is the PDF of an exponential distribution with parameter $\( \beta \)$.
+
+## Summary
+
+1. **Joint Density Function**:
+
+   $$f(x, y) = \alpha \beta e^{-\alpha x} e^{-\beta y}, \quad x \geq 0, y \geq 0$$
+
+2. **Marginal Density of \( X \)**:
+
+   $$f_X(x) = \alpha e^{-\alpha x}, \quad x \geq 0$$
+
+3. **Marginal Density of \( Y \)**:
+
+   $$f_Y(y) = \beta e^{-\beta y}, \quad y \geq 0$$
+
+Both marginal densities correspond to exponential distributions with parameters $\( \alpha \) and \( \beta \)$, respectively.
