@@ -109,6 +109,7 @@ f_Y(y) = (1 / (yσ√(2π))) * exp(-(log(y) - μ)² / (2σ²)), for y > 0
 ## Answer 
 
 The PDF of X is:
+
 $$
 f_X(x) = \frac{1}{\Gamma(k) \lambda^k} x^{k-1} e^{-x / \lambda}, \quad x > 0
 $$
@@ -126,11 +127,16 @@ $$
 $$
 
 The PDF of Y is given by:
+
 $$
 f_Y(y) = f_X\left(\frac{y}{c}\right) \cdot \left|\frac{dX}{dY}\right|
 $$
 
-Substituting \( \frac{dX}{dY} = \frac{1}{c} \), we get:
+Substituting 
+
+$$
+\( \frac{dX}{dY} = \frac{1}{c} \)
+$$
 
 $$
 f_Y(y) = \frac{1}{c} f_X\left(\frac{y}{c}\right)
