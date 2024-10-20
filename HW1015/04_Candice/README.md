@@ -36,6 +36,7 @@ plt.ylabel("Density")
 plt.tight_layout()
 plt.show()
 ```
+## Q2
 
 ## Q8
 ## Find the joint and marginal densities corresponding to the cdf
