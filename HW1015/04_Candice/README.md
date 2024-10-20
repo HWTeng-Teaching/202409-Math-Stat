@@ -73,6 +73,46 @@ plt.ylabel("Density")
 plt.legend()
 plt.show()
 ```
+## Q3
+## Answer
+## Lognormal Distribution Derivation
+
+We are given Z ~ N(μ, σ²), which means Z follows a normal distribution with mean μ and variance σ². We define a new random variable Y = exp(Z), and we need to find the probability density function (PDF) of Y.
+
+### Step 1: Start with the PDF of Z
+
+The PDF of Z is:
+
+f_Z(z) = (1 / (√(2πσ²))) * exp(-(z - μ)² / (2σ²))
+
+### Step 2: Define the transformation
+
+We know that Y = exp(Z), so:
+
+Z = log(Y)
+
+### Step 3: Apply the change of variables
+
+The relationship between the PDFs of Z and Y is:
+
+f_Y(y) = f_Z(z) * |dz/dy|
+
+Since Z = log(Y), we have dz/dy = 1/y. Therefore, the PDF of Y becomes:
+
+f_Y(y) = f_Z(log(y)) * (1 / y)
+
+### Step 4: Substitute the PDF of Z
+
+Substituting the PDF of Z into the equation:
+
+f_Y(y) = (1 / (√(2πσ²))) * exp(-(log(y) - μ)² / (2σ²)) * (1 / y)
+
+### Final Lognormal PDF
+
+The PDF of the lognormal random variable Y is:
+
+f_Y(y) = (1 / (yσ√(2π))) * exp(-(log(y) - μ)² / (2σ²)), for y > 0
+
 ## Q8
 ## Find the joint and marginal densities corresponding to the cdf
 
