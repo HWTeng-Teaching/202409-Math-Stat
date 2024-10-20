@@ -76,15 +76,4 @@ plt.ylabel("Density")
 plt.legend()
 plt.show()
 ```
-## Q3
-![image](https://github.com/user-attachments/assets/8283ffe8-7eea-447e-a7ea-676c9f4cb58f)
-
-## Q4
-
-## Q5
-
-## Q6
-
-## Q7
-
-## Q8
+![2041d285-ca34-4608-abc9-46a14493a66d](https://github.com/user-attachments/assets/27af9661-ae57-4bf7-a5e1-9b21895ec71a)
