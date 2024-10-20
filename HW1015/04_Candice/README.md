@@ -259,61 +259,55 @@ $$
 
 The joint density is 0 outside the ellipse.
 
-To find the marginal density \(f_X(x)\), we integrate the joint density function over \(y\), keeping \(x\) fixed:
-
 $$
 f_X(x) = \int_{-\sqrt{b^2 \left(1 - \frac{x^2}{a^2}\right)}}^{\sqrt{b^2 \left(1 - \frac{x^2}{a^2}\right)}} f_{X,Y}(x, y) \, dy
 $$
 
-Since \( f_{X,Y}(x, y) = \frac{1}{\pi a b} \) inside the ellipse, we get:
 
 $$
 f_X(x) = \frac{1}{\pi a b} \int_{-\sqrt{b^2 \left(1 - \frac{x^2}{a^2}\right)}}^{\sqrt{b^2 \left(1 - \frac{x^2}{a^2}\right)}} 1 \, dy
 $$
 
-The length of the interval for \(y\) is:
+The length of the interval for y is:
 
 $$
 2 \sqrt{b^2 \left(1 - \frac{x^2}{a^2}\right)}
 $$
 
-Thus, the marginal density \( f_X(x) \) becomes:
+Thus, the marginal density  f_X(x) becomes:
 
 $$
 f_X(x) = \frac{1}{\pi a b} \cdot 2 \sqrt{b^2 \left(1 - \frac{x^2}{a^2}\right)} = \frac{2}{\pi a} \sqrt{1 - \frac{x^2}{a^2}}, \quad -a \leq x \leq a
 $$
 
-Similarly, to find the marginal density \(f_Y(y)\), we integrate the joint density function over \(x\), keeping \(y\) fixed:
-
 $$
 f_Y(y) = \int_{-\sqrt{a^2 \left(1 - \frac{y^2}{b^2}\right)}}^{\sqrt{a^2 \left(1 - \frac{y^2}{b^2}\right)}} f_{X,Y}(x, y) \, dx
 $$
 
-Again, since \( f_{X,Y}(x, y) = \frac{1}{\pi a b} \) inside the ellipse, we get:
 
 $$
 f_Y(y) = \frac{1}{\pi a b} \int_{-\sqrt{a^2 \left(1 - \frac{y^2}{b^2}\right)}}^{\sqrt{a^2 \left(1 - \frac{y^2}{b^2}\right)}} 1 \, dx
 $$
 
-The length of the interval for \(x\) is:
+The length of the interval for x is:
 
 $$
 2 \sqrt{a^2 \left(1 - \frac{y^2}{b^2}\right)}
 $$
 
-Thus, the marginal density \( f_Y(y) \) becomes:
+Thus, the marginal density f_Y(y) becomes:
 
 $$
 f_Y(y) = \frac{1}{\pi a b} \cdot 2 \sqrt{a^2 \left(1 - \frac{y^2}{b^2}\right)} = \frac{2}{\pi b} \sqrt{1 - \frac{y^2}{b^2}}, \quad -b \leq y \leq b
 $$
 
-- The marginal density of \(x\) is:
+- The marginal density of x is:
 
 $$
 f_X(x) = \frac{2}{\pi a} \sqrt{1 - \frac{x^2}{a^2}}, \quad -a \leq x \leq a
 $$
 
-- The marginal density of \(y\) is:
+- The marginal density of y is:
 
 $$
 f_Y(y) = \frac{2}{\pi b} \sqrt{1 - \frac{y^2}{b^2}}, \quad -b \leq y \leq b
