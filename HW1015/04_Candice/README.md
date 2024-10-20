@@ -206,22 +206,16 @@ For part (b), try the provided values:
 
 Three players play 10 independent rounds of a game, and each player has a probability of 1/3 of winning each round. Find the joint distribution of the number of games won by each of the three players.
 
-## Solution
+## Answer
 
 This problem can be solved using the **multinomial distribution**, which generalizes the binomial distribution to multiple outcomes.
-
-### Step 1: Define the Random Variables
 
 Let:
 - X₁ be the number of games won by player 1,
 - X₂ be the number of games won by player 2,
 - X₃ be the number of games won by player 3.
 
-These three random variables represent the number of games won by each player out of 10 rounds, where each round can only have one winner.
-
-### Step 2: Multinomial Distribution
-
-Since there are three possible outcomes in each round (each player winning), the number of games won by each player follows a **multinomial distribution**.
+**multinomial distribution**.
 
 The probability mass function (PMF) for the multinomial distribution is given by:
 
@@ -235,21 +229,16 @@ $$
 x_1 + x_2 + x_3 = 10
 $$
 
-### Step 3: Interpretation
-
-- Each round has three possible outcomes (each player winning), and each outcome occurs with probability 1/3.
-- The total number of rounds is 10, so the joint distribution of the number of games won by the three players is multinomial with parameters n = 10 (number of rounds) and p₁ = p₂ = p₃ = 1/3 (equal probability for each player to win).
-
 Therefore, the joint distribution of the numbers of games won by each player is:
 
 $$
-(X_1, X_2, X_3) \sim \text{Multinomial}\left(10, \left( \frac{1}{3}, \frac{1}{3}, \frac{1}{3} \right)\right)
+P(X_1 = x_1, X_2 = x_2, X_3 = x_3) = \frac{10!}{x_1! x_2! x_3!} \left( \frac{1}{3} \right)^{x_1} \left( \frac{1}{3} \right)^{x_2} \left( \frac{1}{3} \right)^{x_3}
 $$
 
-This distribution gives the probabilities for all possible combinations of x₁, x₂, and x₃ (the numbers of games won by each player), where:
+where:
 
 $$
-x_1 + x_2 + x_3 = 10
+x_1 + x_2 + x_3 = 10, x_i>=0
 $$
 
 ## Q8
