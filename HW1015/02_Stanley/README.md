@@ -85,11 +85,65 @@ $$
 f_Y(y) = \frac{\left(\frac{\lambda}{c}\right)^\alpha}{\Gamma(\alpha)} y^{\alpha-1} e^{-\frac{\lambda}{c} y}, \quad y > 0.
 $$
 
-## Conclusion: $\( \lambda \)$ as a Scale Parameter
+#### Conclusion: $\( \lambda \)$ as a Scale Parameter
 
 From the final expression, we can see that the transformation $\( X \to cX \)$ only affects the rate parameter $\( \lambda \)$, replacing it with $\( \frac{\lambda}{c} \)$. The shape parameter $\( \alpha \)$ remains unchanged. This demonstrates that $\( \lambda \)$ is a **scale parameter** because scaling $\( X \)$ by $\( c \)$ only scales the rate parameter, justifying its interpretation as a scale parameter in the gamma distribution.
 
 ### Ch02.72 (Ch2.3)
 ### Ch03.03 (Ch3.2)
+#### Joint Distribution of Games Won by Three Players
+
+Three players play 10 independent rounds of a game, where each player has a probability of \( \frac{1}{3} \) of winning each round. We want to find the joint distribution of the numbers of games won by each of the three players.
+
+#### Problem Setup
+
+Let:
+- \( X_1 \): the number of games won by Player 1,
+- \( X_2 \): the number of games won by Player 2,
+- \( X_3 \): the number of games won by Player 3.
+
+We are interested in the joint distribution of \( (X_1, X_2, X_3) \).
+
+#### Distribution
+
+Since there are three players and the total number of games is 10, the number of wins for each player follows a multinomial distribution. The parameters for this distribution are:
+- Total number of trials (games), \( n = 10 \),
+- The probabilities of winning for each player: 
+  - $\( p_1 = \frac{1}{3} \)$,
+  - $\( p_2 = \frac{1}{3} \)$,
+  - $\( p_3 = \frac{1}{3} \)$.
+
+The joint distribution of $\( (X_1, X_2, X_3) \)$ is given by:
+
+$$
+P(X_1 = k_1, X_2 = k_2, X_3 = k_3) = \frac{10!}{k_1! k_2! k_3!} p_1^{k_1} p_2^{k_2} p_3^{k_3}
+$$
+
+where:
+- $\( k_1 + k_2 + k_3 = 10 \)$ (the total number of games played),
+- $\( k_1, k_2, k_3 \geq 0 \)$ (the number of games won by each player).
+
+Substituting the values for \( p_1 \), \( p_2 \), and \( p_3 \):
+
+$$
+P(X_1 = k_1, X_2 = k_2, X_3 = k_3) = \frac{10!}{k_1! k_2! k_3!} \left(\frac{1}{3}\right)^{k_1} \left(\frac{1}{3}\right)^{k_2} \left(\frac{1}{3}\right)^{k_3}
+$$
+
+This can be simplified to:
+
+$$
+P(X_1 = k_1, X_2 = k_2, X_3 = k_3) = \frac{10!}{k_1! k_2! k_3!} \left(\frac{1}{3}\right)^{10}
+$$
+
+#### Summary
+
+Thus, the joint distribution of the number of games won by each of the three players is given by:
+
+$$
+P(X_1 = k_1, X_2 = k_2, X_3 = k_3) = \frac{10!}{k_1! k_2! k_3!} \left(\frac{1}{3}\right)^{10}, \quad \text{for } k_1 + k_2 + k_3 = 10 \text{ and } k_1, k_2, k_3 \geq 0.
+$$
+
+This represents a multinomial distribution with parameters $\( n = 10 \)$ and $\( p_1 = p_2 = p_3 = \frac{1}{3} \)$.
+
 ### Ch03.06 (Ch3.2)
 ### Ch03.07 (Ch3.2)
