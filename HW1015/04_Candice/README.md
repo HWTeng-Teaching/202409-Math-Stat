@@ -202,9 +202,8 @@ For part (b), try the provided values:
 2. a = 65539, c = 0, m = 2³¹ (RANDU)
 
 ## Q6
-## Question 3
 
-Three players play 10 independent rounds of a game, and each player has a probability of 1/3 of winning each round. Find the joint distribution of the number of games won by each of the three players.
+## Three players play 10 independent rounds of a game, and each player has a probability of 1/3 of winning each round. Find the joint distribution of the number of games won by each of the three players.
 
 ## Answer
 
@@ -239,6 +238,85 @@ where:
 
 $$
 x_1 + x_2 + x_3 = 10, x_i>=0
+$$
+
+## Q7
+
+## A point is chosen randomly in the interior of an ellipse:
+
+$$
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+$$
+
+## Find the marginal densities of the \(x\) and \(y\) coordinates of the point.
+
+## Answer
+
+
+$$
+f_{X,Y}(x, y) = \frac{1}{\pi a b}, \quad \text{for } \frac{x^2}{a^2} + \frac{y^2}{b^2} \leq 1
+$$
+
+The joint density is 0 outside the ellipse.
+
+To find the marginal density \(f_X(x)\), we integrate the joint density function over \(y\), keeping \(x\) fixed:
+
+$$
+f_X(x) = \int_{-\sqrt{b^2 \left(1 - \frac{x^2}{a^2}\right)}}^{\sqrt{b^2 \left(1 - \frac{x^2}{a^2}\right)}} f_{X,Y}(x, y) \, dy
+$$
+
+Since \( f_{X,Y}(x, y) = \frac{1}{\pi a b} \) inside the ellipse, we get:
+
+$$
+f_X(x) = \frac{1}{\pi a b} \int_{-\sqrt{b^2 \left(1 - \frac{x^2}{a^2}\right)}}^{\sqrt{b^2 \left(1 - \frac{x^2}{a^2}\right)}} 1 \, dy
+$$
+
+The length of the interval for \(y\) is:
+
+$$
+2 \sqrt{b^2 \left(1 - \frac{x^2}{a^2}\right)}
+$$
+
+Thus, the marginal density \( f_X(x) \) becomes:
+
+$$
+f_X(x) = \frac{1}{\pi a b} \cdot 2 \sqrt{b^2 \left(1 - \frac{x^2}{a^2}\right)} = \frac{2}{\pi a} \sqrt{1 - \frac{x^2}{a^2}}, \quad -a \leq x \leq a
+$$
+
+Similarly, to find the marginal density \(f_Y(y)\), we integrate the joint density function over \(x\), keeping \(y\) fixed:
+
+$$
+f_Y(y) = \int_{-\sqrt{a^2 \left(1 - \frac{y^2}{b^2}\right)}}^{\sqrt{a^2 \left(1 - \frac{y^2}{b^2}\right)}} f_{X,Y}(x, y) \, dx
+$$
+
+Again, since \( f_{X,Y}(x, y) = \frac{1}{\pi a b} \) inside the ellipse, we get:
+
+$$
+f_Y(y) = \frac{1}{\pi a b} \int_{-\sqrt{a^2 \left(1 - \frac{y^2}{b^2}\right)}}^{\sqrt{a^2 \left(1 - \frac{y^2}{b^2}\right)}} 1 \, dx
+$$
+
+The length of the interval for \(x\) is:
+
+$$
+2 \sqrt{a^2 \left(1 - \frac{y^2}{b^2}\right)}
+$$
+
+Thus, the marginal density \( f_Y(y) \) becomes:
+
+$$
+f_Y(y) = \frac{1}{\pi a b} \cdot 2 \sqrt{a^2 \left(1 - \frac{y^2}{b^2}\right)} = \frac{2}{\pi b} \sqrt{1 - \frac{y^2}{b^2}}, \quad -b \leq y \leq b
+$$
+
+- The marginal density of \(x\) is:
+
+$$
+f_X(x) = \frac{2}{\pi a} \sqrt{1 - \frac{x^2}{a^2}}, \quad -a \leq x \leq a
+$$
+
+- The marginal density of \(y\) is:
+
+$$
+f_Y(y) = \frac{2}{\pi b} \sqrt{1 - \frac{y^2}{b^2}}, \quad -b \leq y \leq b
 $$
 
 ## Q8
