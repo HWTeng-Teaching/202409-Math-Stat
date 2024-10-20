@@ -36,6 +36,7 @@ plt.ylabel("Density")
 plt.tight_layout()
 plt.show()
 ```
+![截圖 2024-10-20 下午11 22 54](https://github.com/user-attachments/assets/9a8e4b88-252c-4e7c-a81c-4570e290b6cf)
 
 
 ## Q2
