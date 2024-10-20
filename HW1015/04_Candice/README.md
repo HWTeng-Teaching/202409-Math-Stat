@@ -36,6 +36,8 @@ plt.ylabel("Density")
 plt.tight_layout()
 plt.show()
 ```
+
+
 ## Q2
 ## Write python codes to illustration Ch02.65 for α = 2.
 
@@ -51,7 +53,8 @@ def inverse_cdf(u):
     return (-1 + np.sqrt(1 + 4*u)) / 2
 
 # Number of samples
-n_samples = 10000
+n_samples = 10000![截圖 2024-10-20 下午11 21 42](https://github.com/user-attachments/assets/8cac8bbb-0f7d-4152-bbbf-30b924b2f083)
+
 
 # Generate uniform random numbers
 U = np.random.uniform(0, 1, size=n_samples)
