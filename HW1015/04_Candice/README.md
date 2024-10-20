@@ -54,8 +54,7 @@ def inverse_cdf(u):
     return (-1 + np.sqrt(1 + 4*u)) / 2
 
 # Number of samples
-n_samples = 10000![截圖 2024-10-20 下午11 21 42](https://github.com/user-attachments/assets/8cac8bbb-0f7d-4152-bbbf-30b924b2f083)
-
+n_samples = 10000
 
 # Generate uniform random numbers
 U = np.random.uniform(0, 1, size=n_samples)
@@ -77,6 +76,9 @@ plt.ylabel("Density")
 plt.legend()
 plt.show()
 ```
+
+![截圖 2024-10-20 下午11 24 19](https://github.com/user-attachments/assets/3843f0b3-5819-4f6d-b67c-d6e9d49478db)
+
 ## Q3
 ## find the probability density function (PDF) of Y= exp(Z),where Z ~ N(μ, σ²) Which is called the lognormal density, since log Y is normally distributed.
 
