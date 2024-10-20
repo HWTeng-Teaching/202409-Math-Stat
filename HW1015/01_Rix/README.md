@@ -28,7 +28,8 @@ Write python codes to illustration Ch02.65 for α = 2.
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/4232ae70-5280-4daa-b409-2da68e0cbfde)
+![4](https://github.com/user-attachments/assets/ae534b72-6fbd-4b22-895b-b54b3ad41136)
 
 ## Q3. 
 
@@ -38,7 +39,7 @@ Write python codes to illustration Ch02.65 for α = 2.
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/f4fcc95e-2384-41b3-a2d6-e1fb7713971f)
 
 ## Q4. 
 
@@ -48,7 +49,7 @@ Write python codes to illustration Ch02.65 for α = 2.
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/6651b348-a17d-4e38-95b2-270c240afc59)
 
 ## Q5. 
 
@@ -58,7 +59,18 @@ Write python codes to illustration Ch02.65 for α = 2.
 
 ### Answers
 
-
+a.  
+We need to find some coprime numbers to ensure that the generated numbers won't fall into a loop.  
+so we choose a = 5, c = 3, m = 16, and seed number $x_0 = 7$.  
+and the generated numbers are 7, 6, 1, 8, 11, 10, 5, 12, 15, 14, 9, 0, 3, 2, 13, 4, 7...  
+looks 'random'  
+b.  
+RANDU  
+![image](https://github.com/user-attachments/assets/106f2f9e-b496-4a97-8248-1461fef7f646)
+![image](https://github.com/user-attachments/assets/e3907781-91ab-4297-83e3-2d1d61b2d3b6)
+![image](https://github.com/user-attachments/assets/28fff1f1-8a92-4d21-b4dd-1b10c9f4cfb8)
+![image](https://github.com/user-attachments/assets/07810a6c-5272-469e-bac7-d371efb2ed26)  
+It looks 'random'
 
 ## Q6. 
 
