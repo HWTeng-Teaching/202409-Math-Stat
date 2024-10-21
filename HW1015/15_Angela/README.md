@@ -6,4 +6,6 @@
 <img width="848" alt="截圖 2024-10-22 凌晨1 36 03" src="https://github.com/user-attachments/assets/c75a1b38-0171-47b2-867d-46a9c447fa41">
 <img width="848" alt="截圖 2024-10-22 凌晨1 37 34" src="https://github.com/user-attachments/assets/f66e6d07-254f-4cdb-9eb4-a6cf45145193">
 <img width="848" alt="截圖 2024-10-22 凌晨1 52 16" src="https://github.com/user-attachments/assets/5282ae3e-7b33-4fbe-b61a-361b8f56d73c">
+(a) The numbers look random
+(b) Although the number look random, we can see that there are only odd numbers.
 <img width="848" alt="截圖 2024-10-22 凌晨1 39 39" src="https://github.com/user-attachments/assets/57a21ed4-8c3a-4001-a9b3-94630f7931a8">
