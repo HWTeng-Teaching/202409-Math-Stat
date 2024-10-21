@@ -4,5 +4,6 @@
 <img width="625" alt="截圖 2024-10-21 上午11 28 38" src="https://github.com/user-attachments/assets/a642a6ab-a8b7-41e9-a998-722670d2ef2f">
 <img width="754" alt="截圖 2024-10-21 上午11 29 00" src="https://github.com/user-attachments/assets/4de45468-e78f-4e5b-a8fa-4464e2838878">
 <img width="575" alt="截圖 2024-10-21 上午11 29 13" src="https://github.com/user-attachments/assets/838b4ae5-bb65-4c32-9b92-e4aaa83fa499">
-![IMG_2805](https://github.com/user-attachments/assets/15f51056-2017-49bc-a4cc-8ae760390d4e)
-
+<img width="532" alt="截圖 2024-10-21 上午11 34 57" src="https://github.com/user-attachments/assets/bf8d1c65-8eec-4703-9fa8-78e9d578ce25">
+<img width="698" alt="截圖 2024-10-21 上午11 35 17" src="https://github.com/user-attachments/assets/2f390719-a845-4dd2-a63c-41cde61d4c4a">
+<img width="702" alt="截圖 2024-10-21 上午11 36 02" src="https://github.com/user-attachments/assets/f3005acc-c576-4be3-9703-0b383129ae18">
