@@ -182,25 +182,55 @@ The latter is an infamous generator called **RANDU**. Try out these schemes and 
 
 ## Answer
 
-$$
-x_n = (a x_{n-1} + c) \mod m
-$$
+'''python
+# Linear Congruential Generator (LCG) function
+def lcg(a, c, m, seed, n):
+    """Linear Congruential Generator to generate n pseudorandom numbers"""
+    x = seed
+    results = []
+    for _ in range(n):
+        x = (a * x + c) % m
+        results.append(x)
+    return results
 
-(a)
+# Part (a): Choose values of a, c, and m
+a = 5
+c = 3
+m = 16
+seed = 7
+n = 20  # Number of random numbers to generate
 
-$$
-a = 69069, \quad c = 0, \quad m = 2^{31}
-$$
+# Generate the sequence
+sequence = lcg(a, c, m, seed, n)
 
-if x₀ = 1, then:
+# Output the results for Part (a)
+print("LCG with a = 5, c = 3, m = 16:")
+print(sequence)
 
-$$
-x_1 = (69069 \times 1 + 0) \mod 2^{31}
-$$
+# Part (b): RANDU and alternative scheme
+# (1) RANDU values: a=69069, c=0, m=2^31
+a_randu = 69069
+c_randu = 0
+m_randu = 2**31
 
-$$
-x_2 = (69069 \times x_1 + 0) \mod 2^{31}
-$$
+# Generate the RANDU sequence
+randu_sequence = lcg(a_randu, c_randu, m_randu, seed, n)
+
+# Output the results for RANDU scheme
+print("\nRANDU Generator (a = 69069, c = 0, m = 2^31):")
+print(randu_sequence)
+
+# (2) RANDU values: a=65539, c=0, m=2^31
+a_randu = 65539
+c_randu = 0
+m_randu = 2**31
+
+randu_sequence = lcg(a_randu, c_randu, m_randu, seed, n)
+
+# Output the results for RANDU scheme
+print("\nRANDU Generator (a = 65539, c = 0, m = 2^31):")
+print(randu_sequence)$
+'''
 
 For part (b), try the provided values:
 
