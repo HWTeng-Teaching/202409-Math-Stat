@@ -182,7 +182,7 @@ The latter is an infamous generator called **RANDU**. Try out these schemes and 
 
 ## Answer
 
-'''python
+```python
 # Linear Congruential Generator (LCG) function
 def lcg(a, c, m, seed, n):
     """Linear Congruential Generator to generate n pseudorandom numbers"""
@@ -230,8 +230,7 @@ randu_sequence = lcg(a_randu, c_randu, m_randu, seed, n)
 # Output the results for RANDU scheme
 print("\nRANDU Generator (a = 65539, c = 0, m = 2^31):")
 print(randu_sequence)$
-'''
-
+```
 For part (b), try the provided values:
 
 1. a = 69069, c = 0, m = 2³¹
