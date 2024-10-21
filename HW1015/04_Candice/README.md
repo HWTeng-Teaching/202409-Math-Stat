@@ -231,11 +231,18 @@ randu_sequence = lcg(a_randu, c_randu, m_randu, seed, n)
 print("\nRANDU Generator (a = 65539, c = 0, m = 2^31):")
 print(randu_sequence)$
 ```
-For part (b), try the provided values:
+OUTPUT
+(a)
+LCG with a = 5, c = 3, m = 16:
+[6, 1, 8, 11, 10, 5, 12, 15, 14, 9, 0, 3, 2, 13, 4, 7, 6, 1, 8, 11]
+The result seems random.
+(b)
+RANDU Generator (a = 69069, c = 0, m = 2^31):
+[483483, 1181432607, 285076179, 1796522487, 258989515, 1755507343, 2062423939, 526220007, 1476404731, 537340159, 735037235, 1773345495, 1470130475, 972449391, 1408412131, 903188935, 104060763, 1892553439, 1591308179, 1851510711]
 
-1. a = 69069, c = 0, m = 2³¹
-2. a = 65539, c = 0, m = 2³¹ (RANDU)
-
+RANDU Generator (a = 65539, c = 0, m = 2^31):
+[458773, 2752575, 12386493, 49545783, 185796261, 668865519, 193543117, 1583919975, 1319180853, 102256287, 1625811933, 244630423, 1867860677, 415555663, 714973421, 549839559, 1159243861, 2006907135, 1608248061, 177258743]
+The result seems random but only with odd numbers.
 ## Q6
 
 ## Three players play 10 independent rounds of a game, and each player has a probability of 1/3 of winning each round. Find the joint distribution of the number of games won by each of the three players.
