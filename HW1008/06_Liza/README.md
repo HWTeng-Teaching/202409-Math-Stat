@@ -61,6 +61,7 @@ for $\( n = 1, 2, 3, \ldots \)$.
 ![image](https://github.com/user-attachments/assets/4e7a4627-409b-4c12-9674-25099b308d3c)
 
 ![image](https://github.com/user-attachments/assets/088c4b25-7936-4a53-bbec-d426b5a87d3a)
+![image](https://github.com/user-attachments/assets/24e2d9dd-3c52-4db5-aab7-99b0c294ee17)
 
 
 
