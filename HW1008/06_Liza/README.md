@@ -53,4 +53,15 @@ for $\( n = 1, 2, 3, \ldots \)$.
 ## Question 2
 
 ## Solution 
+![image](https://github.com/user-attachments/assets/ed69ad40-02d2-472b-be4a-a93f553e47e2)
+![image](https://github.com/user-attachments/assets/7254b520-42a5-4be3-ac2f-db54a684915c)
+![image](https://github.com/user-attachments/assets/2b1bd13a-c1d2-43bb-b224-c0810735cb01)
+
+![image](https://github.com/user-attachments/assets/19102c35-2605-44a0-bbbc-5712dfbe95e4)
+![image](https://github.com/user-attachments/assets/4e7a4627-409b-4c12-9674-25099b308d3c)
+
+![image](https://github.com/user-attachments/assets/088c4b25-7936-4a53-bbec-d426b5a87d3a)
+
+
+
 
