@@ -86,3 +86,14 @@ Thus, the PDF of \( Y = e^Z \) is given by:
 
 
 This function is known as the **lognormal density function**, as it describes a random variable whose logarithm is normally distributed.
+
+
+### HW1015 Q4
+
+## (a)
+
+<img width="1022" alt="截圖 2024-10-14 上午9 43 20" src="https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1015/10_Wang/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-10-22%20180437.png">
+
+## (b)
+
+<img width="1022" alt="截圖 2024-10-14 上午9 43 20" src="https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1015/10_Wang/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-10-22%20180502.png">
