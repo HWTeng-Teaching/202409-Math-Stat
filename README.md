@@ -4,11 +4,11 @@ This repo collects students' efforts in doing homework assigned by Prof. Huei-We
 
 
 
+## 
 
 
 
-
-## Slides available at Quantinar
+## Slides publicly available at Quantinar
 
 You can find the slides in the Quantinar ecosystem: 
 
