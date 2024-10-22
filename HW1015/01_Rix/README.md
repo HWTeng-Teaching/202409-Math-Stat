@@ -12,9 +12,49 @@ Write python codes to illustrate Propositions C and D (suppose $X\sim exp(1)$)
 
 ### Answers
 
-![image](https://github.com/user-attachments/assets/f66a033b-dc03-4f0f-ad3a-3a792ced9c49)
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 10, 50000)
+y = np.exp(-x)
+X = np.random.exponential(scale=1, size=50000)
+Z = 1 - np.exp(-X)
+
+plt.hist(Z, bins=50, density=True, range=[0, 1])
+plt.title("Proposition C: Z = F(X), Uniform on [0, 1]")
+plt.xlabel("Z")
+plt.ylabel("Density")
+plt.show()
+```
 ![Figure_1](https://github.com/user-attachments/assets/67e9cafc-812d-41d1-952d-b5fbb1423511)
-![image](https://github.com/user-attachments/assets/de146f54-2a45-4c0b-b86d-9c506b4ac9ce)
+```
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import expon
+
+X = np.random.exponential(scale=1, size=50000)
+U = np.random.uniform(0, 1, 50000)
+XU = expon.ppf(U)
+
+plt.hist(X, bins=50, density=True, alpha=1)
+plt.title('X ~ exp(1)')
+plt.xlabel('X')
+plt.ylabel('Density')
+plt.show()
+
+plt.hist(X, bins=50, density=True, cumulative=True)
+plt.title('Proposition D: CDF X ~ exp(1)')
+plt.xlabel('X')
+plt.ylabel('Density')
+plt.show()
+
+plt.hist(XU, bins=50, density=True, cumulative=True)
+plt.title('Proposition D: CDF X = F^(-1)(U)')
+plt.xlabel('X')
+plt.ylabel('Density')
+plt.show()
+```
 ![1](https://github.com/user-attachments/assets/c31e8827-1f09-4553-ad11-6037514ebd6c)
 ![2](https://github.com/user-attachments/assets/2aa22dd8-e407-4cfa-8c71-875f78b6ec91)
 ![3](https://github.com/user-attachments/assets/1575a3b4-1ccf-474b-ac2b-d6386e681733)
@@ -28,7 +68,32 @@ Write python codes to illustration Ch02.65 for α = 2.
 
 ### Answers
 
-![image](https://github.com/user-attachments/assets/4232ae70-5280-4daa-b409-2da68e0cbfde)
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+alpha = 2
+
+def cdf(x, alpha):
+    return (x + (alpha * x**2) / 2 + 1) / 2
+
+def inverse_cdf(u, alpha):
+    a = alpha / 2
+    b = 1
+    c = -(2 * u - 1)
+    discriminant = b**2 - 4 * a * c
+    x1 = (-b + np.sqrt(discriminant)) / (2 * a)
+    return x1
+
+U = np.random.uniform(0, 1, 50000)
+X = inverse_cdf(U, alpha)
+
+plt.hist(X, bins=50, density=True, cumulative=True)
+plt.title('Random Variables Generated for α = 2')
+plt.xlabel('X')
+plt.ylabel('Density')
+plt.show()
+```
 ![4](https://github.com/user-attachments/assets/ae534b72-6fbd-4b22-895b-b54b3ad41136)
 
 ## Q3. 
