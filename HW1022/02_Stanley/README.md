@@ -180,7 +180,413 @@ f_{X|Y}(x \mid y) = \frac{f(x, y)}{f_Y(y)} = \frac{\frac{3}{4}}{\frac{3}{2} \sqr
 
 
 ![image](https://github.com/user-attachments/assets/2b17092b-896a-4eb0-a9c7-aa8c314bd06c)
+Let $\( U_1 \), \( U_2 \), and \( U_3 \)$ be independent random variables uniformly distributed on $\([0, 1]\)$. We are tasked with finding the probability that the quadratic equation:
 
+$\[
+U_1 x^2 + U_2 x + U_3 = 0
+\]$
+
+has real roots, i.e., the discriminant $\( \Delta = U_2^2 - 4 U_1 U_3 \geq 0 \)$.
+
+#### Step 1: Condition for Real Roots
+
+For the quadratic equation to have real roots, the discriminant must satisfy:
+
+$\[
+U_2^2 \geq 4 U_1 U_3
+\]$
+
+Thus, the probability we seek is:
+
+$\[
+P(U_2^2 \geq 4 U_1 U_3)
+\]$
+
+#### Step 2: Setting Up the Integral
+
+The probability can be calculated as the volume of the region in the unit cube $\([0, 1]^3\)$ where $\( U_2^2 \geq 4 U_1 U_3 \)$. This volume is given by the triple integral:
+
+$\[
+P(U_2^2 \geq 4 U_1 U_3) = \int_0^1 \int_0^1 \int_0^{\min\left(1, \frac{U_2^2}{4U_1}\right)} dU_3 \, dU_2 \, dU_1
+\]$
+
+#### Step 3: Splitting the Integral
+
+We need to split the region of integration into two cases:
+1. For $\( 0 \leq U_2 \leq 2\sqrt{U_1} \)$, we have $\( \min\left(1, \frac{U_2^2}{4U_1}\right) = \frac{U_2^2}{4U_1} \)$.
+2. For $\( 2\sqrt{U_1} \leq U_2 \leq 1 \)$, we have $\( \min\left(1, \frac{U_2^2}{4U_1}\right) = 1 \)$.
+
+Thus, the integral becomes:
+
+$\[
+P(U_2^2 \geq 4 U_1 U_3) = \int_0^1 \left[ \int_0^{2\sqrt{U_1}} \frac{U_2^2}{4 U_1} dU_2 + \int_{2\sqrt{U_1}}^1 1 \, dU_2 \right] dU_1
+\]$
+
+#### Step 4: Solving the First Integral
+
+For $\( 0 \leq U_2 \leq 2\sqrt{U_1} \)$, the first integral is:
+
+$\[
+\int_0^{2\sqrt{U_1}} \frac{U_2^2}{4U_1} dU_2 = \frac{1}{4 U_1} \int_0^{2\sqrt{U_1}} U_2^2 \, dU_2
+\]$
+
+The integral of $\( U_2^2 \)$ is:
+
+$\[
+\frac{1}{4 U_1} \cdot \frac{(2 \sqrt{U_1})^3}{3} = \frac{2 \sqrt{U_1}}{3}
+\]$
+
+#### Step 5: Solving the Second Integral
+
+For $\( 2 \sqrt{U_1} \leq U_2 \leq 1 \)$, the second integral is:
+
+$\[
+\int_{2\sqrt{U_1}}^1 1 \, dU_2 = 1 - 2 \sqrt{U_1}
+\]$
+
+#### Step 6: Combine and Integrate Over $\( U_1 \)$
+
+Now, combine the integrals:
+
+$\[
+P(U_2^2 \geq 4 U_1 U_3) = \int_0^1 \left( \frac{2 \sqrt{U_1}}{3} + 1 - 2 \sqrt{U_1} \right) dU_1
+\]$
+
+Simplify the integrand:
+
+$\[
+\frac{2 \sqrt{U_1}}{3} + 1 - 2 \sqrt{U_1} = 1 - \frac{4 \sqrt{U_1}}{3}
+\]$
+
+Now, integrate with respect to $\( U_1 \)$:
+
+$\[
+\int_0^1 \left( 1 - \frac{4 \sqrt{U_1}}{3} \right) dU_1 = \left[ U_1 \right]_0^1 - \frac{4}{3} \int_0^1 \sqrt{U_1} \, dU_1
+\]$
+
+The integral of $\( \sqrt{U_1} \)$ is:
+
+$\[
+\int \sqrt{U_1} \, dU_1 = \frac{2}{3} U_1^{3/2}
+\]$
+
+Thus:
+
+$\[
+\frac{4}{3} \int_0^1 \sqrt{U_1} \, dU_1 = \frac{4}{3} \cdot \frac{2}{3} = \frac{8}{9}
+\]$
+
+#### Final Step: Compute the Probability
+
+Now subtract the result:
+
+$\[
+P(U_2^2 \geq 4 U_1 U_3) = 1 - \frac{8}{9} = \frac{1}{3}
+\]$
+
+#### Conclusion
+
+The probability that the quadratic equation $\( U_1 x^2 + U_2 x + U_3 = 0 \)$ has real roots is:
+
+$\[
+P(\text{real roots}) = \boxed{\frac{1}{3}}$
+_______________________________________________________________________________________________
 ![image](https://github.com/user-attachments/assets/4db3d87f-b5b6-4d35-b330-0cee2a989107)
+#### Part a: Find \(c\)
 
-![image](https://github.com/user-attachments/assets/5f39cb6b-8f0c-4339-8fee-88ad96cfd5f9)
+To find the normalization constant $\(c\)$, we must ensure that the total probability integrates to 1 over the region defined by $\(x^2 + y^2 \leq 1\)$.
+
+1. **Set Up the Integral**:
+
+$\[
+\int_{-\sqrt{1}}^{\sqrt{1}} \int_{-\sqrt{1 - x^2}}^{\sqrt{1 - x^2}} f(x, y) \, dy \, dx = 1
+\]$
+
+2. **Convert to Polar Coordinates**:
+
+In polar coordinates, where $\(x = r \cos(\theta)\)$ and $\(y = r \sin(\theta)\)$:
+
+- The Jacobian of the transformation is $\(r\)$.
+- The region of integration is $\(0 \leq r \leq 1\)$ and $\(0 \leq \theta < 2\pi\)$.
+
+Thus, we have:
+
+$\[
+\int_0^{2\pi} \int_0^1 f(r, \theta) \cdot r \, dr \, d\theta = 1
+\]$
+
+3. **Substitute the Joint Density**:
+
+Substituting $\(f(x, y) = c \sqrt{1 - r^2}\)$:
+
+$\[
+= \int_0^{2\pi} \int_0^1 c r \sqrt{1 - r^2} \, dr \, d\theta
+\]$
+
+4. **Evaluate the Integral**:
+
+First, evaluate the inner integral:
+
+$\[
+\int_0^1 r \sqrt{1 - r^2} \, dr
+\]$
+
+Let $\(u = 1 - r^2\)$, then $\(du = -2r \, dr\)$ or $\(dr = -\frac{du}{2r}\)$.
+
+Changing the limits:
+
+- When $\(r = 0\)$, $\(u = 1\)$.
+- When $\(r = 1\)$, $\(u = 0\)$.
+
+Thus,
+
+$\[
+\int_0^1 r \sqrt{1 - r^2} \, dr = -\frac{1}{2} \int_1^0 \sqrt{u} \cdot \left(-\frac{du}{2\sqrt{u}}\right) = \frac{1}{4} \int_0^1 \sqrt{u} \, du
+\]$
+
+5. **Calculate the Integral**:
+
+The integral of $\(\sqrt{u}\)$:
+
+$\[
+\int_0^1 \sqrt{u} \, du = \left[\frac{u^{3/2}}{\frac{3}{2}}\right]_0^1 = \frac{2}{3}
+\]$
+
+Thus:
+
+$\[
+\int_0^1 r \sqrt{1 - r^2} \, dr = \frac{1}{4} \cdot \frac{2}{3} = \frac{1}{6}
+\]$
+
+6. **Complete the Integral**:
+
+Now, substitute back into the full integral:
+
+$\[
+\int_0^{2\pi} c \cdot \frac{1}{6} \, d\theta = c \cdot \frac{1}{6} \cdot 2\pi = \frac{2\pi c}{6}
+\]$
+
+Setting this equal to 1 gives:
+
+$\[
+\frac{2\pi c}{6} = 1 \implies c = \frac{3}{\pi}
+\]$
+
+#### Part b: Sketch the Joint Density
+
+The joint density function can be expressed as:
+
+$\[
+f(x, y) = \frac{3}{\pi} \sqrt{1 - x^2 - y^2}, \quad \text{for } x^2 + y^2 \leq 1
+\]$
+
+- The function is symmetric about the origin.
+- The density is highest at the center $\((0, 0)\)$ and decreases toward the boundary of the circle.
+
+#### Part c: Find $\(P(X^2 + Y^2 \leq \frac{1}{2})\)$
+
+To find this probability, integrate the joint density function over the region defined by $\(x^2 + y^2 \leq \frac{1}{2}\)$.
+
+1. **Set Up the Integral**:
+
+In polar coordinates:
+
+$\[
+P(X^2 + Y^2 \leq \frac{1}{2}) = \int_0^{2\pi} \int_0^{\sqrt{1/2}} f(r, \theta) \cdot r \, dr \, d\theta
+\]$
+
+Substituting $\(f(r, \theta) = \frac{3}{\pi} \sqrt{1 - r^2}\)$:
+
+$\[
+= \int_0^{2\pi} \int_0^{\sqrt{1/2}} \frac{3}{\pi} \sqrt{1 - r^2} \cdot r \, dr \, d\theta
+\]$
+
+2. **Calculate the Inner Integral**:
+
+The inner integral becomes:
+
+$\[
+\int_0^{\sqrt{1/2}} r \sqrt{1 - r^2} \, dr
+\]$
+
+Let $\(u = 1 - r^2\)$. The limits change:
+
+- When $\(r = 0\), \(u = 1\)$.
+- When $\(r = \sqrt{1/2}\), \(u = 1/2\)$.
+
+Thus:
+
+$\[
+\int_0^{\sqrt{1/2}} r \sqrt{1 - r^2} \, dr = -\frac{1}{2} \int_1^{1/2} \sqrt{u} \left(-\frac{du}{2\sqrt{u}}\right) = \frac{1}{4} \int_{1/2}^{1} u^{1/2} \, du
+\]$
+
+3. **Calculate the Integral**:
+
+The integral of $\(u^{1/2}\)$:
+
+$\[
+\int_{1/2}^{1} u^{1/2} \, du = \left[\frac{u^{3/2}}{\frac{3}{2}}\right]_{1/2}^{1} = \frac{2}{3} \left(1 - \left(\frac{1}{2}\right)^{3/2}\right) = \frac{2}{3} \left(1 - \frac{1}{2\sqrt{2}}\right)
+\]$
+
+So we have:
+
+$\[
+\int_0^{\sqrt{1/2}} r \sqrt{1 - r^2} \, dr = \frac{1}{4} \cdot \frac{2}{3} \left(1 - \frac{1}{2\sqrt{2}}\right) = \frac{1}{6} \left(1 - \frac{1}{2\sqrt{2}}\right)
+\]$
+
+4. **Final Calculation**:
+
+Now substituting back:
+
+$\[
+P(X^2 + Y^2 \leq \frac{1}{2}) = \int_0^{2\pi} \frac{3}{\pi} \cdot \frac{1}{6} \left(1 - \frac{1}{2\sqrt{2}}\right) \, d\theta
+\]$
+
+This gives:
+
+$\[
+= \frac{3}{\pi} \cdot \frac{1}{6} \cdot \left(1 - \frac{1}{2\sqrt{2}}\right) \cdot 2\pi = \frac{1}{2} \left(1 - \frac{1}{2\sqrt{2}}\right)
+\]$
+
+#### Part d: Find the Marginal Densities of $\(X\)$ and $\(Y\)$
+
+##### Marginal Density of $\(X\)$
+
+$\[
+f_X(x) = \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}} f(x,y) \, dy
+\]$
+
+Substituting the joint density:
+
+$\[
+f_X(x) = \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}} \frac{3}{\pi} \sqrt{1 - x^2 - y^2} \, dy
+\]$
+
+Using polar coordinates again:
+
+1. Set up the integral:
+
+$\[
+f_X(x) = \frac{3}{\pi} \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}} \sqrt{1 - x^2 - y^2} \, dy
+\]$
+
+2. Change to polar coordinates for $\(y\)$:
+
+$\[
+f_X(x) = \frac{3}{\pi} \cdot 2 \cdot \int_0^{\sqrt{1-x^2}} \sqrt{1 - x^2 - y^2} \, dy
+\]$
+
+3. The integral evaluates as:
+
+The limits are:
+
+- When $\(y = 0\)$, $\(u = 1 - x^2\)$.
+- When $\(y = \sqrt{1-x^2}\), \(u = 0\)$.
+
+Thus:
+
+$\[
+\int_0^{\sqrt{1-x^2}} \sqrt{1 - x^2 - y^2} \, dy = -\frac{1}{2} \int_{1-x^2}^{0} \sqrt{u} \left(-\frac{du}{2\sqrt{u}}\right) = \frac{1}{4} \int_0^{1-x^2} u^{1/2} \, du
+\]$
+
+4. Finally, compute the integral:
+
+$\[
+= \frac{1}{4} \cdot \frac{2}{3} (1-x^2)^{3/2} = \frac{1}{6} (1-x^2)^{3/2}
+\]$
+
+Thus:
+
+$\[
+f_X(x) = \frac{3}{\pi} (1-x^2)^{3/2}, \quad -1 \leq x \leq 1
+\]$
+
+##### Marginal Density of $\(Y\)$
+
+By symmetry, the marginal density of $\(Y\)$ will be the same:
+
+$\[
+f_Y(y) = \frac{3}{\pi} (1-y^2)^{3/2}, \quad -1 \leq y \leq 1
+\]$
+
+#### Part e: Find the Conditional Densities
+
+##### Conditional Density of $\(Y\)$ given $\(X = x\)$
+
+Using the formula for conditional densities:
+
+$\[
+f_{Y|X}(y|x) = \frac{f(x,y)}{f_X(x)}
+\]$
+
+Substituting in the values:
+
+$\[
+f_{Y|X}(y|x) = \frac{\frac{3}{\pi} \sqrt{1 - x^2 - y^2}}{\frac{3}{\pi} (1-x^2)^{3/2}} = \frac{\sqrt{1 - x^2 - y^2}}{(1-x^2)^{3/2}}
+\]$
+
+##### Conditional Density of $\(X\)$ given $\(Y = y\)$
+
+Similarly,
+
+$\[
+f_{X|Y}(x|y) = \frac{f(x,y)}{f_Y(y)}
+\]$
+
+This gives:
+
+$\[
+f_{X|Y}(x|y) = \frac{\frac{3}{\pi} \sqrt{1 - x^2 - y^2}}{\frac{3}{\pi} (1-y^2)^{3/2}} = \frac{\sqrt{1 - x^2 - y^2}}{(1-y^2)^{3/2}}
+\]$
+_________________________________________________________________________________________________-
+![image](https://github.com/user-attachments/assets/5f39cb6b-8f0c-4339-8fee-88ad96cfd5f9) 
+### Step 1: Understanding the Variables
+
+- Let $\(N(t_0, t_1)\)$ be the number of events in the interval $\((t_0, t_1)\)$.
+- Let $\(N(t_0, t_2)\)$ be the number of events in the interval $\((t_0, t_2)\)$.
+- The time intervals can be expressed as:
+  - $\(N(t_0, t_1)\)$ corresponds to events that occur between $\(t_0\)$ and $\(t_1\)$.
+  - $\(N(t_1, t_2)\)$ corresponds to events that occur between $\(t_1\)$ and $\(t_2\)$.
+
+### Step 2: Properties of a Poisson Process
+
+- For a Poisson process with rate $\(\lambda\)$, the number of events in any interval of length $\(t\)$ follows a Poisson distribution:
+  $\[
+  N(a, b) \sim \text{Poisson}(\lambda (b - a)).
+  \]$
+- The counts in disjoint intervals are independent.
+
+### Step 3: Distributions of Counts
+
+- The total number of events in the interval $\((t_0, t_2)\)$ can be expressed as:
+  $\[
+  N(t_0, t_2) = N(t_0, t_1) + N(t_1, t_2).
+  \]$
+- Therefore, we know:
+  - $\(N(t_0, t_2) \sim \text{Poisson}(\lambda (t_2 - t_0))\)$.
+  - $\(N(t_0, t_1) \sim \text{Poisson}(\lambda (t_1 - t_0))\)$.
+  - $\(N(t_1, t_2) \sim \text{Poisson}(\lambda (t_2 - t_1))\)$.
+
+### Step 4: Conditional Distribution
+
+- Given $\(N(t_0, t_2) = n\)$, we want to find the distribution of $\(N(t_0, t_1)\)$.
+- Since the counts are independent, we can think of the distribution of $\(N(t_0, t_1)\)$ as a multinomial distribution where:
+  - The total $\(n\)$ events are distributed among the intervals $\((t_0, t_1)\)$ and $\((t_1, t_2)\)$.
+
+### Step 5: Applying the Multinomial Distribution
+
+- The conditional distribution $\(N(t_0, t_1) | N(t_0, t_2) = n\)$ follows a binomial distribution because:
+  $\[
+  N(t_0, t_1) | N(t_0, t_2) = n \sim \text{Binomial}\left(n, \frac{t_1 - t_0}{t_2 - t_0}\right).
+  \]$
+- The parameter $\(p = \frac{t_1 - t_0}{t_2 - t_0}\)$ represents the proportion of the length of the interval $\((t_0, t_1)\)$ relative to the total length of the interval $\((t_0, t_2)\)$.
+
+### Conclusion
+
+The conditional distribution of $\(N(t_0, t_1)\)$ given $\(N(t_0, t_2) = n\)$ is:
+
+$\[
+N(t_0, t_1) | N(t_0, t_2) = n \sim \text{Binomial}\left(n, \frac{t_1 - t_0}{t_2 - t_0}\right).
+\]$
+
+This reflects that given a fixed number of events $\(n\)$, the number of events in the subinterval $\((t_0, t_1)\)$ follows a binomial distribution based on the proportion of the interval lengths.
