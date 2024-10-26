@@ -113,7 +113,7 @@ P(X = x) = 0, for x is not 1 or 0, it means probability of other outcome is 0.
 
 ### Questions
 
-An experiment consists of throwing a fair coin four times. Find the frequency function and the cumulative distribution function of the following random variables:  
+An experiment consists of throwing a fair coin four times. Find the frequency function and the cumulative distribution function of the following random variables:  
 (a) the number of heads before the first tail  
 (b) the number of heads following the first tail  
 (c) the number of heads minus the number of tails  
