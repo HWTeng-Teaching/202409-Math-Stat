@@ -281,7 +281,7 @@ $\[
 Now subtract the result:
 
 $\[
-P(U_2^2 \geq 4 U_1 U_3) = 1 - \frac{8}{9} = \frac{1}{3}
+P(U_2^2 \geq 4 U_1 U_3) = 1 - \frac{8}{9} = \frac{1}{9}
 \]$
 
 #### Conclusion
@@ -289,7 +289,7 @@ P(U_2^2 \geq 4 U_1 U_3) = 1 - \frac{8}{9} = \frac{1}{3}
 The probability that the quadratic equation $\( U_1 x^2 + U_2 x + U_3 = 0 \)$ has real roots is:
 
 $\[
-P(\text{real roots}) = \boxed{\frac{1}{3}}$
+P(\text{real roots}) = \boxed{\frac{1}{9}}$
 _______________________________________________________________________________________________
 ![image](https://github.com/user-attachments/assets/4db3d87f-b5b6-4d35-b330-0cee2a989107)
 ![image](https://github.com/user-attachments/assets/2dfe7c45-670e-468f-ad0c-549c380e6b83)
