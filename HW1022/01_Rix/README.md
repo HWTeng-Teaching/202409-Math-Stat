@@ -10,7 +10,7 @@ by 周子揚 Rix
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/ab8a3cbf-f2e9-4b54-b068-cc04b0fcdf1d)
 
 ## Q2. 
 
@@ -20,7 +20,7 @@ by 周子揚 Rix
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/f9082b3a-2597-44c4-9213-20d8904ddcae)
 
 ## Q3. 
 
@@ -30,7 +30,7 @@ by 周子揚 Rix
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/ca80a5a6-3e5d-4ae9-ba5c-687eb67fa176)
 
 ## Q4. 
 
