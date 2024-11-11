@@ -23,9 +23,9 @@ This rule allows you to differentiate an integral whose integrand depends on a p
 If f(x,t) is a function of x and t, and the partial derivatives $$\frac{\partial}{\partial x} \times f(x,t)$$ exist and are continuous, then:
 
 $$
-\frac{\partial}{\partial x} \left( \int_{a}^{b} f(x, t) \, dt \right) = f(z, b(z)) \frac{d}{dz} b(z) - f(z, a(z)) \frac{d}{dz} a(z) + \int_{a(z)}^{b(z)} \frac{\partial}{\partial z} f(z, u) \, du.
+\frac{\partial}{\partial x} \left( \int_{a}^{b} f(x, t) \, dt \right) = \int_{a}^{b} \frac{\partial}{\partial x} f(x,t) \, dt
 $$
-
+f(z, b(z)) \frac{d}{dz} b(z) - f(z, a(z)) \frac{d}{dz} a(z) + \int_{a(z)}^{b(z)} \frac{\partial}{\partial z} f(z, u) \, du.
 
 
 **Explanation:**
