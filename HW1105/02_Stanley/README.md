@@ -7,5 +7,9 @@
 ![image](https://github.com/user-attachments/assets/d45d0ebd-e06e-41b0-b271-222e7069178d)
 
 ### 4.Use the inverse method to generate 1000 samples of stnadard normal
+![image](https://github.com/user-attachments/assets/4bd58176-c659-42d6-b5f0-f9913b94e289)
+![image](https://github.com/user-attachments/assets/f1dd8faf-857c-4640-90f0-542167c37ec5)
 
 ### 5.Use the polar method to generate 1000 samples of standard normal
+![image](https://github.com/user-attachments/assets/72ed6f57-3f0f-4402-9629-ceb5527c9af8)
+![image](https://github.com/user-attachments/assets/5eb1ddd7-9a17-437f-9760-3c18065b7397)
