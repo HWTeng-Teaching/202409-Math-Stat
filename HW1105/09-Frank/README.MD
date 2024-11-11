@@ -9,15 +9,6 @@ What are the key points in Lec 1105
 ## Problem
 Explain what is the Leibniz integration rule
 ## Solution
-The **Leibniz rule for integration** provides a way to differentiate an integral with variable limits or a variable integrand. There are two common forms of the Leibniz rule: 
-
-1. **Leibniz Integral Rule (Differentiation under the Integral Sign)**
-2. **Leibniz Rule for Differentiation of an Integral with Variable Limits**
-
-### 1. Leibniz Integral Rule (Differentiation under the Integral Sign)
-
-This rule allows you to differentiate an integral whose integrand depends on a parameter.
-
 **Statement:**
 
 If f(x,t) is a function of x and t, and the partial derivatives $$\frac{\partial}{\partial x} \times f(x,t)$$ exist and are continuous, then:
