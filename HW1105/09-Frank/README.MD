@@ -7,6 +7,8 @@ What are the key points in Lec 1105
 ## Solution
 # Q3
 ## Problem
+Identity  the bivaraite normal disitriubtion of page 14 of the slides in class  
+![image](https://github.com/user-attachments/assets/64286e1b-270c-4ef5-8b3b-1171ad29c7d2)
 ## Solution
 # Q4
 ## Problem
