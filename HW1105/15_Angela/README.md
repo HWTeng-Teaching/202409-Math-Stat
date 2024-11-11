@@ -4,4 +4,4 @@
 <img width="817" alt="截圖 2024-11-12 凌晨12 09 22" src="https://github.com/user-attachments/assets/d2139cee-63d6-4074-8ab9-3694d5c9f457">
 
 ## Q2: Explain what is the Leibniz integration rule
-$$\frac{d}{dx}(\int_a(z)^\b(z) f(z, u))du\,.$$
+$$\frac{d}{dx}(\int_{a(z)}^{\b(z)} f(z, u)du)\,.$$
