@@ -37,36 +37,6 @@ If \( f(x, t) \) is a function of \( x \) and \( t \), and the partial derivativ
 - The limits \( a \) and \( b \) are constants.
 
 This form of the Leibniz rule is useful in physics and engineering for problems involving integrals with parameters.
-
-### Example:
-
-Consider the integral:
-
-\[
-I(x) = \int_{0}^{1} (x^2 + t^2) \, dt
-\]
-
-To find \( I'(x) \), we apply the Leibniz rule:
-
-\[
-I'(x) = \int_{0}^{1} \frac{\partial}{\partial x} (x^2 + t^2) \, dt = \int_{0}^{1} 2x \, dt = 2x \cdot \left( \int_{0}^{1} dt \right) = 2x
-\]
-
-### 2. Leibniz Rule for Differentiation of an Integral with Variable Limits
-
-This rule extends the concept to integrals where the limits themselves are functions of \( x \).
-
-**Statement:**
-
-If \( f(x, t) \) is continuous and \( a(x) \) and \( b(x) \) are differentiable functions of \( x \), then:
-
-[
-frac{d}{dx} left( int_{a(x)}^{b(x)} f(x, t) , dt right) = fbig(x, b(x)big) cdot b'(x) - fbig(x, a(x)big) cdot a'(x) + int_{a(x)}^{b(x)} frac{partial}{partial x} f(x, t) , dt
-]
-
-**Explanation:**
-- The first two terms account for the changes in the limits ( a(x) ) and ( b(x) ).
-- The last term accounts for the change in the integrand with respect to ( x ).
 # Q4
 ## Problem
 Use the inverse method to generate 1000 samples of stnadard normal
