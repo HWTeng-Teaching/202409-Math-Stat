@@ -51,7 +51,26 @@ Use the inverse method to generate 1000 samples of stnadard normal
 
 ### Answers
 
+```
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import norm
 
+uniform_samples = np.random.uniform(0, 1, 1000)
+normal_samples = norm.ppf(uniform_samples)
+
+plt.figure(figsize=(10, 6))
+plt.hist(normal_samples, bins=50, density=True, alpha=0.5, color='skyblue', edgecolor='black')
+xmin, xmax = plt.xlim()
+x = np.linspace(xmin, xmax, 1000)
+plt.plot(x, norm.pdf(x), 'r', lw=2, label='Standard Normal PDF')
+plt.xlabel('Value')
+plt.ylabel('Density')
+plt.title('Histogram of Generated Standard Normal Samples')
+plt.legend()
+plt.show()
+```
+![Figure_1](https://github.com/user-attachments/assets/93717bc6-21c8-46cc-bf02-0da3fc6037d6)
 
 ## Q5. 
 
@@ -61,3 +80,35 @@ Use the polar method to generate 1000 samples of standard normal
 
 ### Answers
 
+```
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import norm
+
+num_samples = 1000
+samples = []
+
+while len(samples) < num_samples:
+    u, v = np.random.uniform(-1, 1, 2)
+    s = u**2 + v**2
+
+    if s == 0 or s >= 1:
+        continue
+
+    factor = np.sqrt(-2 * np.log(s) / s)
+    samples.append(u * factor)
+    if len(samples) < num_samples:
+        samples.append(v * factor)
+
+plt.figure(figsize=(10, 6))
+plt.hist(samples, bins=50, density=True, alpha=0.5, color='skyblue', edgecolor='black')
+xmin, xmax = plt.xlim()
+x = np.linspace(xmin, xmax, 1000)
+plt.plot(x, norm.pdf(x), 'r', lw=2, label='Standard Normal PDF')
+plt.xlabel('Value')
+plt.ylabel('Density')
+plt.title('Histogram of Standard Normal Samples (Polar Method)')
+plt.legend()
+plt.show()
+```
+![2](https://github.com/user-attachments/assets/73642bea-c2b6-491c-808a-2778a042f3b3)
