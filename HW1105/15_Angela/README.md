@@ -11,3 +11,6 @@ $$\frac{d}{d𝑧}\left(\int_{a(𝑧)}^{b(𝑧)} f(𝑧, u)du\right)\=f\left(𝑧
 3. The third term represents the effect of changes in 𝑧 within the integrand 𝑓(𝑧,𝑢) itself.
 
 ## Q3: Identity  the bivaraite normal disitriubtion of page 14 of the slides in class
+<img width="931" alt="截圖 2024-11-12 凌晨2 00 32" src="https://github.com/user-attachments/assets/dcd05242-fe65-42d6-8613-07c596faf8f4">
+
+## Q4: Use the inverse method to generate 1000 samples of stnadard normal
