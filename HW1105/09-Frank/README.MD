@@ -60,34 +60,13 @@ This rule extends the concept to integrals where the limits themselves are funct
 
 If \( f(x, t) \) is continuous and \( a(x) \) and \( b(x) \) are differentiable functions of \( x \), then:
 
-\[
-\frac{d}{dx} \left( \int_{a(x)}^{b(x)} f(x, t) \, dt \right) = f\big(x, b(x)\big) \cdot b'(x) - f\big(x, a(x)\big) \cdot a'(x) + \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) \, dt
-\]
+[
+frac{d}{dx} left( int_{a(x)}^{b(x)} f(x, t) , dt right) = fbig(x, b(x)big) cdot b'(x) - fbig(x, a(x)big) cdot a'(x) + int_{a(x)}^{b(x)} frac{partial}{partial x} f(x, t) , dt
+]
 
 **Explanation:**
-- The first two terms account for the changes in the limits \( a(x) \) and \( b(x) \).
-- The last term accounts for the change in the integrand with respect to \( x \).
-
-### Example:
-
-Consider:
-
-\[
-I(x) = \int_{x}^{2x} t^2 \, dt
-\]
-
-To differentiate \( I(x) \), we use the Leibniz rule:
-
-\[
-I'(x) = (2x)^2 \cdot (2) - (x)^2 \cdot (1) + \int_{x}^{2x} 0 \, dt = 8x^2 - x^2 = 7x^2
-\]
-
-### Summary
-
-- The **first form** of the Leibniz rule is applied when differentiating an integral with fixed limits.
-- The **second form** is used when the limits of integration are variable functions of \( x \).
-
-Both versions are fundamental tools in calculus and analysis, especially useful in solving problems in physics, statistics, and engineering.
+- The first two terms account for the changes in the limits ( a(x) ) and ( b(x) ).
+- The last term accounts for the change in the integrand with respect to ( x ).
 # Q4
 ## Problem
 Use the inverse method to generate 1000 samples of stnadard normal
