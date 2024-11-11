@@ -26,9 +26,6 @@ $$
 \frac{\partial}{\partial x} \left( \int_{a}^{b} f(x, t) \, dt \right) = \int_{a}^{b} \frac{\partial}{\partial x} \times f(x,t) \, dt
 $$
 
-f(z, b(z)) \frac{d}{dz} b(z) - f(z, a(z)) \frac{d}{dz} a(z) + \int_{a(z)}^{b(z)} \frac{\partial}{\partial z} f(z, u) \, du.
-
-
 **Explanation:**
 - \( x \) is the parameter with respect to which we differentiate.
 - \( t \) is the variable of integration.
