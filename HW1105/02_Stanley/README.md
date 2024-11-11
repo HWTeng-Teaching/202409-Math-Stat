@@ -1,4 +1,6 @@
 ### 1.What are the key points in Lec 1105
+![image](https://github.com/user-attachments/assets/7b928aea-ae6b-443c-9fee-02d048693e25)
+![image](https://github.com/user-attachments/assets/6d3a3637-5c52-4bcc-a135-d4d13b783b9f)
 
 ### 2.Explain what is the Leibniz integration rule
 ![image](https://github.com/user-attachments/assets/33aa7120-47bb-4183-92ff-871a8acd1680)
