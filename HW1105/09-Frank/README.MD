@@ -14,6 +14,80 @@ Explain what is the Leibniz integration rule
 Identity  the bivaraite normal disitriubtion of page 14 of the slides in class  
 ![image](https://github.com/user-attachments/assets/64286e1b-270c-4ef5-8b3b-1171ad29c7d2)
 ## Solution
+The **Leibniz rule for integration** provides a way to differentiate an integral with variable limits or a variable integrand. There are two common forms of the Leibniz rule: 
+
+1. **Leibniz Integral Rule (Differentiation under the Integral Sign)**
+2. **Leibniz Rule for Differentiation of an Integral with Variable Limits**
+
+### 1. Leibniz Integral Rule (Differentiation under the Integral Sign)
+
+This rule allows you to differentiate an integral whose integrand depends on a parameter.
+
+**Statement:**
+
+If \( f(x, t) \) is a function of \( x \) and \( t \), and the partial derivatives \( \frac{\partial}{\partial x} f(x, t) \) exist and are continuous, then:
+
+\[
+\frac{d}{dx} \left( \int_{a}^{b} f(x, t) \, dt \right) = \int_{a}^{b} \frac{\partial}{\partial x} f(x, t) \, dt
+\]
+
+**Explanation:**
+- \( x \) is the parameter with respect to which we differentiate.
+- \( t \) is the variable of integration.
+- The limits \( a \) and \( b \) are constants.
+
+This form of the Leibniz rule is useful in physics and engineering for problems involving integrals with parameters.
+
+### Example:
+
+Consider the integral:
+
+\[
+I(x) = \int_{0}^{1} (x^2 + t^2) \, dt
+\]
+
+To find \( I'(x) \), we apply the Leibniz rule:
+
+\[
+I'(x) = \int_{0}^{1} \frac{\partial}{\partial x} (x^2 + t^2) \, dt = \int_{0}^{1} 2x \, dt = 2x \cdot \left( \int_{0}^{1} dt \right) = 2x
+\]
+
+### 2. Leibniz Rule for Differentiation of an Integral with Variable Limits
+
+This rule extends the concept to integrals where the limits themselves are functions of \( x \).
+
+**Statement:**
+
+If \( f(x, t) \) is continuous and \( a(x) \) and \( b(x) \) are differentiable functions of \( x \), then:
+
+\[
+\frac{d}{dx} \left( \int_{a(x)}^{b(x)} f(x, t) \, dt \right) = f\big(x, b(x)\big) \cdot b'(x) - f\big(x, a(x)\big) \cdot a'(x) + \int_{a(x)}^{b(x)} \frac{\partial}{\partial x} f(x, t) \, dt
+\]
+
+**Explanation:**
+- The first two terms account for the changes in the limits \( a(x) \) and \( b(x) \).
+- The last term accounts for the change in the integrand with respect to \( x \).
+
+### Example:
+
+Consider:
+
+\[
+I(x) = \int_{x}^{2x} t^2 \, dt
+\]
+
+To differentiate \( I(x) \), we use the Leibniz rule:
+
+\[
+I'(x) = (2x)^2 \cdot (2) - (x)^2 \cdot (1) + \int_{x}^{2x} 0 \, dt = 8x^2 - x^2 = 7x^2
+\]
+
+### Summary
+
+- The **first form** of the Leibniz rule is applied when differentiating an integral with fixed limits.
+- The **second form** is used when the limits of integration are variable functions of \( x \).
+
+Both versions are fundamental tools in calculus and analysis, especially useful in solving problems in physics, statistics, and engineering.
 # Q4
 ## Problem
 Use the inverse method to generate 1000 samples of stnadard normal
