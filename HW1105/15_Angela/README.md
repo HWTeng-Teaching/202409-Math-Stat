@@ -4,4 +4,7 @@
 <img width="817" alt="截圖 2024-11-12 凌晨12 09 22" src="https://github.com/user-attachments/assets/d2139cee-63d6-4074-8ab9-3694d5c9f457">
 
 ## Q2: Explain what is the Leibniz integration rule
-$$\frac{d}{dx}\left(\int_{a(z)}^{b(z)} f(z, u)du\right)\=f\left(z, b(z)\right)\frac{d}{dz}b(z)-f\left(z, a(z)\right)\frac{d}{dz}a(z)+\int_{a(z)}^{b(z)} \frac{d}{dx}f(z, u)du$$
+$$\frac{d}{d𝑧}\left(\int_{a(𝑧)}^{b(𝑧)} f(𝑧, u)du\right)\=f\left(𝑧, b(𝑧)\right)\frac{d}{d𝑧}b(𝑧)-f\left(𝑧, a(z)\right)\frac{d}{d𝑧}a(𝑧)+\int_{a(𝑧)}^{b(𝑧)} \frac{d}{d𝑧}f(𝑧, u)du$$
+The first term represents the effect of changes in the upper limit $$b(𝑧)$$ with respect to 𝑧.
+The second term represents the effect of changes in the upper limit $$a(𝑧)$$ with respect to 𝑧.
+The third term represents the effect of changes in 𝑧 within the integrand 𝑓(𝑧,𝑢) itself.
