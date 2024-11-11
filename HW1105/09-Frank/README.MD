@@ -20,7 +20,7 @@ This rule allows you to differentiate an integral whose integrand depends on a p
 
 **Statement:**
 
-If f(x,t) is a function of x and t, and the partial derivatives $$\frac{\partial}{\partial x}$
+If f(x,t) is a function of x and t, and the partial derivatives $$\frac{\partial}{\partial x}$$
 
 $frac{$\partial$}{$\partial x$}$ \times f(x,t) exist and are continuous, then:
 
