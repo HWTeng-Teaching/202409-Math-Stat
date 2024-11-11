@@ -9,11 +9,6 @@ What are the key points in Lec 1105
 ## Problem
 Explain what is the Leibniz integration rule
 ## Solution
-# Q3
-## Problem
-Identity  the bivaraite normal disitriubtion of page 14 of the slides in class  
-![image](https://github.com/user-attachments/assets/64286e1b-270c-4ef5-8b3b-1171ad29c7d2)
-## Solution
 The **Leibniz rule for integration** provides a way to differentiate an integral with variable limits or a variable integrand. There are two common forms of the Leibniz rule: 
 
 1. **Leibniz Integral Rule (Differentiation under the Integral Sign)**
@@ -37,6 +32,11 @@ If \( f(x, t) \) is a function of \( x \) and \( t \), and the partial derivativ
 - The limits \( a \) and \( b \) are constants.
 
 This form of the Leibniz rule is useful in physics and engineering for problems involving integrals with parameters.
+# Q3
+## Problem
+Identity the bivaraite normal disitriubtion of page 14 of the slides in class  
+![image](https://github.com/user-attachments/assets/64286e1b-270c-4ef5-8b3b-1171ad29c7d2)
+## Solution
 # Q4
 ## Problem
 Use the inverse method to generate 1000 samples of stnadard normal
