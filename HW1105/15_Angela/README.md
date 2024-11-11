@@ -13,4 +13,8 @@ $$\frac{d}{d𝑧}\left(\int_{a(𝑧)}^{b(𝑧)} f(𝑧, u)du\right)\=f\left(𝑧
 ## Q3: Identity  the bivaraite normal disitriubtion of page 14 of the slides in class
 <img width="931" alt="截圖 2024-11-12 凌晨2 00 32" src="https://github.com/user-attachments/assets/dcd05242-fe65-42d6-8613-07c596faf8f4">
 
-## Q4: Use the inverse method to generate 1000 samples of stnadard normal
+## Q4: Use the inverse method to generate 1000 samples of standard normal
+<img width="676" alt="截圖 2024-11-12 凌晨2 06 37" src="https://github.com/user-attachments/assets/90789ef3-57dd-4a12-b2da-61f14dfda051">
+<img width="508" alt="截圖 2024-11-12 凌晨2 07 09" src="https://github.com/user-attachments/assets/4a1c084d-2b39-4fb8-bb76-282b1468f497">
+
+## Q5: Use the polar method to generate 1000 samples of standard normal
