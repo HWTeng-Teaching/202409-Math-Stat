@@ -22,7 +22,7 @@ This rule allows you to differentiate an integral whose integrand depends on a p
 
 If f(x,t) is a function of x and t, and the partial derivatives $$\frac{\partial}{\partial x} \times f(x,t)$$ exist and are continuous, then:
 $$
-\frac{d}{dx} \ over \int_{a}^{b} f(x,t) \, dt \right)
+\frac{d}{dx} \times \int_{a}^{b} f(x,t)
 $$
 
 = \int_{a}^{b} \frac{\partial}{\partial x} f(x, t) \, dt
