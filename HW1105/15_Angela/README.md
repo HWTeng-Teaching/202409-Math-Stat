@@ -6,8 +6,8 @@
 ## Q2: Explain what is the Leibniz integration rule
 $$\frac{d}{d𝑧}\left(\int_{a(𝑧)}^{b(𝑧)} f(𝑧, u)du\right)\=f\left(𝑧, b(𝑧)\right)\frac{d}{d𝑧}b(𝑧)-f\left(𝑧, a(z)\right)\frac{d}{d𝑧}a(𝑧)+\int_{a(𝑧)}^{b(𝑧)} \frac{d}{d𝑧}f(𝑧, u)du$$
 
-The first term represents the effect of changes in the upper limit $$b(𝑧)$$ with respect to 𝑧.
+1. The first term represents the effect of changes in the upper limit $$b(𝑧)$$ with respect to 𝑧.
+2. The second term represents the effect of changes in the upper limit $$a(𝑧)$$ with respect to 𝑧.
+3. The third term represents the effect of changes in 𝑧 within the integrand 𝑓(𝑧,𝑢) itself.
 
-The second term represents the effect of changes in the upper limit $$a(𝑧)$$ with respect to 𝑧.
-
-The third term represents the effect of changes in 𝑧 within the integrand 𝑓(𝑧,𝑢) itself.
+## Q3: Identity  the bivaraite normal disitriubtion of page 14 of the slides in class
