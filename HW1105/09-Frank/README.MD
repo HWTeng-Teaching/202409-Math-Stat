@@ -4,8 +4,7 @@ What are the key points in Lec 1105
 ## Solution
 **Inverse method**: mapping jointly continuous random variables(change bases)
 
-**Jacobian matrix and its determinant**:
-
+**Jacobian matrix and its determinant**
 # Q2
 ## Problem
 Explain what is the Leibniz integration rule
