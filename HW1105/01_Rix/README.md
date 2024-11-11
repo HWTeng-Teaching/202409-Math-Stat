@@ -10,7 +10,7 @@ What are the key points in Lec 1105
 
 ### Answers
 
-Explain what is the Leibniz integration rule
+
 
 ## Q2. 
 
