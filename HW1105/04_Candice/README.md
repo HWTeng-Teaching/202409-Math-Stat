@@ -1,27 +1,90 @@
-### Q2
-### Answers
+# Q1
+## What are the key point in lecture 1105
 
-# Leibniz Integration Rule
+# Answers
 
-The Leibniz rule for integration, also known as the **Leibniz integral rule**, provides a method for differentiating an integral with respect to a parameter. This rule is useful when dealing with integrals where either the limits of integration or the integrand depend on a variable parameter, often denoted by `t`.
+## Joint Distributions
+### Proposition A
+
+The following proposition explores the transformation of jointly distributed continuous random variables \( X \) and \( Y \) onto new variables \( U \) and \( V \).
+
+#### Transformation Definitions
+
+Suppose \( X \) and \( Y \) are continuous random variables, and they are mapped to \( U \) and \( V \) by the transformations:
+
+$$
+u = g_1(x, y), \quad v = g_2(x, y)
+$$
+
+Assume that these transformations can be inverted, giving:
+
+$$
+x = h_1(u, v), \quad y = h_2(u, v)
+$$
+
+#### Assumptions
+
+1. Functions \( g_1 \) and \( g_2 \) have continuous partial derivatives.
+2. The Jacobian determinant \( J \) of the transformation is defined by:
+
+   $$
+   J = \begin{vmatrix}
+       \frac{\partial h_1}{\partial u} & \frac{\partial h_1}{\partial v} \\
+       \frac{\partial h_2}{\partial u} & \frac{\partial h_2}{\partial v} \\
+       \end{vmatrix} = \frac{\partial h_1}{\partial u} \frac{\partial h_2}{\partial v} - \frac{\partial h_1}{\partial v} \frac{\partial h_2}{\partial u}
+   $$
+
+   for all \( x \) and \( y \).
+
+#### Joint Density of \( U \) and \( V \)
+
+The joint density \( f_{UV}(u, v) \) of \( U \) and \( V \) is given by:
+
+$$
+f_{UV}(u, v) = f_{XY}\big(h_1(u, v), h_2(u, v)\big) \cdot |J|
+$$
+
+where this expression holds for \( (u, v) \) such that:
+
+$$
+u = g_1(x, y) \quad \text{and} \quad v = g_2(x, y)
+$$
+
+for some values of \( x \) and \( y \); otherwise, \( f_{UV}(u, v) = 0 \).
+### Jacobian 
+### Bivariate normal density
+### Leibniz integral rule
+### Sums of random variables
+
+
+# Q2
+## Explain Leibniz Integration Rule
+
+# Answers
+
+The Leibniz rule for integration, also known as the **Leibniz integral rule**, provides a method for differentiating an integral with respect to a parameter. This rule is useful when dealing with integrals where either the limits of integration or the integrand depend on a variable parameter, often denoted by \( t \).
 
 The general form of the **Leibniz rule** states that if we have an integral of the form:
 
-    F(t) = ∫[a(t), b(t)] f(x, t) dx
+$$
+F(t) = \int_{a(t)}^{b(t)} f(x, t) \, dx
+$$
 
 where:
 - `f(x, t)` is the integrand that depends on both `x` and `t`,
 - `a(t)` and `b(t)` are the variable limits of integration, which also depend on `t`,
 
-then the derivative of `F(t)` with respect to `t` is:
+then the derivative of \( F(t) \) with respect to \( t \) is:
 
-    dF(t)/dt = f(b(t), t) * db(t)/dt - f(a(t), t) * da(t)/dt + ∫[a(t), b(t)] ∂f(x, t)/∂t dx
+$$
+\frac{d}{dt} F(t) = f(b(t), t) \cdot \frac{db(t)}{dt} - f(a(t), t) \cdot \frac{da(t)}{dt} + \int_{a(t)}^{b(t)} \frac{\partial}{\partial t} f(x, t) \, dx
+$$
 
 ## Explanation of Terms
 
-1. **Boundary Terms**: The first two terms, `f(b(t), t) * db(t)/dt` and `- f(a(t), t) * da(t)/dt`, account for the contributions from the moving limits of integration. These terms capture the impact of changing the limits of integration on the total value of the integral.
+1. **Boundary Terms**: The first two terms, \( f(b(t), t) \cdot \frac{db(t)}{dt} \) and \( - f(a(t), t) \cdot \frac{da(t)}{dt} \), account for the contributions from the moving limits of integration. These terms capture the impact of changing the limits of integration on the total value of the integral.
 
-2. **Integral of Partial Derivative**: The third term, `∫[a(t), b(t)] ∂f(x, t)/∂t dx`, represents the contribution from the rate of change of the integrand `f(x, t)` with respect to `t` over the interval `[a(t), b(t)]`.
+2. **Integral of Partial Derivative**: The third term, \( \int_{a(t)}^{b(t)} \frac{\partial}{\partial t} f(x, t) \, dx \), represents the contribution from the rate of change of the integrand \( f(x, t) \) with respect to \( t \) over the interval \( [a(t), b(t)] \).
 
 ## When to Use the Leibniz Rule
 
@@ -30,3 +93,71 @@ The Leibniz rule is particularly useful in scenarios such as:
 - **Mathematics**: When the integrand depends on an external parameter that changes.
 
 In summary, the Leibniz rule allows for efficient differentiation of integrals where the boundaries or the integrand itself depend on an external variable, making it a powerful tool in calculus and applied mathematics.
+
+# Q3
+## Identity the bivaraite normal disitriubtion of page 14 of the slides in class
+
+# Answers
+![IMG_25D3E9BC7F01-1](https://github.com/user-attachments/assets/3c8c6349-be0c-4104-9593-3cbf70ce08c0)
+
+
+# Q4 
+## Use the inverse method to generate 1000 samples of standard normal
+
+# Answers
+```python
+import numpy as np
+from scipy.stats import norm
+import matplotlib.pyplot as plt
+
+# Step 1: Generate 1000 uniform random samples in the range [0, 1]
+uniform_samples = np.random.uniform(0, 1, 1000)
+
+# Step 2: Apply the inverse CDF (ppf) of the standard normal distribution
+normal_samples = norm.ppf(uniform_samples)
+
+# Plot the histogram to visualize the distribution
+plt.hist(normal_samples, bins=30, density=True, alpha=0.6, edgecolor='black')
+plt.title("Standard Normal Distribution (Generated by Inverse Transform)")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.show()
+```
+![截圖 2024-11-12 下午12 56 09](https://github.com/user-attachments/assets/00cd561b-0c47-464f-8019-8af943c5c761)
+
+
+# Q5
+## Use the polar method to generate 1000 samples of stnadard normal
+
+# Answers
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def polar_method(n):
+    samples = []
+    while len(samples) < n:
+        # Generate two uniform random variables in the range [-1, 1]
+        u, v = np.random.uniform(-1, 1, 2)
+        s = u**2 + v**2
+        
+        # Only accept points within the unit circle (s < 1) and not zero (s != 0)
+        if s < 1 and s != 0:
+            # Apply the Box-Muller transform to generate two independent standard normal samples
+            factor = np.sqrt(-2 * np.log(s) / s)
+            z1 = u * factor
+            z2 = v * factor
+            samples.extend([z1, z2])  # Add the two samples to the list
+    
+    return np.array(samples[:n])  # Return only the first n samples
+
+# Generate 1000 samples
+normal_samples = polar_method(1000)
+
+# Plot the histogram to visualize the distribution
+plt.hist(normal_samples, bins=30, density=True, alpha=0.6, edgecolor='black')
+plt.title("Standard Normal Distribution (Generated by Polar Method)")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.show()
+```
