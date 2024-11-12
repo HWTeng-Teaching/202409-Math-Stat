@@ -34,11 +34,11 @@ Since $$X_1$$ and $$X_2$$ are independent standard normal random variables,
 $$f_{X_1, X_2}(x_1, x_2)=\frac{1}{2π}e^{-\frac{{x_1}^2+{x_2}^2}{2}}$$
 and $$x_1=y_1, x_2=-y_1+y_2$$, then
 
-$$f_{Y_1, Y_2}(y_1, y_2)=f_{X_1, X_2}(y_1, y_2-y_2)·|J|=\frac{1}{2π}e^{-\frac{{y_1}^2+{y_2-y_1}^2}{2}}·|1|=\frac{1}{2π}e^{-\frac{2{y_1}^2-2y_1y_2+{y_2}^2}{2}}$$, for $$-∞≤y_1, y_2≤∞$$
+$$f_{Y_1, Y_2}(y_1, y_2)=f_{X_1, X_2}(y_1, y_2-y_2)·|J|=\frac{1}{2π}e^{-\frac{{y_1}^2+{y_2-y_1}^2}{2}}·|1|=\frac{1}{2π}e^{-\frac{2{y_1}^2-2y_1y_2+{y_2}^2}{2}}$$ for $$-∞≤y_1, y_2≤∞$$
 
 Compare it with the bivariate normal density function
 
-$$f(y_1, y_2) = \frac{1}{2 \pi \sigma_{Y_1} \sigma_{Y_2} \sqrt{1 - \rho^2}} \cdot e^{ -\frac{1}{2(1 - \rho^2)} \left( \frac{(y_1 - \mu_{Y_1})^2}{\sigma_{Y_1}^2} + \frac{(y_2 - \mu_{Y_2})^2}{\sigma_{Y_2}^2} - \frac{2 \rho (y_1 - \mu_{Y_1})(y_2 - \mu_{Y_2})}{\sigma_{Y_1} \sigma_{Y_2}} \right) }$$, for $$-∞≤y_1, y_2≤∞$$
+$$f(y_1, y_2) = \frac{1}{2 \pi \sigma_{Y_1} \sigma_{Y_2} \sqrt{1 - \rho^2}} \cdot e^{ -\frac{1}{2(1 - \rho^2)} \left( \frac{(y_1 - \mu_{Y_1})^2}{\sigma_{Y_1}^2} + \frac{(y_2 - \mu_{Y_2})^2}{\sigma_{Y_2}^2} - \frac{2 \rho (y_1 - \mu_{Y_1})(y_2 - \mu_{Y_2})}{\sigma_{Y_1} \sigma_{Y_2}} \right) }$$ for $$-∞≤y_1, y_2≤∞$$
 
 We can find that 
 
