@@ -212,5 +212,15 @@ $$
 f_{Y_1, Y_2}(y_1, y_2) = \frac{1}{2\pi} e^{-\frac{2y_1^2 - 2y_1y_2 + y_2^2}{2}} \quad \text{for} \quad -\infty \leq y_1, y_2 \leq \infty
 $$
 
-#HW1106 Q4
+# HW1106 Q4
+Use the polar method to generate 1000 samples of standard normal
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1105/10%20wang/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-11-12%20161129.png)
+
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1105/10%20wang/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-11-12%20161137.png)
+
+
+# HW 1106 Q5
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1105/10%20wang/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-11-12%20161403.png)
+
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1105/10%20wang/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-11-12%20161409.png)
 
