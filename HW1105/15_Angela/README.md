@@ -13,6 +13,44 @@ $$\frac{d}{d𝑧}\left(\int_{a(𝑧)}^{b(𝑧)} f(𝑧, u)du\right)\=f\left(𝑧
 ## Q3: Identity  the bivaraite normal disitriubtion of page 14 of the slides in class
 <img width="931" alt="截圖 2024-11-12 凌晨2 00 32" src="https://github.com/user-attachments/assets/dcd05242-fe65-42d6-8613-07c596faf8f4">
 
+We know that $$X_1$$ and $$X_2$$ are independent standard normal random vairables and that $$Y_1=X_1, Y_2=X_1+X_2$$.
+
+So we can turn $$y_1=x_1, y_2=x_1+x_2$$ into $$x_1=y_1, x_2=-y_1+y_2$$.
+
+Then calculate the Jacobian 
+
+$$J=\left|
+\begin{array}{cc}
+\frac{dx_1}{dy_1} & \frac{dx_1}{dy_2} \\
+\frac{dx_2}{dy_1} & \frac{dx_2}{dy_2} \\
+\end{array}
+\right|=\left|\begin{array}{cc}
+1 & 0 \\
+-1 & 1 \\
+\end{array}
+\right|=1$$
+
+Since $$X_1$$ and $$X_2$$ are independent standard normal random variables,
+
+$$f_{X_1, X_2}(x_1, x_2)=\frac{1}{2π}e^{-\frac{{x_1}^2+{x_2}^2}{2}}$$
+and $$x_1=y_1, x_2=-y_1+y_2$$, then
+
+$$f_{Y_1, Y_2}(y_1, y_2)=f_{X_1, X_2}(y_1, y_2-y_2)·|J|=\frac{1}{2π}e^{-\frac{{y_1}^2+{y_2-y_1}^2}{2}}·|1|=\frac{1}{2π}e^{-\frac{2{y_1}^2-2y_1y_2+{y_2}^2}{2}}$$, for $$-∞≤y_1, y_2≤∞$$
+
+Compare it with the bivariate normal density function
+
+$$f(y_1, y_2) = \frac{1}{2 \pi \sigma_{Y_1} \sigma_{Y_2} \sqrt{1 - \rho^2}} \cdot e^{ -\frac{1}{2(1 - \rho^2)} \left( \frac{(y_1 - \mu_{Y_1})^2}{\sigma_{Y_1}^2} + \frac{(y_2 - \mu_{Y_2})^2}{\sigma_{Y_2}^2} - \frac{2 \rho (y_1 - \mu_{Y_1})(y_2 - \mu_{Y_2})}{\sigma_{Y_1} \sigma_{Y_2}} \right) }$$, for $$-∞≤y_1, y_2≤∞$$
+
+We can find that 
+
+1. $$\sigma_{Y_1} \sigma_{Y_2}\sqrt{1 - \rho^2} = 1$$
+2. $$(1 - \rho^2) \sigma_{Y_1}^2 = \frac{1}{2}$$
+3. $$(1 - \rho^2) \sigma_{Y_2}^2 = 1$$
+4. $$\frac{\rho}{(1 - \rho^2) \sigma_{Y_1} \sigma_{Y_2}} = 1$$
+
+Acoording to the above equation, $$\sqrt{1 - \rho^2}=\frac{1 - \rho^2}{\rho}$$, so $$\rho=\frac{1}{\sqrt{2}}$$
+
+
 ## Q4: Use the inverse method to generate 1000 samples of standard normal
 ```
 import numpy as np
