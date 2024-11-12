@@ -4,9 +4,31 @@
 
 ## Q2: Explain what is the Leibniz integration rule
 
+The **Leibniz integration rule** refers to a method for differentiating an integral whose limits of integration or the integrand depend on a parameter. It provides a systematic way to take the derivative of an integral where the upper and/or lower limits of integration are variable functions.
 
+**General form of Leibniz's rule**:
+If we have an integral of the form:
+
+$$
+I(z) = \int_{a(z)}^{b(z)} f(z, u) \, du
+$$
+
+where $a(z)$ and $b(z)$ are functions of $z$, and $f(z, u)$ is a function of $z$ and $u$, then the derivative of $I(z)$ with respect to $z$ is given by:
+
+$$
+\frac{dI(z)}{dz} = f(z, b(z)) \frac{d}{dz}b(z) - f(z, a(z)) \frac{d}{dz}a(z) + \int_{a(z)}^{b(z)} \frac{\partial}{\partial z} f(z, u)du
+$$
+
+### Explanation:
+- The **first term** $f(z, b(z)) \frac{d}{dz}b(z)$ accounts for the change in the integral's value due to the change in the upper limit $b(z)$.
+  
+- The **second term** $-f(z, a(z)) \frac{d}{dz}a(z)$ represents the change due to the change in the lower limit $a(z)$.
+
+  
+- The **third term** $\int_{a(z)}^{b(z)} \frac{\partial}{\partial z} f(z, u)du$ accounts for the direct change in the integrand $f(z, u)$ with respect to $z$ over the interval of integration.
 
 ## Q3: Identity  the bivaraite normal disitriubtion of page 14 of the slides in class
+
 
 
 ## Q4: Use the inverse method to generate 1000 samples of stnadard normal
