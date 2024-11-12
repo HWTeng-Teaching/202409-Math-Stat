@@ -1,77 +1,128 @@
-# Key Points from Chapter 3.6: Functions of Jointly Distributed Random Variables
+# 	HW1106Q1
 
-## 1. Jointly Distributed Random Variables
-- Consider two continuous random variables \( X \) and \( Y \) that are jointly distributed.
-- The variables are transformed into new variables \( U \) and \( V \) using the functions \( u = g_1(x, y) \) and \( v = g_2(x, y) \).
+## Key Points:
 
-## 2. Transformation and Inversion
-- The transformation should be invertible: \( x = h_1(u, v) \) and \( y = h_2(u, v) \).
-- The Jacobian determinant \( J \) of the inverse transformation must exist and be non-zero.
-
-## 3. Proposition A (Main Result)
-- If \( X \) and \( Y \) are continuous random variables, and we apply a transformation \( (x, y) \to (u, v) \), the joint density of \( (U, V) \) is:
+### 1. Proposition A (Transformation of Joint Distributions)
+- If \( X \) and \( Y \) are jointly distributed continuous random variables and we apply a transformation:
   \[
-  f_{UV}(u, v) = f_{XY}(h_1(u, v), h_2(u, v)) |J|
+  u = g_1(x, y), \quad v = g_2(x, y),
   \]
-- Here, \( |J| \) is the absolute value of the Jacobian determinant of the inverse transformation.
-
-## 4. Example A - Transformation to Polar Coordinates
-- For independent standard normal variables \( X \) and \( Y \), converting to polar coordinates:
+  then the joint density of \( (U, V) \) is:
   \[
-  R = \sqrt{X^2 + Y^2}, \quad \theta = \tan^{-1}\left(\frac{Y}{X}\right)
-  \]
-- The joint density of \( (R, \theta) \) is derived using Proposition A:
-  \[
-  f_{R\theta}(r, \theta) = \frac{1}{2\pi} r \exp\left(-\frac{r^2}{2}\right)
-  \]
-  - Here, \( R \sim \chi(2) \) (chi-distribution with 2 degrees of freedom) and \( \theta \sim \text{Unif}(0, 2\pi) \).
-
-## 5. Example B - Linear Transformation
-- If \( X_1 \) and \( X_2 \) are independent standard normal random variables, and \( Y_1 = X_1 \), \( Y_2 = X_1 + X_2 \), the joint density of \( (Y_1, Y_2) \) is:
-  \[
-  f_{Y_1 Y_2}(y_1, y_2) = \frac{1}{2\pi} \exp\left(-y_1^2 - 2y_1 y_2 + y_2^2\right)
-  \]
-  - This is a bivariate normal distribution.
-
-## 6. Distribution of Functions of Random Variables
-- To find the distribution of a function \( Z = f(X, Y) \), two methods can be used:
-  - **Method 1 (Proposition A)**: Apply the transformation and use the Jacobian.
-  - **Method 2 (CDF Approach)**: Find the CDF of \( Z \), differentiate it to get the PDF.
-
-## 7. Leibniz Integral Rule
-- The Leibniz integral rule is used for differentiating under the integral sign, which is useful in complex transformations of random variables.
-
-## 8. Convolutions of Probability Distributions
-- **Discrete Random Variables**: For independent random variables \( X \) and \( Y \), the probability distribution of \( Z = X + Y \) is the convolution of the individual probability mass functions (PMFs):
-  \[
-  p_Z(z) = \sum_{x=-\infty}^{\infty} p_X(x) p_Y(z - x)
-  \]
-- **Continuous Random Variables**: For independent random variables \( X \) and \( Y \), the PDF of \( Z = X + Y \) is the convolution of the individual PDFs:
-  \[
-  f_Z(z) = \int_{-\infty}^{\infty} f_X(x) f_Y(z - x) dx
+  f_{UV}(u, v) = f_{XY}(h_1(u, v), h_2(u, v)) \left| J \right|.
   \]
 
-## 9. Example with Sum of Exponentials
-- If \( T_1 \sim \text{Exp}(\lambda) \) and \( T_2 \sim \text{Exp}(\lambda) \), the sum \( S = T_1 + T_2 \) follows a Gamma distribution with shape parameter 2 and rate \( \lambda \):
-  \[
-  f_S(s) = \lambda^2 s \exp(-\lambda s)
-  \]
-  - This is a Gamma distribution with shape \( k = 2 \) and rate \( \lambda \).
+### 2. Proof Sketch
+- The change of variables technique is used to derive the transformed joint density.
 
-## 10. Example with Quotients of Random Variables
-- If \( Z = Y / X \), where \( X \) and \( Y \) are independent normal random variables, the density of \( Z \) is derived through integration and results in a **Cauchy distribution**:
+### 3. Example 1: Polar Coordinates Transformation
+- Transform independent normal random variables \( X \) and \( Y \) into polar coordinates \( R \) and \( \theta \):
   \[
-  f_Z(z) = \frac{1}{\pi (1 + z^2)}
+  f_{R\theta}(r, \theta) = \frac{1}{2\pi} r \exp\left(-\frac{r^2}{2}\right), \quad 0 \leq r, \ 0 \leq \theta \leq 2\pi.
   \]
 
-## Summary of Methods
+### 4. Example 2: Linear Transformation of Normal Variables
+- Given \( Y_1 = X_1 \) and \( Y_2 = X_1 + X_2 \), find the joint density of \( Y_1 \) and \( Y_2 \):
+  \[
+  f_{Y_1 Y_2}(y_1, y_2) = \frac{1}{2\pi} \exp\left(-\frac{1}{2} \left( 2y_1^2 + 2y_1 y_2 + y_2^2 \right) \right).
+  \]
 
-### Method 1: Function of Random Variables
-- Apply **Proposition A**: Calculate the Jacobian and use the formula for the joint density.
+### 5. Finding Distributions of Transformed Variables
+- Use Proposition A or differentiate the CDF to find the PDF of transformed variables.
 
-### Method 2: CDF Approach
-- Use the cumulative distribution function (CDF) of the transformed variable and differentiate it to find the PDF.
+### 6. Leibniz Integral Rule
+- This rule allows differentiation under the integral sign when computing the PDF of transformed variables.
 
-## Additional Resources:
-- For further understanding of convolutions, check the following links:
-  - [Convolution of Probability Distributions](https://en.wikipedia.org/wiki/List_of_convolutions_of_probability_distributions)
+### 7. Convolution of Distributions
+- The sum of independent random variables is the convolution of their individual distributions.
+
+### 8. Example: Sum of Independent Exponential Random Variables
+- The sum \( S = T_1 + T_2 \) of independent exponential variables follows a Gamma distribution.
+
+### 9. Ratio of Random Variables
+- For \( Z = Y/X \), the CDF and PDF can be derived by integrating over the joint density of \( X \) and \( Y \).
+
+### 10. Example: Ratio of Normal Random Variables
+- The ratio \( Z = Y/X \) follows a Cauchy distribution with:
+  \[
+  f_Z(z) = \frac{1}{\pi (1 + z^2)}.
+  \]
+
+# HW1106Q2
+
+# Leibniz Integration Rule
+
+The **Leibniz Integration Rule** is a formula for differentiating an integral with respect to a parameter. This rule is particularly useful when the limits of integration or the integrand depend on a variable that is being differentiated.
+
+### Statement of the Leibniz Rule
+
+Suppose you have an integral of the form:
+
+$$
+I(\alpha) = \int_{a(\alpha)}^{b(\alpha)} f(x, \alpha) \, dx,
+$$
+
+where:
+
+$$
+- \( f(x, \alpha) \) is a function of both \( x \) and a parameter \( \alpha \),
+- The limits of integration \( a(\alpha) \) and \( b(\alpha) \) are functions of \( \alpha \).
+
+$$
+The Leibniz rule states that the derivative of the integral with respect to \( \alpha \) is:
+
+$$
+\frac{d}{d\alpha} I(\alpha) = \frac{d}{d\alpha} \int_{a(\alpha)}^{b(\alpha)} f(x, \alpha) \, dx = \int_{a(\alpha)}^{b(\alpha)} \frac{\partial}{\partial \alpha} f(x, \alpha) \, dx + f(b(\alpha), \alpha) \cdot b'(\alpha) - f(a(\alpha), \alpha) \cdot a'(\alpha).
+$$
+
+### Explanation
+
+1. **The Integral of the Derivative**: 
+
+   The first term, 
+
+   $$
+   \int_{a(\alpha)}^{b(\alpha)} \frac{\partial}{\partial \alpha} f(x, \alpha) \, dx,
+   $$
+
+   represents the change in the integral due to the direct dependence of the integrand on \( \alpha \).
+
+2. **The Boundary Terms**: 
+
+   The terms 
+
+   $$
+   f(b(\alpha), \alpha) \cdot b'(\alpha) \quad \text{and} \quad -f(a(\alpha), \alpha) \cdot a'(\alpha)
+   $$
+
+   account for the change in the limits of integration with respect to \( \alpha \). If the limits depend on \( \alpha \), the values of the integrand at the boundaries contribute to the rate of change of the integral.
+
+### Example
+
+Consider the following integral where the upper limit depends on a parameter \( \alpha \):
+
+$$
+I(\alpha) = \int_0^{\alpha} e^{-x^2} \, dx.
+$$
+
+To differentiate this with respect to \( \alpha \), apply the Leibniz rule:
+
+$$
+\frac{d}{d\alpha} I(\alpha) = e^{-\alpha^2} \cdot 1 - 0 \cdot 0 = e^{-\alpha^2}.
+$$
+
+Here, the integrand is \( e^{-x^2} \), and the upper limit is \( \alpha \), so the Leibniz rule gives us the derivative \( e^{-\alpha^2} \).
+
+### Applications
+
+- **Differentiating with Respect to a Parameter**: Leibniz's rule is useful for computing derivatives of integrals when the integrand or the limits depend on a parameter.
+  
+- **Changing Limits of Integration**: It can also be applied in cases where the limits of integration are functions of the parameter being differentiated.
+
+- **Probability Theory**: In statistics, Leibniz's rule is frequently used when computing moments, expectation, or distributions that involve integrals with varying limits or integrands that depend on parameters.
+
+### Conclusion
+
+The Leibniz integration rule is a powerful tool for differentiating integrals with respect to parameters, especially when the limits of integration themselves are functions of that parameter. It generalizes the concept of differentiating an integral by handling both the changes in the integrand and the boundary terms.
+
+# HW1106 Q3
