@@ -29,7 +29,7 @@ $$
 
 ## Q3: Identity  the bivaraite normal disitriubtion of page 14 of the slides in class
 
-
+<img width="923" alt="截圖 2024-11-12 下午1 34 06" src="https://github.com/user-attachments/assets/3edf74ab-de17-4067-ae15-8b03147d28b6">
 
 ## Q4: Use the inverse method to generate 1000 samples of stnadard normal
 
