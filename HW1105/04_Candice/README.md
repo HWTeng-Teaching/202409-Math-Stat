@@ -24,15 +24,15 @@ $$
 
 #### Assumptions
 
-1. Functions \( g_1 \) and \( g_2 \) have continuous partial derivatives.
-2. The Jacobian determinant \( J \) of the transformation is defined by:
+Functions \( g_1 \) and \( g_2 \) have continuous partial derivatives.
+The Jacobian determinant \( J \) of the transformation is defined by:
 
-   $$
+$$
    J = \begin{vmatrix}
        \frac{\partial h_1}{\partial u} & \frac{\partial h_1}{\partial v} \\
        \frac{\partial h_2}{\partial u} & \frac{\partial h_2}{\partial v} \\
        \end{vmatrix} = \frac{\partial h_1}{\partial u} \frac{\partial h_2}{\partial v} - \frac{\partial h_1}{\partial v} \frac{\partial h_2}{\partial u}
-   $$
+$$
 
    for all \( x \) and \( y \).
 
