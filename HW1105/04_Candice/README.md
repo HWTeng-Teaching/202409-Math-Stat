@@ -1,10 +1,10 @@
 # Q1
-## What are the key point in lecture 1105
+### What are the key point in lecture 1105
 
 # Answers
 
-## Joint Distributions
-### Proposition A
+1. **Joint Distributions**
+2. **Proposition A**
 
 The following proposition explores the transformation of jointly distributed continuous random variables \( X \) and \( Y \) onto new variables \( U \) and \( V \).
 
@@ -51,14 +51,15 @@ u = g_1(x, y) \quad \text{and} \quad v = g_2(x, y)
 $$
 
 for some values of \( x \) and \( y \); otherwise, \( f_{UV}(u, v) = 0 \).
-### Jacobian 
-### Bivariate normal density
-### Leibniz integral rule
-### Sums of random variables
+3. **Jacobian** 
+4. **Bivariate normal density**
+5. **Leibniz integral rule**
+6. **Sums of random variables**
 
 
 # Q2
-## Explain Leibniz Integration Rule
+
+### Explain Leibniz Integration Rule
 
 # Answers
 
@@ -80,13 +81,13 @@ $$
 \frac{d}{dt} F(t) = f(b(t), t) \cdot \frac{db(t)}{dt} - f(a(t), t) \cdot \frac{da(t)}{dt} + \int_{a(t)}^{b(t)} \frac{\partial}{\partial t} f(x, t) \, dx
 $$
 
-## Explanation of Terms
+### Explanation of Terms
 
 1. **Boundary Terms**: The first two terms, \( f(b(t), t) \cdot \frac{db(t)}{dt} \) and \( - f(a(t), t) \cdot \frac{da(t)}{dt} \), account for the contributions from the moving limits of integration. These terms capture the impact of changing the limits of integration on the total value of the integral.
 
 2. **Integral of Partial Derivative**: The third term, \( \int_{a(t)}^{b(t)} \frac{\partial}{\partial t} f(x, t) \, dx \), represents the contribution from the rate of change of the integrand \( f(x, t) \) with respect to \( t \) over the interval \( [a(t), b(t)] \).
 
-## When to Use the Leibniz Rule
+### When to Use the Leibniz Rule
 
 The Leibniz rule is particularly useful in scenarios such as:
 - **Physics and Engineering**: When you need to differentiate an integral with variable limits.
@@ -95,14 +96,14 @@ The Leibniz rule is particularly useful in scenarios such as:
 In summary, the Leibniz rule allows for efficient differentiation of integrals where the boundaries or the integrand itself depend on an external variable, making it a powerful tool in calculus and applied mathematics.
 
 # Q3
-## Identity the bivaraite normal disitriubtion of page 14 of the slides in class
+### Identity the bivaraite normal disitriubtion of page 14 of the slides in class
 
 # Answers
 ![IMG_25D3E9BC7F01-1](https://github.com/user-attachments/assets/3c8c6349-be0c-4104-9593-3cbf70ce08c0)
 
 
 # Q4 
-## Use the inverse method to generate 1000 samples of standard normal
+### Use the inverse method to generate 1000 samples of standard normal
 
 # Answers
 ```python
@@ -127,7 +128,7 @@ plt.show()
 
 
 # Q5
-## Use the polar method to generate 1000 samples of stnadard normal
+### Use the polar method to generate 1000 samples of stnadard normal
 
 # Answers
 ```python
@@ -161,3 +162,4 @@ plt.xlabel("Value")
 plt.ylabel("Frequency")
 plt.show()
 ```
+![截圖 2024-11-12 下午12 59 53](https://github.com/user-attachments/assets/6e2a11a7-04f1-4ea6-bd4a-4bbba3229a6b)
