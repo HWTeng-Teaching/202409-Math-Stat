@@ -126,3 +126,91 @@ Here, the integrand is \( e^{-x^2} \), and the upper limit is \( \alpha \), so t
 The Leibniz integration rule is a powerful tool for differentiating integrals with respect to parameters, especially when the limits of integration themselves are functions of that parameter. It generalizes the concept of differentiating an integral by handling both the changes in the integrand and the boundary terms.
 
 # HW1106 Q3
+
+# Q3: Identifying the Bivariate Normal Distribution
+
+We are given that \(X_1\) and \(X_2\) are independent standard normal random variables, and we define new random variables \(Y_1\) and \(Y_2\) as follows:
+
+$$
+Y_1 = X_1, \quad Y_2 = X_1 + X_2
+$$
+
+### Step 1: Inverse Transformation
+
+We want to express \(X_1\) and \(X_2\) in terms of \(Y_1\) and \(Y_2\). From the definitions:
+
+$$
+Y_1 = X_1 \quad \Rightarrow \quad X_1 = Y_1
+$$
+
+$$
+Y_2 = X_1 + X_2 \quad \Rightarrow \quad X_2 = Y_2 - Y_1
+$$
+
+Thus, the inverse transformation is:
+
+$$
+X_1 = Y_1, \quad X_2 = Y_2 - Y_1
+$$
+
+### Step 2: Jacobian Determinant
+
+To compute the joint pdf of \(Y_1\) and \(Y_2\), we need the Jacobian determinant of the transformation. The Jacobian matrix is:
+
+$$
+J = \begin{vmatrix}
+\frac{\partial X_1}{\partial Y_1} & \frac{\partial X_1}{\partial Y_2} \\
+\frac{\partial X_2}{\partial Y_1} & \frac{\partial X_2}{\partial Y_2}
+\end{vmatrix}
+= \begin{vmatrix}
+1 & 0 \\
+-1 & 1
+\end{vmatrix} = 1
+$$
+
+### Step 3: Joint Probability Density Function (pdf)
+
+Since \(X_1\) and \(X_2\) are independent standard normal random variables, their joint pdf is:
+
+$$
+f_{X_1, X_2}(x_1, x_2) = \frac{1}{2\pi} e^{-\frac{x_1^2 + x_2^2}{2}}
+$$
+
+Substituting the inverse transformation \(x_1 = y_1\) and \(x_2 = y_2 - y_1\), we get:
+
+$$
+f_{Y_1, Y_2}(y_1, y_2) = f_{X_1, X_2}(y_1, y_2 - y_1) \cdot |J|
+$$
+
+Since the Jacobian determinant is 1, we have:
+
+$$
+f_{Y_1, Y_2}(y_1, y_2) = \frac{1}{2\pi} e^{-\frac{y_1^2 + (y_2 - y_1)^2}{2}}
+$$
+
+Now, expand the term \((y_2 - y_1)^2\):
+
+$$
+(y_2 - y_1)^2 = y_2^2 - 2y_1y_2 + y_1^2
+$$
+
+So the joint pdf becomes:
+
+$$
+f_{Y_1, Y_2}(y_1, y_2) = \frac{1}{2\pi} e^{-\frac{y_1^2 + y_2^2 - 2y_1y_2 + y_1^2}{2}}
+$$
+
+Simplifying the expression:
+
+$$
+f_{Y_1, Y_2}(y_1, y_2) = \frac{1}{2\pi} e^{-\frac{2y_1^2 - 2y_1y_2 + y_2^2}{2}}
+$$
+
+Thus, the joint pdf is:
+
+$$
+f_{Y_1, Y_2}(y_1, y_2) = \frac{1}{2\pi} e^{-\frac{2y_1^2 - 2y_1y_2 + y_2^2}{2}} \quad \text{for} \quad -\infty \leq y_1, y_2 \leq \infty
+$$
+
+#HW1106 Q4
+
