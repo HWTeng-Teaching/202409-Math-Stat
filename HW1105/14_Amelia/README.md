@@ -41,5 +41,5 @@ $$
 
 ## Q5: Use the polar method to generate 1000 samples of standard normal
 
-<img width="583" alt="截圖 2024-11-11 下午8 32 38" src="https://github.com/user-attachments/assets/87723224-483e-4f22-80af-67f38f81c77e">
-<img width="583" alt="截圖 2024-11-11 下午8 32 46" src="https://github.com/user-attachments/assets/0ca9afad-6edb-41d0-98b6-e3fc302e9d81">
+<img width="533" alt="截圖 2024-11-12 下午6 03 20" src="https://github.com/user-attachments/assets/fd7b291c-6814-4d03-86b6-9f8ad96c4eca">
+<img width="566" alt="截圖 2024-11-12 下午6 03 59" src="https://github.com/user-attachments/assets/ec588484-a21f-4377-b65b-98ca636f6516">
