@@ -59,7 +59,6 @@ from scipy.stats import norm
 uniform_samples = np.random.uniform(0, 1, 1000)
 normal_samples = norm.ppf(uniform_samples)
 
-plt.figure(figsize=(10, 6))
 plt.hist(normal_samples, bins=50, density=True, alpha=0.5, color='skyblue', edgecolor='black')
 xmin, xmax = plt.xlim()
 x = np.linspace(xmin, xmax, 1000)
@@ -70,7 +69,8 @@ plt.title('Histogram of Generated Standard Normal Samples')
 plt.legend()
 plt.show()
 ```
-![Figure_1](https://github.com/user-attachments/assets/93717bc6-21c8-46cc-bf02-0da3fc6037d6)
+![11](https://github.com/user-attachments/assets/f63b28b3-6b12-4251-b806-8dfa4b8ba8d0)
+
 
 ## Q5. 
 
@@ -100,7 +100,6 @@ while len(samples) < num_samples:
     if len(samples) < num_samples:
         samples.append(v * factor)
 
-plt.figure(figsize=(10, 6))
 plt.hist(samples, bins=50, density=True, alpha=0.5, color='skyblue', edgecolor='black')
 xmin, xmax = plt.xlim()
 x = np.linspace(xmin, xmax, 1000)
@@ -111,4 +110,5 @@ plt.title('Histogram of Standard Normal Samples (Polar Method)')
 plt.legend()
 plt.show()
 ```
-![2](https://github.com/user-attachments/assets/73642bea-c2b6-491c-808a-2778a042f3b3)
+![12](https://github.com/user-attachments/assets/a3a4a5d4-a650-4d2d-8df5-f5abcf237783)
+
