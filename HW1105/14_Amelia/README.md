@@ -1,6 +1,10 @@
 ## Q1: What are the key points in Lec 1105
 
-
+<img width="1007" alt="截圖 2024-11-12 下午1 38 40" src="https://github.com/user-attachments/assets/ef15b40c-4fcb-40ee-b241-65d2a0cf3619">
+<img width="1007" alt="截圖 2024-11-12 下午1 38 51" src="https://github.com/user-attachments/assets/2af86b28-bfac-49dd-b660-a93a6f2461d0">
+<img width="924" alt="截圖 2024-11-12 下午1 39 02" src="https://github.com/user-attachments/assets/d16c826a-20a8-48de-9c36-122298841d9b">
+<img width="914" alt="截圖 2024-11-12 下午1 39 38" src="https://github.com/user-attachments/assets/78d49d87-6f10-46b2-ad65-a11c9ba37ce2">
+<img width="997" alt="截圖 2024-11-12 下午1 39 58" src="https://github.com/user-attachments/assets/dbd07f17-8643-471d-9f9c-04121dd39f90">
 
 ## Q2: Explain what is the Leibniz integration rule
 
