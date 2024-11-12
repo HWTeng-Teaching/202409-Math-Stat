@@ -11,7 +11,6 @@ $$\frac{d}{d𝑧}\left(\int_{a(𝑧)}^{b(𝑧)} f(𝑧, u)du\right)\=f\left(𝑧
 3. The third term represents the effect of changes in 𝑧 within the integrand 𝑓(𝑧,𝑢) itself.
 
 ## Q3: Identity  the bivaraite normal disitriubtion of page 14 of the slides in class
-<img width="931" alt="截圖 2024-11-12 凌晨2 00 32" src="https://github.com/user-attachments/assets/dcd05242-fe65-42d6-8613-07c596faf8f4">
 
 We know that $$X_1$$ and $$X_2$$ are independent standard normal random vairables and that $$Y_1=X_1, Y_2=X_1+X_2$$.
 
@@ -48,8 +47,12 @@ We can find that
 3. $$(1 - \rho^2) \sigma_{Y_2}^2 = 1$$
 4. $$\frac{\rho}{(1 - \rho^2) \sigma_{Y_1} \sigma_{Y_2}} = 1$$
 
-Acoording to the above equation, $$\sqrt{1 - \rho^2}=\frac{1 - \rho^2}{\rho}$$, so $$\rho=\frac{1}{\sqrt{2}}$$
+According to the above equation, $$\sqrt{1 - \rho^2}=\frac{1 - \rho^2}{\rho}$$, $$\rho=\frac{1}{\sqrt{2}}$$, so $$\sigma_{Y_1}=1$$ and $$\sigma_{Y_2}=\sqrt{2}$$.
 
+Thus, 
+```math
+(Y_1, Y_2) \sim N_2 \left( \begin{pmatrix} 0 \\ 0 \end{pmatrix}, \begin{pmatrix} 1 & 1 \\ 1 & 2 \end{pmatrix} \right)
+```
 
 ## Q4: Use the inverse method to generate 1000 samples of standard normal
 ```
