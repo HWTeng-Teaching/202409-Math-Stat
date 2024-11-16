@@ -23,6 +23,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/27e74ba3-359a-485f-bb68-97d9152b1b4a)
 
 
 ## Q3. 
@@ -34,6 +35,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/af012042-3d93-4d99-93e7-189e5d0f7e46)
 
 
 ## Q4. 
@@ -45,6 +47,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/e0122841-bc37-474e-a6e3-f4949bc0a6dd)
 
 
 ## Q5. 
@@ -56,6 +59,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/2c26f094-69db-43f8-9fcc-70d92449b6d2)
 
 
 ## Q6. 
@@ -68,6 +72,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/68c703a8-9773-42f9-bd2f-b9619d36e9f4)
 
 
 ## Q7. 
@@ -79,6 +84,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/58ac40a4-c48e-44a5-9911-c2207bcb61b1)
 
 
 ## Q8. 
@@ -89,3 +95,4 @@ by 周子揚 Rix
 
 
 ### Answers
+
