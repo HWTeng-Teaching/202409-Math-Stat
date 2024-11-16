@@ -11,6 +11,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/e41132f0-3f09-4157-8c80-9a01cb51e8a9)
 
 
 ## Q2. 
