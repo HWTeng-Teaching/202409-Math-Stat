@@ -1,1 +1,24 @@
-
+# Q1
+## Problem
+## Solution
+# Q2
+## Problem
+## Solution
+# Q3
+## Problem
+## Solution
+# Q4
+## Problem
+## Solution
+# Q5
+## Problem
+## Solution
+# Q6
+## Problem
+## Solution
+# Q7
+## Problem
+## Solution
+# Q8
+## Problem
+## Solution
