@@ -14,7 +14,7 @@
 ## Problem
 ## Solution
 # Q6
-![image](09_Frank/1112Q6.JPG)
+![image](/1112Q6.JPG)
 # Q7
 ## Problem
 ## Solution
