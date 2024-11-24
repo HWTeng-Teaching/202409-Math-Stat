@@ -60,7 +60,7 @@ Find the mean and variance of Normal
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/523ec159-6657-4cf0-8dc8-dcd898c316cd)
 
 ## Q7. 
 
@@ -70,6 +70,7 @@ Find the mean and variance of Normal
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/4d84a84a-3bb4-47d8-95a7-b59d8a24eb75)
 
 ## Q8. 
 
@@ -79,7 +80,7 @@ Find the mean and variance of Normal
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/5c43a7e0-b41d-48b2-97f1-71a17b7f75a4)
 
 ## Q9. 
 
@@ -89,7 +90,7 @@ Find the mean and variance of Normal
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/276d598c-3bd1-432b-a824-23b2d7aca9ac)
 
 ## Q10. 
 
@@ -99,3 +100,4 @@ Find the mean and variance of Normal
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/4bd16c12-df2e-495a-80d1-1cf26392aa2e)
