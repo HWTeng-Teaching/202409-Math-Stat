@@ -10,37 +10,37 @@ Find the mean and variance of Bernoulli
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/a02fdffb-50b9-4343-9037-f612e77a6751)
 
 ## Q2. 
 
 ### Questions 
 
-Find the mean and variance Exponential
+Find the mean and variance of Exponential
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/023a814c-3762-4a39-acd0-005b833a286d)
 
 ## Q3. 
 
 ### Questions 
 
-Find the mean and variance Gamma
+Find the mean and variance of Gamma
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/8ac3b3cf-5534-45d1-9678-75a77944b9e9)
 
 ## Q4. 
 
 ### Questions 
 
-Find the mean and variance Normal
+Find the mean and variance of Normal
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/4d5a517c-bd8a-4f38-b40f-153432ce5145)
 
 ## Q5. 
 
