@@ -50,7 +50,7 @@ Find the mean and variance of Normal
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/73e17d39-59f5-4a6f-808a-0e4eafa501fb)
 
 ## Q6. 
 
