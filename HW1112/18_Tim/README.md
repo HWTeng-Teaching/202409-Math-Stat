@@ -3,3 +3,7 @@
 ![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1112/18_Tim/IMG_1143.jpeg)
 ![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1112/18_Tim/IMG_1144.jpeg)
 ![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1112/18_Tim/IMG_1145.jpeg)
+![image](https://github.com/user-attachments/assets/b4f54568-c6c7-4ee8-a1af-eb8dbd7684d5)
+![image](https://github.com/user-attachments/assets/5fd6393d-f82d-4c39-bb9d-516d1266fba5)
+![image](https://github.com/user-attachments/assets/5d26ec46-1961-413d-addb-1780a6de40f1)
+![image](https://github.com/user-attachments/assets/1ae53fe3-de35-44fb-a368-5093edf9c5b6)
