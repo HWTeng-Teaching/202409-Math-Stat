@@ -193,22 +193,21 @@ E(X^2) = \frac{2}{\lambda^2}
 $$
 
 ### Step 2: Compute Variance
-Now substitute $E(X) = \frac{1}{\lambda}$ and $E(X^2) = \frac{2}{\lambda^2}$ into the variance formula:
 
 $$
-\text{Var}(X) = E(X^2) - [E(X)]^2
-$$
-
-$$
-\text{Var}(X) = \frac{2}{\lambda^2} - \left(\frac{1}{\lambda}\right)^2
-$$
-
-$$
-\text{Var}(X) = \frac{2}{\lambda^2} - \frac{1}{\lambda^2}
+\begin{aligned}
+&\text{Now substitute } E(X) = \frac{1}{\lambda} \text{ and } E(X^2) = \frac{2}{\lambda^2} \text{ into the variance formula:} \\
+&\text{Var}(X) = E(X^2) - [E(X)]^2
+\end{aligned}
 $$
 
 $$
-\text{Var}(X) = \frac{1}{\lambda^2}
+\begin{aligned}
+\text{Var}(X) &= E(X^2) - [E(X)]^2 \\
+&= \frac{2}{\lambda^2} - \left(\frac{1}{\lambda}\right)^2 \\
+&= \frac{2}{\lambda^2} - \frac{1}{\lambda^2} \\
+&= \frac{1}{\lambda^2}
+\end{aligned}
 $$
 
 ## Final Results:
