@@ -194,12 +194,7 @@ $$
 
 ### Step 2: Compute Variance
 
-$$
-\begin{aligned}
-&\text{Now substitute } E(X) = \frac{1}{\lambda} \text{ and } E(X^2) = \frac{2}{\lambda^2} \text{ into the variance formula:} \\
-&\text{Var}(X) = E(X^2) - [E(X)]^2
-\end{aligned}
-$$
+Now substitute $E(X) = \frac{1}{\lambda}$ and $E(X^2) = \frac{2}{\lambda^2}$ into the variance formula:
 
 $$
 \begin{aligned}
