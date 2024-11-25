@@ -406,7 +406,7 @@ $$
 Split the integral:
 
 $$
-E(X) = \frac{\sigma}{\sqrt{2 \pi \sigma^2}} \int_{-\infty}^\infty z e^{-\frac{z^2}{2}} dz + \frac{\mu}{\sqrt{2 \pi \sigma^2}} \int_{-\infty}^\infty e^{-\frac{z^2}{2}} dz
+E(X) = \frac{(\sigma)^2}{\sqrt{2 \pi \sigma^2}} \int_{-\infty}^\infty z e^{-\frac{z^2}{2}} dz + \frac{\mu}{\sqrt{2 \pi}} \int_{-\infty}^\infty e^{-\frac{z^2}{2}} dz
 $$
 
 ### Step 3: Evaluate Each Integral
