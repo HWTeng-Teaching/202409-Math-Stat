@@ -462,7 +462,7 @@ $$
 E(X^2) = \int_{-\infty}^\infty [(z \sigma + \mu)^2] \cdot \frac{1}{\sqrt{2 \pi}} e^{-\frac{z^2}{2}} dz
 $$
 
-Expand \( (z \sigma + \mu)^2 \):
+Expand $(z \sigma + \mu)^2$:
 
 $$
 (z \sigma + \mu)^2 = z^2 \sigma^2 + 2z \sigma \mu + \mu^2
