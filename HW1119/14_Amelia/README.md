@@ -147,7 +147,7 @@ $$
 $$
 
 $$
-= -\frac{x}{\lambda} e^{-\lambda x} + \frac{1}{\lambda^2} e^{-\lambda x} + C
+   = -\frac{x}{\lambda} e^{-\lambda x} + \frac{1}{\lambda^2} e^{-\lambda x} + C
 $$
 
 Substituting back:
