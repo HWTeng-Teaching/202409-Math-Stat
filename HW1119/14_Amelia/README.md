@@ -415,7 +415,8 @@ $$
 $$
 \int_{-\infty}^\infty z e^{-\frac{z^2}{2}} dz = 0
 $$
-   (This is because the function \( z e^{-\frac{z^2}{2}} \) is odd and symmetric about $z = 0$.)
+   
+(This is because the function $z e^{-\frac{z^2}{2}}$ is odd and symmetric about $z = 0$.)
 
 2. The second integral:
 
