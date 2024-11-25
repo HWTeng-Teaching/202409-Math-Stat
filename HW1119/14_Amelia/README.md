@@ -142,13 +142,10 @@ $$
 ### Step 2: Solving the Integral
 To solve this, we use **integration by parts**:
 
-$$
-\int x e^{-\lambda x} dx = -\frac{x}{\lambda} e^{-\lambda x} - \int -\frac{1}{\lambda} e^{-\lambda x} dx
-$$
-
-$$
-   = -\frac{x}{\lambda} e^{-\lambda x} + \frac{1}{\lambda^2} e^{-\lambda x} + C
-$$
+\begin{align*}
+\int x e^{-\lambda x} dx &= -\frac{x}{\lambda} e^{-\lambda x} - \int -\frac{1}{\lambda} e^{-\lambda x} dx \\
+&= -\frac{x}{\lambda} e^{-\lambda x} + \frac{1}{\lambda^2} e^{-\lambda x} + C
+\end{align*}
 
 Substituting back:
 
