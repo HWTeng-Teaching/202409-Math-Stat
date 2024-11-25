@@ -1,4 +1,4 @@
-# Q1 Mean and Variance of a Bernoulli Random Variable
+# Q1. Mean and Variance of a Bernoulli Random Variable
 
 A **Bernoulli random variable** $X$ takes two possible values: 
 
@@ -96,8 +96,6 @@ $$
 \text{Var}(X) = p(1 - p)
 $$
 
----
-
 ## Final Results:
 
 1. **Mean**:
@@ -111,3 +109,6 @@ $$
 $$
 \text{Var}(X) = p(1 - p)
 $$
+
+
+
