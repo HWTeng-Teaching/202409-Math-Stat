@@ -110,5 +110,122 @@ $$
 \text{Var}(X) = p(1 - p)
 $$
 
+# Q2. Mean and Variance of an Exponential Random Variable
+
+The **Exponential distribution** models the time until the occurrence of an event in a Poisson process. It is defined by the parameter $\lambda > 0$, which represents the rate of the event per unit time.
+
+The probability density function (PDF) of an Exponential random variable $X$ is:
+
+$$
+f_X(x) = 
+\begin{cases} 
+\lambda e^{-\lambda x}, & \text{if } x \geq 0, \\
+0, & \text{if } x < 0.
+\end{cases}
+$$
+
+## 1. Mean of Exponential Random Variable
+
+The **mean** (or expected value) of $X$ is given by:
+
+$$
+E(X) = \int_{-\infty}^{\infty} x f_X(x) dx
+$$
+
+### Step 1: Substituting the PDF
+Since the PDF $f_X(x) = 0$ for $x < 0$, we only integrate over $[0, \infty)$:
+
+$$
+E(X) = \int_{0}^{\infty} x \cdot \lambda e^{-\lambda x} dx
+$$
+
+### Step 2: Solving the Integral
+To solve this, we use **integration by parts**:
+
+$$
+\int x e^{-\lambda x} dx = -\frac{x}{\lambda} e^{-\lambda x} - \int -\frac{1}{\lambda} e^{-\lambda x} dx
+$$
+
+$$
+= -\frac{x}{\lambda} e^{-\lambda x} + \frac{1}{\lambda^2} e^{-\lambda x} + C
+$$
+
+Substituting back:
+
+$$
+E(X) = \lambda \left[ -\frac{x}{\lambda} e^{-\lambda x} + \frac{1}{\lambda^2} e^{-\lambda x} \right]_{0}^{\infty}
+$$
+
+### Step 3: Evaluate Limits
+At $x \to \infty$, $e^{-\lambda x} \to 0$. At $x = 0$, the terms simplify:
+
+$$
+E(X) = \lambda \left[ 0 + \frac{1}{\lambda^2} - 0 \right]
+$$
+
+$$
+E(X) = \frac{1}{\lambda}
+$$
+
+Thus, the **mean** is:
+
+$$
+E(X) = \frac{1}{\lambda}
+$$
+
+## 2. Variance of Exponential Random Variable
+
+The **variance** is defined as:
+$$
+\text{Var}(X) = E(X^2) - [E(X)]^2
+$$
+
+### Step 1: Compute $E(X^2)$
+The second moment $E(X^2)$ is:
+
+$$
+E(X^2) = \int_{0}^{\infty} x^2 \cdot \lambda e^{-\lambda x} dx
+$$
+
+Using integration by parts again, let $u = x^2$ and $dv = \lambda e^{-\lambda x} dx$. The result is:
+
+$$
+E(X^2) = \frac{2}{\lambda^2}
+$$
+
+### Step 2: Compute Variance
+Now substitute $E(X) = \frac{1}{\lambda}$ and $E(X^2) = \frac{2}{\lambda^2}$ into the variance formula:
+
+$$
+\text{Var}(X) = E(X^2) - [E(X)]^2
+$$
+
+$$
+\text{Var}(X) = \frac{2}{\lambda^2} - \left(\frac{1}{\lambda}\right)^2
+$$
+
+$$
+\text{Var}(X) = \frac{2}{\lambda^2} - \frac{1}{\lambda^2}
+$$
+
+$$
+\text{Var}(X) = \frac{1}{\lambda^2}
+$$
+
+## Final Results:
+
+1. **Mean**:
+
+$$
+E(X) = \frac{1}{\lambda}
+$$
+
+2. **Variance**:
+
+$$
+\text{Var}(X) = \frac{1}{\lambda^2}
+$$
+
+
 
 
