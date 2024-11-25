@@ -528,6 +528,8 @@ $$
 \text{Var}(X) = \sigma^2
 $$
 
-
-
+![IMG_3290](https://github.com/user-attachments/assets/b844c0f3-932c-4257-9910-07d5ce0688e0)
+![IMG_3291](https://github.com/user-attachments/assets/e414a47c-8d85-4b54-ae22-8d5e8908c838)
+![IMG_3292](https://github.com/user-attachments/assets/8bfd3af7-1e1c-495a-9690-a1b669855776)
+![IMG_3293](https://github.com/user-attachments/assets/88e2ec0c-81da-418f-aa39-578f0f83c11b)
 
