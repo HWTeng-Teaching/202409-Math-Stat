@@ -2,9 +2,9 @@
 
 A **Bernoulli random variable** $X$ takes two possible values: 
 
-$X = 1$ (success) with probability $p$,
+&#8226; $X = 1$ (success) with probability $p$,
 
-$X = 0$ (failure) with probability $1 - p$.
+&#8226; $X = 0$ (failure) with probability $1 - p$.
 
 The probability mass function (PMF) is given by:
 
@@ -223,17 +223,17 @@ $$
 
 The **Gamma distribution** is defined by two parameters:
 
-$\alpha$ (shape parameter)
+&#8226; $\alpha$ (shape parameter)
 
-$\beta$ (rate parameter, also written as $\theta = \frac{1}{\beta}$, the scale parameter)
+&#8226; $\beta$ (rate parameter, also written as $\theta = \frac{1}{\beta}$, the scale parameter)
 
 The probability density function (PDF) is:
 
 $$
-f_X(x) = \frac{\beta^\alpha x^{\alpha-1} e^{-\beta x}}{\Gamma(\alpha)}, \quad x > 0, \alpha > 0, \beta > 0
+f_X(x) = \frac{\beta^\alpha x^{\alpha-1} e^{-\beta x}}{\Gamma(\alpha)}, \quad x > 0,  \alpha > 0,  \beta > 0
 $$
 
-where \( \Gamma(\alpha) \) is the Gamma function:
+where $\Gamma(\alpha)$ is the Gamma function:
 
 $$
 \Gamma(\alpha) = \int_{0}^\infty t^{\alpha-1} e^{-t} dt
@@ -341,7 +341,7 @@ Now substitute $E(X^2) = \frac{(\alpha + 1)\alpha}{\beta^2}$ and $E(X) = \frac{\
 
 $$
 \begin{aligned}
-\text{Var}(X) = E(X^2) - [E(X)]^2 \\
+\text{Var}(X) &= E(X^2) - [E(X)]^2 \\
 &= \frac{(\alpha + 1)\alpha}{\beta^2} - \left(\frac{\alpha}{\beta}\right)^2 \\
 &= \frac{(\alpha + 1)\alpha}{\beta^2} - \frac{\alpha^2}{\beta^2} \\
 &= \frac{\alpha}{\beta^2}
@@ -367,6 +367,166 @@ $$
 $$
 \text{Var}(X) = \frac{\alpha}{\beta^2}
 $$
+
+# Q4. Mean and Variance of a Normal Distribution
+
+The **Normal distribution** is defined by two parameters:
+
+&#8226; $\mu$ (mean): the center of the distribution.
+
+&#8226; $\sigma^2$ (variance): a measure of the spread of the distribution.
+
+The probability density function (PDF) is:
+
+$$
+f_X(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x - \mu)^2}{2 \sigma^2}}, \quad -\infty < x < \infty
+$$
+
+## 1. Mean of the Normal Distribution
+
+The **mean** (expected value) of $X$ is:
+
+$$
+E(X) = \int_{-\infty}^\infty x f_X(x) dx
+$$
+
+### Step 1: Substituting the PDF
+
+$$
+E(X) = \int_{-\infty}^\infty x \cdot \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x - \mu)^2}{2 \sigma^2}} dx
+$$
+
+### Step 2: Simplify
+Using a substitution $z = \frac{x - \mu}{\sigma}$, so $x = z \sigma + \mu$ and $dx = \sigma dz$, the integral becomes:
+
+$$
+E(X) = \int_{-\infty}^\infty (\sigma z + \mu) \cdot \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{z^2}{2}} \sigma dz
+$$
+
+Split the integral:
+
+$$
+E(X) = \frac{\sigma}{\sqrt{2 \pi \sigma^2}} \int_{-\infty}^\infty z e^{-\frac{z^2}{2}} dz + \frac{\mu}{\sqrt{2 \pi \sigma^2}} \int_{-\infty}^\infty e^{-\frac{z^2}{2}} dz
+$$
+
+### Step 3: Evaluate Each Integral
+1. The first integral:
+
+$$
+\int_{-\infty}^\infty z e^{-\frac{z^2}{2}} dz = 0
+$$
+   (This is because the function \( z e^{-\frac{z^2}{2}} \) is odd and symmetric about $z = 0$.)
+
+2. The second integral:
+
+$$
+\int_{-\infty}^\infty e^{-\frac{z^2}{2}} dz = \sqrt{2 \pi}
+$$
+
+Substitute back:
+
+$$
+E(X) = \mu
+$$
+
+Thus, the **mean** of the normal distribution is:
+
+$$
+E(X) = \mu
+$$
+
+## 2. Variance of the Normal Distribution
+
+The **variance** is defined as:
+
+$$
+\text{Var}(X) = E(X^2) - [E(X)]^2
+$$
+
+### Step 1: Compute $E(X^2)$
+
+$$
+E(X^2) = \int_{-\infty}^\infty x^2 f_X(x) dx
+$$
+
+Substitute the PDF:
+
+$$
+E(X^2) = \int_{-\infty}^\infty x^2 \cdot \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x - \mu)^2}{2 \sigma^2}} dx
+$$
+
+Using the same substitution $z = \frac{x - \mu}{\sigma}$, so $x = z \sigma + \mu$:
+
+$$
+E(X^2) = \int_{-\infty}^\infty [(z \sigma + \mu)^2] \cdot \frac{1}{\sqrt{2 \pi}} e^{-\frac{z^2}{2}} dz
+$$
+
+Expand \( (z \sigma + \mu)^2 \):
+
+$$
+(z \sigma + \mu)^2 = z^2 \sigma^2 + 2z \sigma \mu + \mu^2
+$$
+
+Substitute this back into the integral:
+
+$$
+E(X^2) = \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^\infty (z^2 \sigma^2 + 2z \sigma \mu + \mu^2) e^{-\frac{z^2}{2}} dz
+$$
+
+Split into three integrals:
+
+$$
+E(X^2) = \frac{\sigma^2}{\sqrt{2 \pi}} \int_{-\infty}^\infty z^2 e^{-\frac{z^2}{2}} dz + \frac{2 \sigma \mu}{\sqrt{2 \pi}} \int_{-\infty}^\infty z e^{-\frac{z^2}{2}} dz + \frac{\mu^2}{\sqrt{2 \pi}} \int_{-\infty}^\infty e^{-\frac{z^2}{2}} dz
+$$
+
+1. The second term vanishes because:
+
+$$   
+\int_{-\infty}^\infty z e^{-\frac{z^2}{2}} dz = 0
+$$
+
+3. The first term:
+
+$$
+\int_{-\infty}^\infty z^2 e^{-\frac{z^2}{2}} dz = \sqrt{2 \pi}
+$$
+
+4. The third term:
+   
+$$
+\int_{-\infty}^\infty e^{-\frac{z^2}{2}} dz = \sqrt{2 \pi}
+$$
+
+Substitute back:
+
+$$
+E(X^2) = \sigma^2 + \mu^2
+$$
+
+### Step 2: Compute Variance
+
+$$
+\begin{aligned}
+\text{Var}(X) &= E(X^2) - [E(X)]^2 \\
+&= (\sigma^2 + \mu^2) - \mu^2 \\
+&= \sigma^2 
+\end{aligned}
+$$
+
+## Final Results
+
+1. **Mean**:
+
+$$
+E(X) = \mu
+$$
+
+2. **Variance**:
+
+$$
+\text{Var}(X) = \sigma^2
+$$
+
 
 
 
