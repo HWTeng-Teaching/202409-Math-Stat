@@ -19,3 +19,4 @@
 ----------------------------------------------------------------------------
 5.
 ![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1105/18_Tim/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-11-26%20103753.png)
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1105/18_Tim/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-11-26%20103759.png)
