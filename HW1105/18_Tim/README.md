@@ -18,5 +18,15 @@
 ![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1105/18_Tim/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-11-25%20192308.png)
 ----------------------------------------------------------------------------
 5.
+steps explaination
+1.generate u1 u2 ( uniform distribution of [0,1] )
+2.generate $R = \sqrt{-2 \ln(U_1)}$.
+           $\theta = 2 \pi U_2$.
+3.calculate 1000samples
+  $X = R \cos(\theta)$.
+  $Y = R \sin(\theta)$.
+
+formula above is based on Box-Muller transformation and Rayleigh distribution
+In the Box-Muller transformation, u is a uniform random variable on the interval (0,1), is essential for generating a Rayleigh-distributed radius R that allows us to produce independent standard normal samples.
 ![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1105/18_Tim/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-11-26%20103753.png)
 ![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1105/18_Tim/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202024-11-26%20103759.png)
