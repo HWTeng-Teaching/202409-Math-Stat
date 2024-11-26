@@ -18,7 +18,7 @@ $$
 
 ## 1. Mean of Bernoulli Random Variable
 
-The **mean** (or expected value) of a random variable \( X \) is defined as:
+The **mean** (or expected value) of a random variable $X$ is defined as:
 
 $$
 E(X) = \sum_x x \cdot P(X = x)
