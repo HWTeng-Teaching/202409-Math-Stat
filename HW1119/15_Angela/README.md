@@ -489,4 +489,5 @@ $$
 $$
 
 ![HW1119-2](https://github.com/user-attachments/assets/035aa928-6565-4149-84a4-52b8d9666145)
-
+![HW1119-3](https://github.com/user-attachments/assets/09c9ed9a-e3ad-4298-9098-c6a998c2e9b3)
+![HW1119-4](https://github.com/user-attachments/assets/5f0fc2a6-9ca1-4cf4-b1c6-fe05a9a7b71f)
