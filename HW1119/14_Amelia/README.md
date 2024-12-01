@@ -175,6 +175,7 @@ $$
 ## 2. Variance of Exponential Random Variable
 
 The **variance** is defined as:
+
 $$
 \text{Var}(X) = E(X^2) - [E(X)]^2
 $$
