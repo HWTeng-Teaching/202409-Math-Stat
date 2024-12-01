@@ -123,114 +123,130 @@ $$
 
 **Variance**: $\text{Var}(X) = p(1 - p)$
 
-# Q2. Mean and Variance of an Exponential Random Variable
+# Q2. Find the mgf of Exponential and use it to find its mean and variance
 
-The **Exponential distribution** models the time until the occurrence of an event in a Poisson process. It is defined by the parameter $\lambda > 0$, which represents the rate of the event per unit time.
+A **Bernoulli random variable** $X$ takes two possible values: 
 
-The probability density function (PDF) of an Exponential random variable $X$ is:
+&#8226; $X = 1$ (success) with probability $p$,
+
+&#8226; $X = 0$ (failure) with probability $1 - p$.
+
+The probability mass function (PMF) is given by:
 
 $$
-f_X(x) = 
+P(X = x) = 
 \begin{cases} 
-\lambda e^{-\lambda x}, & \text{if } x \geq 0, \\
-0, & \text{if } x < 0.
+p, & \text{if } x = 1, \\
+1 - p, & \text{if } x = 0.
 \end{cases}
 $$
 
-## 1. Mean of Exponential Random Variable
+## 1. Moment Generating Function (MGF)
 
-The **mean** (or expected value) of $X$ is given by:
-
-$$
-E(X) = \int_{-\infty}^{\infty} x f_X(x) dx
-$$
-
-### Step 1: Substituting the PDF
-Since the PDF $f_X(x) = 0$ for $x < 0$, we only integrate over $[0, \infty)$:
+The moment-generating function (MGF) is defined as:
 
 $$
-E(X) = \int_{0}^{\infty} x \cdot \lambda e^{-\lambda x} dx
+M_X(t) = E[e^{tX}]
 $$
 
-### Step 2: Solving the Integral
-To solve this, we use **integration by parts**:
+For a Bernoulli random variable:
+
+$$
+M_X(t) = E[e^{tX}] = \sum_{x} e^{tx} P(X = x)
+$$
+
+Substitute $P(X = 1) = p$ and $P(X = 0) = 1 - p$:
 
 $$
 \begin{aligned}
-\int x e^{-\lambda x} dx &= -\frac{x}{\lambda} e^{-\lambda x} - \int -\frac{1}{\lambda} e^{-\lambda x} dx \\
-&= -\frac{x}{\lambda} e^{-\lambda x} + \frac{1}{\lambda^2} e^{-\lambda x} + C
+M_X(t) &= e^{t \cdot 1} P(X = 1) + e^{t \cdot 0} P(X = 0) \\
+&= e^t \cdot p + 1 \cdot (1 - p) \\
+&= p e^t + (1 - p)
 \end{aligned}
 $$
 
-Substituting back:
+Thus, the MGF of $X$ is:
 
 $$
-E(X) = \lambda \left[ -\frac{x}{\lambda} e^{-\lambda x} + \frac{1}{\lambda^2} e^{-\lambda x} \right]_{0}^{\infty}
+M_X(t) = (1-p) + p e^t
 $$
 
-### Step 3: Evaluate Limits
-At $x \to \infty$, $e^{-\lambda x} \to 0$. At $x = 0$, the terms simplify:
+## 2. Mean $E[X]$ Using the MGF
+
+We know the preperty:
+If the moment-generating function exists in an open interval containing zero, then $M^{(r)}(0) = E(X^r)$.
+
+The mean is the first derivative of the MGF evaluated at $t = 0$:
 
 $$
-E(X) = \lambda \left[ 0 + \frac{1}{\lambda^2} - 0 \right]
+E[X] = M_X'(t)\big|_{t=0}
+$$
+
+First, compute the derivative of $M_X(t)$:
+
+$$
+\begin{aligned}
+M_X'(t) &= \frac{d}{dt} \left[ (1-p) + p e^t \right] \\
+&= p e^t 
+\end{aligned}
+$$
+
+Now evaluate $M_X'(t)$ at $t = 0$:
+
+$$
+E[X] = M_X'(0) = p e^0 = p
+$$
+
+Thus, the mean of \( X \) is:
+
+$$
+E[X] = p
+$$
+
+## 3. Variance $\text{Var}(X)$ Using the MGF
+
+The variance is computed using the second derivative of the MGF:
+
+$$
+\text{Var}(X) = E[X^2] - (E[X])^2
 $$
 
 $$
-E(X) = \frac{1}{\lambda}
+E[X^2] = M_X''(t)\big|_{t=0}
 $$
 
-Thus, the **mean** is:
+Compute the second derivative of $M_X(t)$:
 
 $$
-E(X) = \frac{1}{\lambda}
+\begin{aligned}
+M_X''(t) &= \frac{d}{dt} \left[ p e^t \right] \\
+&= p e^t
+\end{aligned}
 $$
 
-## 2. Variance of Exponential Random Variable
-
-The **variance** is defined as:
-$$
-\text{Var}(X) = E(X^2) - [E(X)]^2
-$$
-
-### Step 1: Compute $E(X^2)$
-The second moment $E(X^2)$ is:
+Evaluate $M_X''(t)$ at $t = 0$:
 
 $$
-E(X^2) = \int_{0}^{\infty} x^2 \cdot \lambda e^{-\lambda x} dx
+E[X^2] = M_X''(0) = p e^0 = p
 $$
 
-Using integration by parts again, let $u = x^2$ and $dv = \lambda e^{-\lambda x} dx$. The result is:
-
-$$
-E(X^2) = \frac{2}{\lambda^2}
-$$
-
-### Step 2: Compute Variance
-
-Now substitute $E(X) = \frac{1}{\lambda}$ and $E(X^2) = \frac{2}{\lambda^2}$ into the variance formula:
+Now substitute into the variance formula:
 
 $$
 \begin{aligned}
 \text{Var}(X) &= E(X^2) - [E(X)]^2 \\
-&= \frac{2}{\lambda^2} - \left(\frac{1}{\lambda}\right)^2 \\
-&= \frac{2}{\lambda^2} - \frac{1}{\lambda^2} \\
-&= \frac{1}{\lambda^2}
+&= p - p^2 \\
+&= p(1 - p)
 \end{aligned}
 $$
 
 ## Final Results:
 
-1. **Mean**:
+**MGF**: $M_X(t) = (1-p) + p e^t$
 
-$$
-E(X) = \frac{1}{\lambda}
-$$
+**Mean**: $E[X] = p$
 
-2. **Variance**:
-
-$$
-\text{Var}(X) = \frac{1}{\lambda^2}
-$$
+**Variance**: $\text{Var}(X) = p(1 - p)$
 
 # Q3. Mean and Variance of a Gamma Random Variable
 
