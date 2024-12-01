@@ -267,7 +267,7 @@ $$
 
 **Variance**: $\text{Var}(X) = \dfrac{1}{\lambda^2}$
 
-# Q3. Find the mgf of Gamma and use it to find its mean and variance
+# Q3. Find the mgf of the gamma distribution and use it to find its mean and variance
 
 The **Gamma distribution** is defined by two parameters:
 
@@ -417,7 +417,7 @@ $$
 
 **Variance**: $\text{Var}(X) = \frac{\alpha}{\beta^2}$
 
-# Q4. Mean and Variance of a Normal Distribution
+# Q4. Find the mgf of the normal distribution and use it to find its mean and variance
 
 The **Normal distribution** is defined by two parameters:
 
@@ -431,148 +431,125 @@ $$
 f_X(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x - \mu)^2}{2 \sigma^2}}, \quad -\infty < x < \infty
 $$
 
-## 1. Mean of the Normal Distribution
+## 1. Moment Generating Function (MGF)
 
-The **mean** (expected value) of $X$ is:
-
-$$
-E(X) = \int_{-\infty}^\infty x f_X(x) dx
-$$
-
-### Step 1: Substituting the PDF
+The moment-generating function (MGF) is defined as:
 
 $$
-E(X) = \int_{-\infty}^\infty x \cdot \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x - \mu)^2}{2 \sigma^2}} dx
+M_X(t) = E[e^{tX}]
 $$
 
-### Step 2: Simplify
-Using a substitution $z = \frac{x - \mu}{\sigma}$, so $x = z \sigma + \mu$ and $dx = \sigma dz$, the integral becomes:
-
 $$
-E(X) = \int_{-\infty}^\infty (\sigma z + \mu) \cdot \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{z^2}{2}} \sigma dz
+M_X(t) = E[e^{tX}] = \int_{-\infty}^\infty e^{tx} f_X(x) \, dx.
 $$
 
-Split the integral:
+Substitute the PDF of $X$ into the definition of $M_X(t)$:
 
 $$
-E(X) = \frac{\sigma}{\sqrt{2 \pi}} \int_{-\infty}^\infty z e^{-\frac{z^2}{2}} dz + \frac{\mu}{\sqrt{2 \pi}} \int_{-\infty}^\infty e^{-\frac{z^2}{2}} dz
+M_X(t) = \int_{-\infty}^\infty e^{tx} \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}} \, dx.
 $$
 
-### Step 3: Evaluate Each Integral
-1. The first integral:
+Combine the exponential terms:
 
 $$
-\int_{-\infty}^\infty z e^{-\frac{z^2}{2}} dz = 0
-$$
-   
-(This is because the function $z e^{-\frac{z^2}{2}}$ is odd and symmetric about $z = 0$.)
-
-2. The second integral:
-
-$$
-\int_{-\infty}^\infty e^{-\frac{z^2}{2}} dz = \sqrt{2 \pi}
+M_X(t) = \frac{1}{\sqrt{2\pi\sigma^2}} \int_{-\infty}^\infty e^{-\frac{(x - \mu)^2}{2\sigma^2} + tx} \, dx.
 $$
 
-Substitute back:
+Complete the square in the exponent:
 
 $$
-E(X) = \mu
+-\frac{(x - \mu)^2}{2\sigma^2} + tx = -\frac{1}{2\sigma^2} \left[(x - \mu)^2 - 2\sigma^2 tx\right].
 $$
 
-Thus, the **mean** of the normal distribution is:
+Expanding $(x - \mu)^2$ gives:
 
 $$
-E(X) = \mu
+(x - \mu)^2 - 2\sigma^2 tx = x^2 - 2\mu x + \mu^2 - 2\sigma^2 tx = x^2 - 2(\mu + \sigma^2 t)x + \mu^2.
 $$
 
-## 2. Variance of the Normal Distribution
-
-The **variance** is defined as:
+Complete the square in $x$:
 
 $$
-\text{Var}(X) = E(X^2) - [E(X)]^2
+x^2 - 2(\mu + \sigma^2 t)x + \mu^2 = \left[x - (\mu + \sigma^2 t)\right]^2 - (\sigma^2 t^2 + 2\mu t).
 $$
 
-### Step 1: Compute $E(X^2)$
+Thus, the exponent becomes:
 
 $$
-E(X^2) = \int_{-\infty}^\infty x^2 f_X(x) dx
+-\frac{(x - \mu)^2}{2\sigma^2} + tx = -\frac{1}{2\sigma^2} \left[x - (\mu + \sigma^2 t)\right]^2 + \frac{\sigma^2 t^2}{2} + \mu t.
 $$
 
-Substitute the PDF:
+The integral simplifies to:
 
 $$
-E(X^2) = \int_{-\infty}^\infty x^2 \cdot \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x - \mu)^2}{2 \sigma^2}} dx
+M_X(t) = e^{\mu t + \frac{\sigma^2 t^2}{2}} \int_{-\infty}^\infty \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{1}{2\sigma^2} \left[x - (\mu + \sigma^2 t)\right]^2} \, dx.
 $$
 
-Using the same substitution $z = \frac{x - \mu}{\sigma}$, so $x = z \sigma + \mu$:
+The integral evaluates to 1 (as it is the integral of a Gaussian PDF), leaving:
 
 $$
-E(X^2) = \int_{-\infty}^\infty [(z \sigma + \mu)^2] \cdot \frac{1}{\sqrt{2 \pi}} e^{-\frac{z^2}{2}} dz
+M_X(t) = e^{\mu t + \frac{\sigma^2 t^2}{2}}.
 $$
 
-Expand $(z \sigma + \mu)^2$:
+## 2. Mean $E[X]$ Using the MGF
+
+We know the preperty:
+If the moment-generating function exists in an open interval containing zero, then $M^{(r)}(0) = E(X^r)$.
+
+The mean is the first derivative of the MGF evaluated at $t = 0$:
 
 $$
-(z \sigma + \mu)^2 = z^2 \sigma^2 + 2z \sigma \mu + \mu^2
+E[X] = M_X'(t)\big|_{t=0}
 $$
 
-Substitute this back into the integral:
+First, compute the derivative of $M_X(t)$:
 
 $$
-E(X^2) = \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^\infty (z^2 \sigma^2 + 2z \sigma \mu + \mu^2) e^{-\frac{z^2}{2}} dz
+M_X'(t) = e^{\mu t + \frac{\sigma^2 t^2}{2}} (\mu + \sigma^2 t).
 $$
 
-Split into three integrals:
+Now evaluate $M_X'(t)$ at $t = 0$:
 
 $$
-E(X^2) = \frac{\sigma^2}{\sqrt{2 \pi}} \int_{-\infty}^\infty z^2 e^{-\frac{z^2}{2}} dz + \frac{2 \sigma \mu}{\sqrt{2 \pi}} \int_{-\infty}^\infty z e^{-\frac{z^2}{2}} dz + \frac{\mu^2}{\sqrt{2 \pi}} \int_{-\infty}^\infty e^{-\frac{z^2}{2}} dz
+E[X] = M_X'(0) = e^{0} \cdot \mu = \mu.
 $$
 
-1. The second term vanishes because:
+Thus, $E[X] = \mu$.
 
-$$   
-\int_{-\infty}^\infty z e^{-\frac{z^2}{2}} dz = 0
-$$
+## 3. Variance $\text{Var}(X)$ Using the MGF
 
-3. The first term:
+The variance is computed using the second derivative of the MGF:
 
 $$
-\int_{-\infty}^\infty z^2 e^{-\frac{z^2}{2}} dz = \sqrt{2 \pi}
+\text{Var}(X) = E[X^2] - (E[X])^2
 $$
 
-4. The third term:
-   
 $$
-\int_{-\infty}^\infty e^{-\frac{z^2}{2}} dz = \sqrt{2 \pi}
+E[X^2] = M_X''(t)\big|_{t=0}
 $$
 
-Substitute back:
+Compute the second derivative of $M_X(t)$:
 
 $$
-E(X^2) = \sigma^2 + \mu^2
+M_X''(t) = e^{\mu t + \frac{\sigma^2 t^2}{2}} \left[(\mu + \sigma^2 t)^2 + \sigma^2\right].
 $$
 
-### Step 2: Compute Variance
+Evaluate $M_X''(t)$ at $t = 0$:
 
 $$
-\begin{aligned}
-\text{Var}(X) &= E(X^2) - [E(X)]^2 \\
-&= (\sigma^2 + \mu^2) - \mu^2 \\
-&= \sigma^2 
-\end{aligned}
+M_X''(0) = e^{0} \left[\mu^2 + \sigma^2\right] = \mu^2 + \sigma^2.
 $$
 
-## Final Results
-
-1. **Mean**:
+Therefore:
 
 $$
-E(X) = \mu
+\text{Var}(X) = E[X^2] - (E[X])^2 = (\mu^2 + \sigma^2) - \mu^2 = \sigma^2.
 $$
 
-2. **Variance**:
+## Final Results:
 
-$$
-\text{Var}(X) = \sigma^2
-$$
+**MGF**: $M_X(t) = e^{\mu t + \frac{\sigma^2 t^2}{2}}.$
+
+**Mean**: $E[X] = \mu$
+
+**Variance**: $\text{Var}(X) = \sigma^2$
