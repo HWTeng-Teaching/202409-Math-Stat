@@ -163,7 +163,7 @@ $$
 M_X(t) = \lambda \int_{0}^{\infty} e^{(\lambda - t) x} \ dx
 $$
 
-This is a standard integral, and it converges for \( t < \lambda \). The integral evaluates to:
+This is a standard integral, and it converges for $t < \lambda$. The integral evaluates to:
 
 $$
 M_X(t) = \lambda \cdot \frac{1}{\lambda - t} \quad \text{for} \quad t < \lambda
