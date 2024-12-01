@@ -46,7 +46,7 @@ Find the mean and variance of Normal
 
 ### Questions 
 
-![image](https://github.com/user-attachments/assets/90dd5b0b-aa15-46e4-acab-ff46c4321e2f)
+![image](https://github.com/user-attachments/assets/3c86a7d4-9119-410f-afec-730d5101ea82)
 
 ### Answers
 
