@@ -261,7 +261,7 @@ $$
 
 ## Final Results:
 
-**MGF**: $M_X(t) = \dfrac{\lambda}{\lambda - t}$, $for t < \lambda$
+**MGF**: $M_X(t) = \dfrac{\lambda}{\lambda - t}$, $\text{for} t < \lambda$
 
 **Mean**: $E[X] = \dfrac{1}{\lambda}$
 
