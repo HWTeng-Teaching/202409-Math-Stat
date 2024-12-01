@@ -298,31 +298,31 @@ $$
 Using the definition of expectation:
 
 $$
-M_X(t) = \int_0^\infty e^{tx} f_X(x; \alpha, \beta) \, dx
+M_X(t) = \int_0^\infty e^{tx} f_X(x; \alpha, \beta) \ dx
 $$
 
 Substitute the PDF of the gamma distribution:
 
 $$
-M_X(t) = \int_0^\infty e^{tx} \frac{\beta^\alpha x^{\alpha - 1} e^{-\beta x}}{\Gamma(\alpha)} \, dx
+M_X(t) = \int_0^\infty e^{tx} \frac{\beta^\alpha x^{\alpha - 1} e^{-\beta x}}{\Gamma(\alpha)} \ dx
 $$
 
 Combine the exponents:
 
 $$
-M_X(t) = \frac{\beta^\alpha}{\Gamma(\alpha)} \int_0^\infty x^{\alpha - 1} e^{-(\beta - t)x} \, dx
+M_X(t) = \frac{\beta^\alpha}{\Gamma(\alpha)} \int_0^\infty x^{\alpha - 1} e^{-(\beta - t)x} \ dx
 $$
 
 The integral converges if $t < \beta$. Let $\lambda = \beta - t$. The integral becomes:
 
 $$
-M_X(t) = \frac{\beta^\alpha}{\Gamma(\alpha)} \int_0^\infty x^{\alpha - 1} e^{-\lambda x} \, dx
+M_X(t) = \frac{\beta^\alpha}{\Gamma(\alpha)} \int_0^\infty x^{\alpha - 1} e^{-\lambda x} \ dx
 $$
 
 The integral evaluates to the Gamma function:
 
 $$
-\int_0^\infty x^{\alpha - 1} e^{-\lambda x} \, dx = \frac{\Gamma(\alpha)}{\lambda^\alpha}
+\int_0^\infty x^{\alpha - 1} e^{-\lambda x} \ dx = \frac{\Gamma(\alpha)}{\lambda^\alpha}
 $$
 
 Substitute this result back:
