@@ -10,6 +10,7 @@ Find the mgf of Bernoulli and use it to find its mean and variance
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/0bce5a1e-965d-4f80-a748-8b437e3da635)
 
 
 ## Q2. 
@@ -20,6 +21,7 @@ Find the mgf of Exponential and use it to find its mean and variance
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/5ebc382d-6b72-450b-8d1d-ca460ac77876)
 
 
 ## Q3. 
@@ -30,6 +32,7 @@ Find the mgf of the gamma distribution and use it to find its mean and variance
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/c63486ac-23ce-4606-9054-963c5923e784)
 
 
 ## Q4. 
@@ -40,6 +43,7 @@ Find the mgf of the normal distribution and use it to find its mean and variance
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/21aeabde-4dcb-4b38-99c0-d2cc61be4540)
 
 
 ## Q5. 
