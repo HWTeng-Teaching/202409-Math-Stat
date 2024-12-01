@@ -557,7 +557,7 @@ $$
 \text{Var}(X) &= E[X^2] - (E[X])^2 \\
 &= (\mu^2 + \sigma^2) - \mu^2 \\
 &= \sigma^2.
-\bend{aligned}
+\end{aligned}
 $$
 
 ## Final Results:
