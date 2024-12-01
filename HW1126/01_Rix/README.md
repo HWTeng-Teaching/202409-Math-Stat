@@ -43,8 +43,7 @@ Find the mgf of the normal distribution and use it to find its mean and variance
 
 ### Answers
 
-![image](https://github.com/user-attachments/assets/21aeabde-4dcb-4b38-99c0-d2cc61be4540)
-
+![image](https://github.com/user-attachments/assets/7cc89286-5608-43e1-9bf8-829923c96417)
 
 ## Q5. 
 
@@ -101,6 +100,7 @@ the line of ρ = 0.9
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/367d5ad1-47f5-4c1f-bc8f-79f640b4ffa2)
 
 
 ## Q8. 
@@ -112,6 +112,7 @@ the line of ρ = 0.9
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/22b6f385-c8c7-4064-ba50-9d8d0ff5b186)
 
 
 ## Q9. 
@@ -123,6 +124,7 @@ the line of ρ = 0.9
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/d7eb5a02-476b-4915-be80-2ffccdc63adf)
 
 
 ## Q10. 
@@ -134,3 +136,4 @@ the line of ρ = 0.9
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/9d546420-76f9-411f-9d68-8c8430a5437e)
