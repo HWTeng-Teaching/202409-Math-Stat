@@ -464,7 +464,10 @@ $$
 Expanding $(x - \mu)^2$ gives:
 
 $$
-(x - \mu)^2 - 2\sigma^2 tx = x^2 - 2\mu x + \mu^2 - 2\sigma^2 tx = x^2 - 2(\mu + \sigma^2 t)x + \mu^2.
+\begin{aligned}
+(x - \mu)^2 - 2\sigma^2 tx &= x^2 - 2\mu x + \mu^2 - 2\sigma^2 tx \\
+&= x^2 - 2(\mu + \sigma^2 t)x + \mu^2.
+\end{aligned}
 $$
 
 Complete the square in $x$:
@@ -511,7 +514,11 @@ $$
 Now evaluate $M_X'(t)$ at $t = 0$:
 
 $$
-E[X] = M_X'(0) = e^{0} \cdot \mu = \mu.
+\begin{aligned}
+E[X] &= M_X'(0) \\
+&= e^{0} \cdot \mu \\
+&= \mu.
+\end{aligned}
 $$
 
 Thus, $E[X] = \mu$.
@@ -537,13 +544,20 @@ $$
 Evaluate $M_X''(t)$ at $t = 0$:
 
 $$
-M_X''(0) = e^{0} \left[\mu^2 + \sigma^2\right] = \mu^2 + \sigma^2.
+\begin{aligned}
+M_X''(0) &= e^{0} \left[\mu^2 + \sigma^2\right] \\
+&= \mu^2 + \sigma^2.
+\end{aligned}
 $$
 
 Therefore:
 
 $$
-\text{Var}(X) = E[X^2] - (E[X])^2 = (\mu^2 + \sigma^2) - \mu^2 = \sigma^2.
+\begin{aligned}
+\text{Var}(X) &= E[X^2] - (E[X])^2 \\
+&= (\mu^2 + \sigma^2) - \mu^2 \\
+&= \sigma^2.
+\bend{aligned}
 $$
 
 ## Final Results:
