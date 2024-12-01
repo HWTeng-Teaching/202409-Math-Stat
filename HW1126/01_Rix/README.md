@@ -69,7 +69,8 @@ Find the mgf of the normal distribution and use it to find its mean and variance
 
 ### Answers
 
-![image](https://github.com/user-attachments/assets/ca13e7ee-89bc-468a-b574-3a9a2b9699a5)  
+![image](https://github.com/user-attachments/assets/dc937561-6887-4088-a0f7-0b0dc94ce787)
+  
 ρ = 0  
 ![image](https://github.com/user-attachments/assets/a600393b-bf35-409d-9b05-83dd6bc15787)
 ρ = 0.5  
