@@ -148,19 +148,19 @@ $$
 For an exponential random variable with rate $\lambda$, the MGF is given by:
 
 $$
-M_X(t) = \int_{0}^{\infty} e^{tx} f_X(x) \, dx
+M_X(t) = \int_{0}^{\infty} e^{tx} f_X(x) \ dx
 $$
 
 Substitute the PDF of the exponential distribution:
 
 $$
-M_X(t) = \int_{0}^{\infty} e^{tx} \lambda e^{-\lambda x} \, dx
+M_X(t) = \int_{0}^{\infty} e^{tx} \lambda e^{-\lambda x} \ dx
 $$
 
 Combine the exponential terms:
 
 $$
-M_X(t) = \lambda \int_{0}^{\infty} e^{(\lambda - t) x} \, dx
+M_X(t) = \lambda \int_{0}^{\infty} e^{(\lambda - t) x} \ dx
 $$
 
 This is a standard integral, and it converges for \( t < \lambda \). The integral evaluates to:
