@@ -267,7 +267,7 @@ $$
 
 **Variance**: $\text{Var}(X) = \dfrac{1}{\lambda^2}$
 
-# Q3. Mean and Variance of a Gamma Random Variable
+# Q3. Find the mgf of Gamma and use it to find its mean and variance
 
 The **Gamma distribution** is defined by two parameters:
 
@@ -287,134 +287,135 @@ $$
 \Gamma(\alpha) = \int_{0}^\infty t^{\alpha-1} e^{-t} dt
 $$
 
-## 1. Mean of the Gamma Distribution
+## 1. Moment Generating Function (MGF)
 
-The **mean** (expected value) of a Gamma random variable $X$ is defined as:
-
-$$
-E(X) = \int_{0}^\infty x f_X(x) dx
-$$
-
-### Step 1: Substitute the PDF
+The moment-generating function (MGF) is defined as:
 
 $$
-E(X) = \int_{0}^\infty x \cdot \frac{\beta^\alpha x^{\alpha-1} e^{-\beta x}}{\Gamma(\alpha)} dx
+M_X(t) = E[e^{tX}]
+$$
+
+Using the definition of expectation:
+
+$$
+M_X(t) = \int_0^\infty e^{tx} f_X(x; \alpha, \beta) \, dx
+$$
+
+Substitute the PDF of the gamma distribution:
+
+$$
+M_X(t) = \int_0^\infty e^{tx} \frac{\beta^\alpha x^{\alpha - 1} e^{-\beta x}}{\Gamma(\alpha)} \, dx
+$$
+
+Combine the exponents:
+
+$$
+M_X(t) = \frac{\beta^\alpha}{\Gamma(\alpha)} \int_0^\infty x^{\alpha - 1} e^{-(\beta - t)x} \, dx
+$$
+
+The integral converges if $t < \beta$. Let $\lambda = \beta - t$. The integral becomes:
+
+$$
+M_X(t) = \frac{\beta^\alpha}{\Gamma(\alpha)} \int_0^\infty x^{\alpha - 1} e^{-\lambda x} \, dx
+$$
+
+The integral evaluates to the Gamma function:
+
+$$
+\int_0^\infty x^{\alpha - 1} e^{-\lambda x} \, dx = \frac{\Gamma(\alpha)}{\lambda^\alpha}
+$$
+
+Substitute this result back:
+
+$$
+M_X(t) = \frac{\beta^\alpha}{\Gamma(\alpha)} \cdot \frac{\Gamma(\alpha)}{(\beta - t)^\alpha}
 $$
 
 Simplify:
 
 $$
-E(X) = \frac{\beta^\alpha}{\Gamma(\alpha)} \int_{0}^\infty x^\alpha e^{-\beta x} dx
+M_X(t) = \left(\frac{\beta}{\beta - t}\right)^\alpha, \quad t < \beta
 $$
 
-### Step 2: Use the Gamma Function Property
-The Gamma function is defined as:
+
+## 2. Mean $E[X]$ Using the MGF
+
+We know the preperty:
+If the moment-generating function exists in an open interval containing zero, then $M^{(r)}(0) = E(X^r)$.
+
+The mean is the first derivative of the MGF evaluated at $t = 0$:
 
 $$
-\Gamma(\alpha) = \int_{0}^\infty t^{\alpha-1} e^{-t} dt
+E[X] = M_X'(t)\big|_{t=0}
 $$
 
-Using the substitution $t = \beta x$ (so $x = \frac{t}{\beta}$ and $dx = \frac{1}{\beta} dt$):
+First, compute the derivative of $M_X(t)$:
 
 $$
-\int_{0}^\infty x^\alpha e^{-\beta x} dx = \frac{\Gamma(\alpha + 1)}{\beta^{\alpha+1}}
-$$
-
-Substitute this into the equation for $E(X)$:
-
-$$
-E(X) = \frac{\beta^\alpha}{\Gamma(\alpha)} \cdot \frac{\Gamma(\alpha + 1)}{\beta^{\alpha+1}}
-$$
-
-Simplify using the property $\Gamma(\alpha + 1) = \alpha \Gamma(\alpha)$:
-
-$$
-E(X) = \frac{\beta^\alpha \cdot \alpha \Gamma(\alpha)}{\Gamma(\alpha) \beta^{\alpha+1}}
+M_X(t) = \left(\frac{\beta}{\beta - t}\right)^\alpha
 $$
 
 $$
-E(X) = \frac{\alpha}{\beta}
+M_X'(t) = \alpha \cdot \frac{\beta}{(\beta - t)} \cdot \left(\frac{\beta}{\beta - t}\right)^{\alpha - 1}
 $$
 
-Thus, the **mean** is:
+Now evaluate $M_X'(t)$ at $t = 0$:
 
 $$
-E(X) = \frac{\alpha}{\beta}
+M_X'(0) = \alpha \cdot \frac{\beta}{\beta} \cdot \beta^{\alpha - 1} = \frac{\alpha}{\beta}
 $$
 
-## 2. Variance of the Gamma Distribution
-
-The **variance** is defined as:
+Thus, the mean of $X$ is:
 
 $$
-\text{Var}(X) = E(X^2) - [E(X)]^2
+E[X] = \frac{\alpha}{\beta}
 $$
 
-### Step 1: Compute $E(X^2)$
+## 3. Variance $\text{Var}(X)$ Using the MGF
+
+The variance is computed using the second derivative of the MGF:
 
 $$
-E(X^2) = \int_{0}^\infty x^2 f_X(x) dx
-$$
-
-Substitute the PDF:
-
-$$
-E(X^2) = \frac{\beta^\alpha}{\Gamma(\alpha)} \int_{0}^\infty x^{\alpha+1} e^{-\beta x} dx
-$$
-
-Using the same substitution as before:
-
-$$
-\int_{0}^\infty x^{\alpha+1} e^{-\beta x} dx = \frac{\Gamma(\alpha + 2)}{\beta^{\alpha+2}}
-$$
-
-Substitute this into the equation for $E(X^2)$:
-
-$$
-E(X^2) = \frac{\beta^\alpha}{\Gamma(\alpha)} \cdot \frac{\Gamma(\alpha + 2)}{\beta^{\alpha+2}}
-$$
-
-Simplify using the property $\Gamma(\alpha + 2) = (\alpha + 1)\alpha \Gamma(\alpha)$:
-
-$$
-E(X^2) = \frac{\beta^\alpha \cdot (\alpha + 1)\alpha \Gamma(\alpha)}{\Gamma(\alpha) \beta^{\alpha+2}}
+\text{Var}(X) = E[X^2] - (E[X])^2
 $$
 
 $$
-E(X^2) = \frac{(\alpha + 1)\alpha}{\beta^2}
+E[X^2] = M_X''(t)\big|_{t=0}
 $$
 
-### Step 2: Compute Variance
-Now substitute $E(X^2) = \frac{(\alpha + 1)\alpha}{\beta^2}$ and $E(X) = \frac{\alpha}{\beta}$ into the variance formula:
+Compute the second derivative of $M_X(t)$:
+
+$$
+M_X''(t) = \alpha \cdot \frac{\beta}{(\beta - t)^2} \cdot \left(\frac{\beta}{\beta - t}\right)^{\alpha - 1} + \alpha(\alpha - 1) \cdot \frac{\beta^2}{(\beta - t)^2} \cdot \left(\frac{\beta}{\beta - t}\right)^{\alpha - 2}
+$$
+
+Evaluate $M_X''(t)$ at $t = 0$:
 
 $$
 \begin{aligned}
-\text{Var}(X) &= E(X^2) - [E(X)]^2 \\
-&= \frac{(\alpha + 1)\alpha}{\beta^2} - \left(\frac{\alpha}{\beta}\right)^2 \\
-&= \frac{(\alpha + 1)\alpha}{\beta^2} - \frac{\alpha^2}{\beta^2} \\
+M_X''(0) &= \alpha \cdot \frac{\beta}{\beta^2} + \alpha (\alpha - 1) \cdot \frac{\beta^2}{\beta^2} \\
+&= \frac{\alpha}{\beta^2} + \frac{\alpha (\alpha - 1)}{\beta^2} \\
+&= \frac{\alpha (\alpha - 1) + \alpha}{\beta^2} \\
+&= \frac{\alpha^2}{\beta^2}
+\end{aligned}
+$$
+
+The variance is:
+
+$$
+\begin{aligned}
+\text{Var}(X) &= M_X''(0) - (M_X'(0))^2 \\
 &= \frac{\alpha}{\beta^2}
 \end{aligned}
 $$
 
-Thus, the **variance** is:
+## Final Results:
 
-$$
-\text{Var}(X) = \frac{\alpha}{\beta^2}
-$$
+**MGF**: $M_X(t) = \left(\frac{\beta}{\beta - t}\right)^\alpha, \quad t < \beta$
 
-## Final Results
+**Mean**: $E[X] = \frac{\alpha}{\beta}$
 
-1. **Mean**:
-
-$$
-E(X) = \frac{\alpha}{\beta}
-$$
-
-2. **Variance**:
-
-$$
-\text{Var}(X) = \frac{\alpha}{\beta^2}
-$$
+**Variance**: $\text{Var}(X) = \frac{\alpha}{\beta^2}$
 
 # Q4. Mean and Variance of a Normal Distribution
 
