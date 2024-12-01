@@ -1,4 +1,4 @@
-# Q1. Mean and Variance of a Bernoulli Random Variable
+# Q1. Find the mgf of Bernoulli and use it to find its mean and variance
 
 A **Bernoulli random variable** $X$ takes two possible values: 
 
@@ -16,99 +16,112 @@ p, & \text{if } x = 1, \\
 \end{cases}
 $$
 
-## 1. Mean of Bernoulli Random Variable
+## 1. Moment Generating Function (MGF)
 
-The **mean** (or expected value) of a random variable $X$ is defined as:
+The moment-generating function (MGF) is defined as:
 
 $$
-E(X) = \sum_x x \cdot P(X = x)
+M_X(t) = E[e^{tX}]
 $$
 
 For a Bernoulli random variable:
 
 $$
-E(X) = (1 \cdot P(X = 1)) + (0 \cdot P(X = 0))
+M_X(t) = E[e^{tX}] = \sum_{x} e^{tx} P(X = x)
 $$
 
 Substitute $P(X = 1) = p$ and $P(X = 0) = 1 - p$:
 
 $$
-E(X) = (1 \cdot p) + (0 \cdot (1 - p))
+\begin{aligned}
+M_X(t) &= e^{t \cdot 1} P(X = 1) + e^{t \cdot 0} P(X = 0) \\
+&= e^t \cdot p + 1 \cdot (1 - p) \\
+&= p e^t + (1 - p)
+\end{aligned}
+$$
+
+Thus, the MGF of $X$ is:
+
+$$
+M_X(t) = (1-p) + p e^t
+$$
+
+## 2. Mean $E[X]$ Using the MGF
+
+We know the preperty:
+If the moment-generating function exists in an open interval containing zero, then $M^{(r)}(0) = E(X^r)$.
+
+The mean is the first derivative of the MGF evaluated at $t = 0$:
+
+$$
+E[X] = M_X'(t)\big|_{t=0}
+$$
+
+First, compute the derivative of $M_X(t)$:
+
+$$
+\begin{aligned}
+M_X'(t) &= \frac{d}{dt} \left[ (1-p) + p e^t \right] \\
+&= p e^t 
+\end{aligned}
+$$
+
+Now evaluate $M_X'(t)$ at $t = 0$:
+
+$$
+E[X] = M_X'(0) = p e^0 = p
+$$
+
+Thus, the mean of \( X \) is:
+
+$$
+E[X] = p
+$$
+
+## 3. Variance $\text{Var}(X)$ Using the MGF
+
+The variance is computed using the second derivative of the MGF:
+
+$$
+\text{Var}(X) = E[X^2] - (E[X])^2
 $$
 
 $$
-E(X) = p
+E[X^2] = M_X''(t)\big|_{t=0}
 $$
 
-Thus, the **mean** of a Bernoulli random variable is:
+Compute the second derivative of $M_X(t)$:
 
 $$
-\mu = p
+\begin{aligned}
+M_X''(t) &= \frac{d}{dt} \left[ p e^t \right] \\
+&= p e^t
+\end{aligned}
 $$
 
-## 2. Variance of Bernoulli Random Variable
-
-The **variance** of a random variable $X$ is defined as:
+Evaluate $M_X''(t)$ at $t = 0$:
 
 $$
-\text{Var}(X) = E\big[(X - \mu)^2\big]
+E[X^2] = M_X''(0) = p e^0 = p
 $$
 
-Alternatively, we use the formula:
+Now substitute into the variance formula:
 
 $$
-\text{Var}(X) = E(X^2) - [E(X)]^2
-$$
-
-### Step 1: Compute $E(X^2)$
-
-For a Bernoulli random variable:
-
-$$
-E(X^2) = \sum_x x^2 \cdot P(X = x)
-$$
-
-Since $X$ only takes values $0$ or $1$:
-
-$$
-E(X^2) = (1^2 \cdot P(X = 1)) + (0^2 \cdot P(X = 0))
-$$
-
-$$
-E(X^2) = (1 \cdot p) + (0 \cdot (1 - p)) = p
-$$
-
-### Step 2: Compute $\text{Var}(X)$
-
-Using the formula:
-
-$$
-\text{Var}(X) = E(X^2) - [E(X)]^2
-$$
-
-Substitute $E(X^2) = p$ and $E(X) = p$:
-
-$$
-\text{Var}(X) = p - p^2
-$$
-
-$$
-\text{Var}(X) = p(1 - p)
+\begin{aligned}
+\text{Var}(X) &= E(X^2) - [E(X)]^2 \\
+&= p - p^2 \\
+&= p(1 - p)
+\end{aligned}
 $$
 
 ## Final Results:
 
-1. **Mean**:
-   
-$$
-\mu = E(X) = p
-$$
+**MGF**: $M_X(t) = (1-p) + p e^t$
 
-2. **Variance**:
+**Mean**: $E[X] = p$
 
-$$
-\text{Var}(X) = p(1 - p)
-$$
+**Variance**: $\text{Var}(X) = p(1 - p)$
 
 # Q2. Mean and Variance of an Exponential Random Variable
 
