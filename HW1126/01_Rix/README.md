@@ -56,6 +56,8 @@ Find the mgf of the normal distribution and use it to find its mean and variance
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/476f0e91-416a-48dd-b58d-fb091a1a67a5)
+![image](https://github.com/user-attachments/assets/05d144dc-d66c-4d96-9a02-6e97c0a5e91f)
 
 
 ## Q6. 
