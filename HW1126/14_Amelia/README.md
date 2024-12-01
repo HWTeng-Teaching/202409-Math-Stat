@@ -231,12 +231,11 @@ M_X''(t) &= \frac{d}{dt} \left[ \frac{\lambda}{(\lambda - t)^2} \right] \\
 \end{aligned}
 $$
 
-Evaluate \( M_X''(0) \):
+Evaluate $M_X''(0)$:
 
 $$
 \begin{aligned}
 M_X''(0) &= 2\lambda (\lambda - 0)^{-3} \\
-&= 2\lambda \lambda^{-3} \\
 &= \frac{2}{\lambda^2}
 \end{aligned}
 $$
@@ -262,7 +261,7 @@ $$
 
 ## Final Results:
 
-**MGF**: $M_X(t) = \dfrac{\lambda}{\lambda - t}, \quad \text{for } t < \lambda$
+**MGF**: $M_X(t) = \dfrac{\lambda}{\lambda - t}$, $\quad \text{for } t < \lambda$
 
 **Mean**: $E[X] = \dfrac{1}{\lambda}$
 
