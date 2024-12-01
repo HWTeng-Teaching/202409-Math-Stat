@@ -48,7 +48,7 @@ $$
 
 ## 2. Mean $E[X]$ Using the MGF
 
-We know the preperty:
+We know the property:
 If the moment-generating function exists in an open interval containing zero, then $M^{(r)}(0) = E(X^r)$.
 
 The mean is the first derivative of the MGF evaluated at $t = 0$:
@@ -177,7 +177,7 @@ $$
 
 ## 2. Mean $E[X]$ Using the MGF
 
-We know the preperty:
+We know the property:
 If the moment-generating function exists in an open interval containing zero, then $M^{(r)}(0) = E(X^r)$.
 
 The mean is the first derivative of the MGF evaluated at $t = 0$:
@@ -340,7 +340,7 @@ $$
 
 ## 2. Mean $E[X]$ Using the MGF
 
-We know the preperty:
+We know the property:
 If the moment-generating function exists in an open interval containing zero, then $M^{(r)}(0) = E(X^r)$.
 
 The mean is the first derivative of the MGF evaluated at $t = 0$:
@@ -496,7 +496,7 @@ $$
 
 ## 2. Mean $E[X]$ Using the MGF
 
-We know the preperty:
+We know the property:
 If the moment-generating function exists in an open interval containing zero, then $M^{(r)}(0) = E(X^r)$.
 
 The mean is the first derivative of the MGF evaluated at $t = 0$:
