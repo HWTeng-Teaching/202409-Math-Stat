@@ -63,8 +63,7 @@ Find the mgf of the normal distribution and use it to find its mean and variance
 
 ### Questions 
 
-![image](https://github.com/user-attachments/assets/6c0e750c-1633-41e4-a019-b2d9b8a52e39)
-
+![image](https://github.com/user-attachments/assets/90631673-3ae2-4c39-bc14-fedfe353ca6e)
 
 ### Answers
 
