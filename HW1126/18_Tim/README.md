@@ -1,1 +1,7 @@
-
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1126/18_Tim/IMG_1206.jpeg)
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1126/18_Tim/IMG_1207.jpeg)
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1126/18_Tim/IMG_1208.jpeg)
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1126/18_Tim/IMG_1209.jpeg)
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1126/18_Tim/IMG_1210.jpeg)
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1126/18_Tim/IMG_1211.jpeg)
+![image](https://github.com/HWTeng-Teaching/202409-Math-Stat/blob/main/HW1126/18_Tim/IMG_1212.jpeg)
