@@ -2,7 +2,8 @@
 
 by 周子揚 Rix
 
-![image](https://github.com/user-attachments/assets/e739fb1a-7604-45be-8245-ce8f7b16726e)
+![image](https://github.com/user-attachments/assets/d35af4ea-d498-4fcb-a887-1c1bba5e4a62)
+
 
 ## Q1. 
 
