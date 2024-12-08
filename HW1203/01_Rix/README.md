@@ -2,8 +2,7 @@
 
 by 周子揚 Rix
 
-![image](https://github.com/user-attachments/assets/d35af4ea-d498-4fcb-a887-1c1bba5e4a62)
-
+![image](https://github.com/user-attachments/assets/8122e5c5-ed13-4b29-ac71-f37f6ef9839f)
 
 ## Q1. 
 
@@ -25,6 +24,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/e0401202-4ae2-432b-b6b2-5a625adad193)
 
 
 ## Q3. 
