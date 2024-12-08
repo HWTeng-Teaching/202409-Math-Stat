@@ -60,6 +60,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/9675ab23-3d53-45f2-ae47-28398e5d5f9d)
 
 
 ## Q6. 
@@ -71,6 +72,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/c62806dc-808e-4f67-82e4-d1d7c4b333aa)
 
 
 ## Q7. 
@@ -82,6 +84,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/60b2adf0-4d37-4a63-9d2c-9c6d500629e6)
 
 
 ## Q8. 
