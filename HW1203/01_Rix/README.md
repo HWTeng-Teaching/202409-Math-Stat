@@ -36,6 +36,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/c4ef1779-9d5f-4703-892c-f06378b996a8)
 
 
 ## Q4. 
@@ -47,6 +48,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/7c7fb5c0-927e-40d6-b66d-2c4db2f90b92)
 
 
 ## Q5. 
