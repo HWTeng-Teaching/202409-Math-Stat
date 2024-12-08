@@ -2,6 +2,8 @@
 
 by 周子揚 Rix
 
+![image](https://github.com/user-attachments/assets/e739fb1a-7604-45be-8245-ce8f7b16726e)
+
 ## Q1. 
 
 ### Questions 
@@ -11,7 +13,7 @@ by 周子揚 Rix
 
 ### Answers
 
-
+![image](https://github.com/user-attachments/assets/c1748048-88e0-49dc-91e4-67150f06e735)
 
 ## Q2. 
 
