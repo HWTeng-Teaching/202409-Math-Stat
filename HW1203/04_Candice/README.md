@@ -3,3 +3,4 @@
 ![Page3](https://github.com/user-attachments/assets/970ef5e5-9007-4662-9065-2fdbdcff8dce)
 ![Page4](https://github.com/user-attachments/assets/e6b8228a-6432-4361-9cab-950a36e31e8e)
 ![Page5](https://github.com/user-attachments/assets/f19aea5a-8fac-4219-9cd1-afb79a9c7f9a)
+![Uploading 1203數理統計HW.jpg…]()
