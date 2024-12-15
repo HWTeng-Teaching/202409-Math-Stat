@@ -75,6 +75,9 @@ Find the Third Quartile Q3
 CDF 𝐹(𝑄3) = 0.75  
 ​Q3 = $\frac{−1 + \sqrt{1 - 4𝛼 + 3𝛼^2}}{𝛼}$  
 ### 2.35  Sketch the pdf and cdf of a random variable that is uniform on [−1, 1].  
-![image](https://github.com/user-attachments/assets/720a3d8d-cfd3-4289-a3db-fc7c6cbaf972)
+![image](https://github.com/user-attachments/assets/aa636712-8f92-43a8-b9fe-cd9dfea797ae)
+
+![image](https://github.com/user-attachments/assets/ae8745cf-e500-4d22-95df-3949ef1304cb)
+
 
 
