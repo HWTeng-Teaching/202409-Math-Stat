@@ -11,6 +11,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/88ee10e8-a9ea-4dd8-85f8-84454f0368de)
 
 
 ## Q2. 
@@ -22,6 +23,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/1d697e7d-def2-44ac-95bb-77639d1bd1f3)
 
 
 ## Q3. 
@@ -33,6 +35,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/96e2fad6-0660-478c-aa0d-aa81286e9a37)
 
 
 ## Q4. 
@@ -44,6 +47,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/1f78e6f5-e908-4f24-b8f5-a84b12cdc062)
 
 
 ## Q5. 
@@ -56,6 +60,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/41f8e728-a605-486f-a928-c2fa8de67bec)
 
 
 ## Q6. 
@@ -68,6 +73,8 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/e55b874a-df46-4c1c-89ac-4cadcb99931e)
+![image](https://github.com/user-attachments/assets/796886c7-4e54-4cea-95a2-d6f56debec21)
 
 
 ## Q7. 
@@ -79,6 +86,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/9927b7c2-2f32-4a3d-8019-cb4f7d791c3a)
 
 
 ## Q8. 
@@ -91,6 +99,7 @@ by 周子揚 Rix
 
 ### Answers
 
+![image](https://github.com/user-attachments/assets/58c72256-0630-48fa-b3c5-2d00c2106dba)
 
 
 ## Q9. 
@@ -102,3 +111,40 @@ by 周子揚 Rix
 
 ### Answers
 
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Parameters
+mu = 0
+sigma = 10
+n = 25  # sample size
+num_samples = 1000  # number of samples to generate
+
+# Generate samples from N(mu, sigma^2)
+samples = np.random.normal(mu, sigma, (num_samples, n))
+
+# Calculate sample means (X-bar) and sample variances (s^2)
+sample_means = np.mean(samples, axis=1)
+sample_variances = np.var(samples, axis=1, ddof=1)  # Using ddof=1 for unbiased estimator of variance
+
+# Plot the sampling distributions
+fig, axs = plt.subplots(1, 2, figsize=(12, 6))
+
+# Plot the distribution of X-bar (sample means)
+axs[0].hist(sample_means, bins=30, color='skyblue', edgecolor='black', alpha=0.7)
+axs[0].set_title('Sampling Distribution of X-bar')
+axs[0].set_xlabel('Sample Mean (X-bar)')
+axs[0].set_ylabel('Frequency')
+
+# Plot the distribution of s^2 (sample variances)
+axs[1].hist(sample_variances, bins=30, color='lightgreen', edgecolor='black', alpha=0.7)
+axs[1].set_title('Sampling Distribution of Sample Variance (s^2)')
+axs[1].set_xlabel('Sample Variance (s^2)')
+axs[1].set_ylabel('Frequency')
+
+# Show the plots
+plt.tight_layout()
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/6f77ffba-3dc3-4695-9532-4e97d91852c9)
