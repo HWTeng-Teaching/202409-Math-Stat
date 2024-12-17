@@ -9,8 +9,8 @@
 ![Page09](https://github.com/user-attachments/assets/0697e3b0-a246-4f0c-b920-43bc5c63b13c)
 ![Page10](https://github.com/user-attachments/assets/edf07e4e-b170-40ba-b0d6-f38625590752)
 
-# Q10
-# Amswer
+# Q9
+# Answer
 
 ```python
 import numpy as np
